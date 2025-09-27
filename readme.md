@@ -51,7 +51,7 @@ Purpose: Train transformer on full gene set (~13,000 genes)
 bash
 
 
-python production_transformer_13092025.py
+python src/production_transformer_13092025.py
 Key Features:
 CPM → log1p normalization
 Feature Token Transformer architecture
@@ -68,7 +68,7 @@ Script: run_training.sbatch
 bash
 
 
-sbatch run_training.sbatch
+sbatch src/run_training.sbatch
 Step 3-4: Production Inference
 Script: inference_persister_transformer_14092025.py
 Purpose: Apply model to new samples with automatic format detection
@@ -79,7 +79,7 @@ MTX triplets (GSE120221 format)
 bash
 
 
-python inference_persister_transformer_14092025.py \
+python src/inference_persister_transformer_14092025.py \
     --model-dir /path/to/models \
     --out-dir /path/to/predictions \
     --aml-root /path/to/AML_data \
@@ -94,7 +94,7 @@ Method C: Filter housekeeping genes while preserving cancer markers
 bash
 
 
-python gene_Reduction_production_transformer_20092025.py
+python src/gene_Reduction_production_transformer_20092025.py
 Step 6-7: Reduced Model Training with Distillation
 Script: train_gene_reduction.py
 Purpose: Train 1,000-gene model using soft labels from original model
@@ -105,14 +105,14 @@ Independent dataset validation
 bash
 
 
-python train_gene_reduction.py
+python src/train_gene_reduction.py
 Step 8: DepMap Integration
 Script: depmap_gene_refinement.py
 Purpose: Further refine to 500 genes based on AML dependency scores
 bash
 
 
-python depmap_gene_refinement.py \
+python src/depmap_gene_refinement.py \
     --genes-file selected_genes.txt \
     --depmap-dir /path/to/DepMap_Datasets \
     --output-dir /path/to/depmap_refined
@@ -131,7 +131,7 @@ Interactive network visualizations
 bash
 
 
-python pathway_analysis.py \
+python src/pathway_analysis.py \
     --genes genes_500_depmap.txt \
     --output /path/to/pathway_analysis \
     --background-size 19000
@@ -141,7 +141,7 @@ Purpose: Compute per-sample pathway/module activity scores
 bash
 
 
-python pathway_module_score_analysis.py \
+python src/pathway_module_score_analysis.py \
     --expression expression.csv \
     --metadata metadata.csv \
     --kegg-tf-dir /path/to/pathway_analysis \
@@ -165,7 +165,7 @@ text
 - Method A: Differential expression on high-confidence predictions
 - Method B: PCA-based feature importance
 - Method C: Filter housekeeping genes
-- Output: `selected_genes_model_aware.txt`
+- Output: `selected_genes.txt`
 
 ### Stage 3: Reduced Model Training
 **Script**: `train_gene_reduction.py`
@@ -250,10 +250,13 @@ AML_Persister_Analysis/
 │   ├── GSE123902_RAW/
 │   ├── AML_scRNA_decrypted/
 │   └── GSE120221_RAW/
+├── metadata/
+│   ├── common_genes.txt/
+│   ├── metadata.json/
 ├── logs/
 │   └── *.out
 ├── gene_reduction_model_aware/
-│   ├── selected_genes_model_aware.txt
+│   ├── selected_genes.txt
 │   ├── de_high_confidence.csv
 │   └── pca_importance.csv
 ├── reduced_model_distilled/
