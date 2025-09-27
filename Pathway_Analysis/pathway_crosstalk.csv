@@ -1,0 +1,14 @@
+gene,n_pathways,pathways
+MYC,70,path:hsa01521; path:hsa01522; path:hsa03083; path:hsa04010; path:hsa04012
+RAD1,51,path:hsa01522; path:hsa01524; path:hsa03420; path:hsa03460; path:hsa04068
+GCSH,6,path:hsa00260; path:hsa00630; path:hsa00670; path:hsa00785; path:hsa01100
+POLD2,5,path:hsa03030; path:hsa03410; path:hsa03420; path:hsa03430; path:hsa03440
+IMPDH2,4,path:hsa00230; path:hsa00983; path:hsa01100; path:hsa01232
+MCL1,4,path:hsa04151; path:hsa04210; path:hsa04630; path:hsa05206
+AHCY,3,path:hsa00270; path:hsa00670; path:hsa01100
+CDK7,3,path:hsa03022; path:hsa03420; path:hsa04110
+RUVBL1,2,path:hsa03082; path:hsa04310
+RPL36A,2,path:hsa03010; path:hsa05171
+PAICS,2,path:hsa00230; path:hsa01100
+NUP155,2,path:hsa03013; path:hsa05014
+DROSHA,2,path:hsa03008; path:hsa05205

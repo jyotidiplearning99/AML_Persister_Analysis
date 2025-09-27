@@ -1,0 +1,7 @@
+{
+  "method_a_genes": 1000,
+  "method_b_genes": 1000,
+  "final_genes": 1000,
+  "housekeeping_removed": 75,
+  "cancer_markers_included": 16
+}

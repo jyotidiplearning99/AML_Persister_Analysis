@@ -1,0 +1,4 @@
+/scratch/project_2010751/GSE123902_RAW/GSM3516671_MSK_LX681_METASTASIS_dense.csv
+/scratch/project_2010751/GSE123902_RAW/GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense.csv
+/scratch/project_2010376/scRNAseq/FH_5897_2/filtered_feature_bc_matrix
+/scratch/project_2010376/scRNAseq/FH_6333_2/filtered_feature_bc_matrix

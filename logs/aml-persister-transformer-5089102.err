@@ -1,0 +1,27 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/transformer_12092025.py", line 539, in <module>
+    main()
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/transformer_12092025.py", line 429, in main
+    oof_probs = stratified_validation(X_train, y_train, n_folds=5)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/transformer_12092025.py", line 291, in stratified_validation
+    X_tr_s = scaler.fit_transform(X_tr)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/utils/_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/base.py", line 915, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/preprocessing/_data.py", line 837, in fit
+    return self.partial_fit(X, y, sample_weight)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/preprocessing/_data.py", line 873, in partial_fit
+    X = self._validate_data(
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/base.py", line 604, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "/usr/local/lib64/python3.9/site-packages/sklearn/utils/validation.py", line 978, in check_array
+    raise ValueError(
+ValueError: Found array with 0 feature(s) (shape=(3840, 0)) while a minimum of 1 is required by StandardScaler.
+srun: error: g5201: task 0: Exited with exit code 1
+srun: Terminating StepId=5089102.0

@@ -1,0 +1,48 @@
+{
+  "analysis_version": "v1_final",
+  "n_samples": 32,
+  "n_genes": 31733,
+  "modules_tested": 6,
+  "top_modules": {
+    "RTK_signaling": {
+      "auc": 0.9166666666666669,
+      "cohens_d": 2.805619673047742,
+      "q_value": 0.0692847937773768,
+      "n_genes": 6
+    },
+    "GO_morphogenesis_epithelium": {
+      "auc": 0.8782051282051282,
+      "cohens_d": 2.463799253487203,
+      "q_value": 0.0692847937773768,
+      "n_genes": 56
+    },
+    "Cell_adhesion_Ephrins": {
+      "auc": 0.814102564102564,
+      "cohens_d": 2.4687563861661936,
+      "q_value": 0.0692847937773768,
+      "n_genes": 13
+    },
+    "WNT_pathway": {
+      "auc": 0.8397435897435898,
+      "cohens_d": 2.2484830971979037,
+      "q_value": 0.07323601354495067,
+      "n_genes": 7
+    },
+    "Stemness_markers": {
+      "auc": 0.6923076923076923,
+      "cohens_d": 1.6304870907803044,
+      "q_value": 0.1368040122941133,
+      "n_genes": 6
+    },
+    "ESR1_targets": {
+      "auc": 0.8333333333333334,
+      "cohens_d": 1.667348149907135,
+      "q_value": 0.0692847937773768,
+      "n_genes": 70
+    }
+  },
+  "composite_score": {
+    "auc": 0.8525641025641026,
+    "cohens_d": 1.7042587630170625
+  }
+}

@@ -1,0 +1,1 @@
+scaler_reduced.pkl

@@ -1,0 +1,91 @@
+=========================================
+Persister Inference - REDUCED Model
+Started: Sun Sep 21 09:29:06 EEST 2025
+Output dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+Sun Sep 21 09:29:06 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.261.03             Driver Version: 535.261.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:44:00.0 Off |                    0 |
+| N/A   39C    P0              55W / 400W |      0MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+TF version: 2.13.0
+GPUs: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+=========================================
+2025-09-21 09:29:20,607 | INFO | [DISCOVER] AML datasets seen: 6 under /scratch/project_2010751/AML_scRNA_decrypted
+2025-09-21 09:29:20,609 | INFO | [DISCOVER] Healthy triplets seen: 25 under /scratch/project_2010751/GSE120221_RAW
+2025-09-21 09:29:26,041 | INFO | Starting inference at 2025-09-21 09:29:26.041213
+2025-09-21 09:29:26,041 | INFO | Model directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+2025-09-21 09:29:26,041 | INFO | Output directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+2025-09-21 09:29:26,041 | INFO | [MODEL] Loading /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/model_reduced.h5
+2025-09-21 09:29:27,853 | INFO | [LOAD] scaler loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/scaler_reduced.pkl
+2025-09-21 09:29:28,001 | INFO | [LOAD] pca loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/pca_reduced.pkl
+2025-09-21 09:29:28,001 | INFO | [THRESH] Using override: 0.551
+2025-09-21 09:29:28,018 | INFO | [GENES] Loaded 1000 genes from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt
+2025-09-21 09:29:28,018 | INFO | [MODEL] Type: REDUCED (1000 genes)
+2025-09-21 09:29:28,018 | INFO | [MODEL] Genes: 1000
+2025-09-21 09:29:28,018 | INFO | [MODEL] PCA components: 100
+2025-09-21 09:29:28,018 | INFO | [MODEL] Threshold: 0.551
+2025-09-21 09:29:28,088 | INFO | [DISCOVER] Total samples to process: 12
+2025-09-21 09:29:40,231 | INFO | [LOAD] FH_5238_2: 5,053 cells × 36,601 genes
+2025-09-21 09:29:40,235 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:29:41,268 | INFO | [RESULT] FH_5238_2: 4472 persisters (88.5%), 581 non-persisters
+2025-09-21 09:29:48,855 | INFO | [LOAD] FH_6333_3: 2,815 cells × 36,601 genes
+2025-09-21 09:29:48,860 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:29:49,051 | INFO | [RESULT] FH_6333_3: 2466 persisters (87.6%), 349 non-persisters
+2025-09-21 09:31:38,741 | INFO | [LOAD] AGG_AML_deep_NVS-IC_Batch1-2: 30,486 cells × 36,601 genes
+2025-09-21 09:31:38,746 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:31:40,416 | INFO | [RESULT] AGG_AML_deep_NVS-IC_Batch1-2: 28935 persisters (94.9%), 1551 non-persisters
+2025-09-21 09:32:12,359 | INFO | [LOAD] FH_5143_2: 8,116 cells × 36,601 genes
+2025-09-21 09:32:12,363 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:32:12,836 | INFO | [RESULT] FH_5143_2: 7750 persisters (95.5%), 366 non-persisters
+2025-09-21 09:32:44,176 | INFO | [LOAD] FH_6088_2: 7,373 cells × 36,601 genes
+2025-09-21 09:32:44,181 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:32:44,632 | INFO | [RESULT] FH_6088_2: 7087 persisters (96.1%), 286 non-persisters
+2025-09-21 09:33:13,866 | INFO | [LOAD] FH_6088_3: 6,801 cells × 36,601 genes
+2025-09-21 09:33:13,871 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:14,271 | INFO | [RESULT] FH_6088_3: 6544 persisters (96.2%), 257 non-persisters
+2025-09-21 09:33:15,490 | INFO | [LOAD] GSM3516664_METASTASIS: 1,316 cells × 17,625 genes
+2025-09-21 09:33:15,493 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:15,619 | INFO | [RESULT] GSM3516664_METASTASIS: 1232 persisters (93.6%), 84 non-persisters
+2025-09-21 09:33:18,480 | INFO | [LOAD] GSM3516665_PRIMARY: 3,435 cells × 19,856 genes
+2025-09-21 09:33:18,483 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:18,728 | INFO | [RESULT] GSM3516665_PRIMARY: 1078 persisters (31.4%), 2357 non-persisters
+2025-09-21 09:33:21,243 | INFO | [LOAD] GSM3516666_NORMAL: 3,061 cells × 18,158 genes
+2025-09-21 09:33:21,245 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:21,448 | INFO | [RESULT] GSM3516666_NORMAL: 717 persisters (23.4%), 2344 non-persisters
+2025-09-21 09:33:24,446 | INFO | [LOAD] GSM3516667_PRIMARY: 4,014 cells × 18,082 genes
+2025-09-21 09:33:24,449 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:24,721 | INFO | [RESULT] GSM3516667_PRIMARY: 1730 persisters (43.1%), 2284 non-persisters
+2025-09-21 09:33:27,398 | INFO | [LOAD] GSM3516668_METASTASIS: 3,886 cells × 16,287 genes
+2025-09-21 09:33:27,400 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:27,699 | INFO | [RESULT] GSM3516668_METASTASIS: 3145 persisters (80.9%), 741 non-persisters
+2025-09-21 09:33:28,990 | INFO | [LOAD] GSM3516671_METASTASIS: 1,630 cells × 18,444 genes
+2025-09-21 09:33:28,992 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 09:33:29,132 | INFO | [RESULT] GSM3516671_METASTASIS: 609 persisters (37.4%), 1021 non-persisters
+2025-09-21 09:33:29,144 | INFO | 
+================================================================================
+2025-09-21 09:33:29,144 | INFO | INFERENCE COMPLETE
+2025-09-21 09:33:29,144 | INFO | ================================================================================
+2025-09-21 09:33:29,144 | INFO | Processed: 12 samples
+2025-09-21 09:33:29,145 | INFO | Total cells: 77,986
+2025-09-21 09:33:29,146 | INFO | Mean persister %: 72.4%
+2025-09-21 09:33:29,146 | INFO | Results saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+2025-09-21 09:33:30,323 | INFO | Summary shows 12 samples in /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced/inference_results_summary.csv
+=========================================
+Finished: Sun Sep 21 09:33:30 EEST 2025
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+=========================================

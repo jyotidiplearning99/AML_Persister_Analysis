@@ -1,0 +1,76 @@
+=========================================
+Unified Persister Inference Pipeline
+Job ID: 5129830
+Node: g5101.mahti.csc.fi
+Started: Sat Sep 20 22:25:21 EEST 2025
+Working Dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src
+=========================================
+name, memory.total [MiB]
+NVIDIA A100-SXM4-40GB, 40960 MiB
+WARNING: Sample not found: /scratch/project_2010751/GSE123902_RAW/GSM3516669_MSK_LX682_METASTASIS_dense.csv
+WARNING: Sample not found: /scratch/project_2010376/scRNAseq/FH_7167_2/filtered_feature_bc_matrix
+Processing 4 samples
+=========================================
+Running REDUCED model (1,000 genes)
+=========================================
+2025-09-20 22:25:33,424 | INFO | Loading model from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/model_reduced.h5
+2025-09-20 22:25:36,489 | INFO | Model components loaded:
+2025-09-20 22:25:36,489 | INFO |   - Genes: 1000
+2025-09-20 22:25:36,489 | INFO |   - PCA components: 100
+2025-09-20 22:25:36,489 | INFO |   - Threshold: 0.551
+2025-09-20 22:25:36,489 | INFO |   - Residualizer: No
+2025-09-20 22:25:36,489 | INFO | Initialized reduced model with 1000 genes
+2025-09-20 22:25:44,352 | INFO | Processing GSM3516671_MSK_LX681_METASTASIS_dense: 1630 cells × 18167 genes
+2025-09-20 22:25:44,703 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:25:45,491 | INFO |   Results: 402/1630 persisters (24.7%)
+2025-09-20 22:26:03,855 | INFO | Processing GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense: 4014 cells × 17879 genes
+2025-09-20 22:26:04,606 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:26:04,726 | INFO |   Results: 505/4014 persisters (12.6%)
+2025-09-20 22:26:31,059 | INFO | Processing filtered_feature_bc_matrix: 9495 cells × 30397 genes
+2025-09-20 22:26:33,979 | INFO |   Gene coverage: 99.9%
+2025-09-20 22:26:34,134 | INFO |   Results: 2888/9495 persisters (30.4%)
+2025-09-20 22:26:41,206 | INFO | Processing filtered_feature_bc_matrix: 2451 cells × 30191 genes
+2025-09-20 22:26:41,968 | INFO |   Gene coverage: 99.1%
+2025-09-20 22:26:42,045 | INFO |   Results: 1106/2451 persisters (45.1%)
+
+============================================================
+Model: reduced (1000 genes)
+Processed: 4 samples
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/results/inference/reduced_20250920_222521
+============================================================
+
+Summary:
+                                   sample  n_cells  persisters  persister_pct
+    GSM3516671_MSK_LX681_METASTASIS_dense     1630         402      24.662577
+GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense     4014         505      12.580967
+               filtered_feature_bc_matrix     9495        2888      30.416008
+               filtered_feature_bc_matrix     2451        1106      45.124439
+
+Overall statistics:
+  Mean persister %: 28.2%
+  Std persister %:  13.5%
+
+=========================================
+Inference Complete
+Finished: Sat Sep 20 22:26:43 EEST 2025
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/results/inference/reduced_20250920_222521
+=========================================
+
+Results Summary:
+----------------
+sample                                     model    n_cells  persisters  persister_pct       mean_prob            coverage
+GSM3516671_MSK_LX681_METASTASIS_dense      reduced  1630     402         24.662576687116562  0.38346749544143677  100.0
+GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense  reduced  4014     505         12.580966616841055  0.23983561992645264  100.0
+filtered_feature_bc_matrix                 reduced  9495     2888        30.4160084254871    0.39690977334976196  99.9
+filtered_feature_bc_matrix                 reduced  2451     1106        45.12443900448797   0.48089367151260376  99.1
+
+Overall Statistics:
+-------------------
+Samples processed: 4
+Mean persister %: 28.2%
+Std persister %: 13.5%
+Range: 12.6% - 45.1%
+
+=========================================
+Job completed successfully
+=========================================

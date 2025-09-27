@@ -1,0 +1,51 @@
+{
+  "version": "v12.0_production_final",
+  "timestamp": "Sat Sep 20 14:29:32 2025",
+  "pipeline": {
+    "normalization": "CPM_log1p",
+    "batch_correction": "None",
+    "pseudobulk_method": "expm1_sum_cpm_log1p",
+    "scaling": "StandardScaler",
+    "pca": true,
+    "pca_whiten": true,
+    "model_type": "CompactTransformer"
+  },
+  "genes": {
+    "n_genes": 100,
+    "gene_file": "final_genes.txt",
+    "selection_method": "deterministic_order"
+  },
+  "thresholds": {
+    "recall_optimized": 0.33,
+    "specificity_optimized": 0.33,
+    "metrics_recall": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "metrics_specificity": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "thresholds_source": "nested_cv_out_of_fold_probs"
+  },
+  "thresholds_source": "nested_cv_out_of_fold_probs",
+  "performance": {
+    "mean_auc": 0.22222222222222224,
+    "std_auc": 0.0,
+    "n_folds": 1
+  },
+  "random_state": {
+    "seed": 42,
+    "rng_algorithm": "PCG64"
+  },
+  "configuration": {
+    "min_precision_for_threshold": 0.3,
+    "fdr_threshold": 0.1,
+    "min_log_fc": 0.25,
+    "max_genes": 500
+  }
+}

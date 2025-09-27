@@ -1,0 +1,249 @@
+=========================================
+Unified Persister Inference Pipeline
+Job ID: 5129851
+Node: g3301.mahti.csc.fi
+Started: Sat Sep 20 22:38:16 EEST 2025
+Working Dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src
+=========================================
+name, memory.total [MiB]
+NVIDIA A100-SXM4-40GB, 40960 MiB
+Processing 37 samples
+=========================================
+Running REDUCED model (1,000 genes)
+=========================================
+2025-09-20 22:38:26,217 | INFO | Loading model from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/model_reduced.h5
+2025-09-20 22:38:28,800 | INFO | Model components loaded:
+2025-09-20 22:38:28,800 | INFO |   - Genes: 1000
+2025-09-20 22:38:28,800 | INFO |   - PCA components: 100
+2025-09-20 22:38:28,800 | INFO |   - Threshold: 0.551
+2025-09-20 22:38:28,800 | INFO |   - Residualizer: No
+2025-09-20 22:38:28,800 | INFO | Initialized reduced model with 1000 genes
+2025-09-20 22:38:35,001 | INFO | Processing GSM3516664_MSK_LX666_METASTASIS_dense: 1316 cells × 17395 genes
+2025-09-20 22:38:35,276 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:38:35,928 | INFO |   Results: 1120/1316 persisters (85.1%)
+2025-09-20 22:38:52,933 | INFO | Processing GSM3516665_MSK_LX675_PRIMARY_TUMOUR_dense: 3435 cells × 19504 genes
+2025-09-20 22:38:53,669 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:38:53,779 | INFO |   Results: 224/3435 persisters (6.5%)
+2025-09-20 22:39:07,821 | INFO | Processing GSM3516666_MSK_LX675_NORMAL_dense: 3061 cells × 17926 genes
+2025-09-20 22:39:08,421 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:39:08,512 | INFO |   Results: 126/3061 persisters (4.1%)
+2025-09-20 22:39:26,767 | INFO | Processing GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense: 4014 cells × 17879 genes
+2025-09-20 22:39:27,507 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:39:27,626 | INFO |   Results: 505/4014 persisters (12.6%)
+2025-09-20 22:39:43,546 | INFO | Processing GSM3516668_MSK_LX255B_METASTASIS_dense: 3886 cells × 16150 genes
+2025-09-20 22:39:44,177 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:39:44,306 | INFO |   Results: 3373/3886 persisters (86.8%)
+2025-09-20 22:39:52,047 | INFO | Processing GSM3516671_MSK_LX681_METASTASIS_dense: 1630 cells × 18167 genes
+2025-09-20 22:39:52,390 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:39:52,465 | INFO |   Results: 402/1630 persisters (24.7%)
+2025-09-20 22:40:01,583 | INFO | Processing GSM3516669_MSK_LX679_PRIMARY_TUMOUR_dense: 2017 cells × 17231 genes
+2025-09-20 22:40:01,932 | INFO |   Gene coverage: 98.8%
+2025-09-20 22:40:02,058 | INFO |   Results: 866/2017 persisters (42.9%)
+2025-09-20 22:40:06,787 | INFO | Processing GSM3516670_MSK_LX680_PRIMARY_TUMOUR_dense: 941 cells × 18414 genes
+2025-09-20 22:40:06,956 | INFO |   Gene coverage: 99.5%
+2025-09-20 22:40:07,043 | INFO |   Results: 272/941 persisters (28.9%)
+2025-09-20 22:40:27,035 | INFO | Processing GSM3516672_MSK_LX682_PRIMARY_TUMOUR_dense: 4092 cells × 19133 genes
+2025-09-20 22:40:27,873 | INFO |   Gene coverage: 100.0%
+2025-09-20 22:40:27,969 | INFO |   Results: 499/4092 persisters (12.2%)
+2025-09-20 22:40:47,043 | INFO | Processing GSM3516673_MSK_LX682_NORMAL_dense: 4061 cells × 18494 genes
+2025-09-20 22:40:47,884 | INFO |   Gene coverage: 99.4%
+2025-09-20 22:40:48,005 | INFO |   Results: 261/4061 persisters (6.4%)
+2025-09-20 22:41:13,953 | INFO | Processing filtered_feature_bc_matrix: 9495 cells × 30397 genes
+2025-09-20 22:41:16,897 | INFO |   Gene coverage: 99.9%
+2025-09-20 22:41:17,066 | INFO |   Results: 2888/9495 persisters (30.4%)
+2025-09-20 22:41:23,999 | INFO | Processing filtered_feature_bc_matrix: 2451 cells × 30191 genes
+2025-09-20 22:41:24,759 | INFO |   Gene coverage: 99.1%
+2025-09-20 22:41:24,847 | INFO |   Results: 1106/2451 persisters (45.1%)
+2025-09-20 22:41:29,583 | INFO | Processing GSM3396161_matrix_A.mtx: 4900981 cells × 0 genes
+2025-09-20 22:41:29,583 | WARNING | Subsampling from 4900981 to 20000 cells
+2025-09-20 22:41:29,827 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:30,160 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:33,665 | INFO | Processing GSM3396162_matrix_B.mtx: 3591651 cells × 0 genes
+2025-09-20 22:41:33,666 | WARNING | Subsampling from 3591651 to 20000 cells
+2025-09-20 22:41:33,839 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:34,156 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:37,127 | INFO | Processing GSM3396163_matrix_C1.mtx: 3016168 cells × 0 genes
+2025-09-20 22:41:37,127 | WARNING | Subsampling from 3016168 to 20000 cells
+2025-09-20 22:41:37,274 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:37,578 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:38,435 | INFO | Processing GSM3396164_matrix_Ck.mtx: 898655 cells × 0 genes
+2025-09-20 22:41:38,435 | WARNING | Subsampling from 898655 to 20000 cells
+2025-09-20 22:41:38,513 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:38,815 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:41,256 | INFO | Processing GSM3396165_matrix_C2.mtx: 2644222 cells × 0 genes
+2025-09-20 22:41:41,256 | WARNING | Subsampling from 2644222 to 20000 cells
+2025-09-20 22:41:41,382 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:41,672 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:44,064 | INFO | Processing GSM3396166_matrix_E.mtx: 2546700 cells × 0 genes
+2025-09-20 22:41:44,064 | WARNING | Subsampling from 2546700 to 20000 cells
+2025-09-20 22:41:44,193 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:44,497 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:48,052 | INFO | Processing GSM3396167_matrix_F.mtx: 3721587 cells × 0 genes
+2025-09-20 22:41:48,052 | WARNING | Subsampling from 3721587 to 20000 cells
+2025-09-20 22:41:48,233 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:48,538 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:52,615 | INFO | Processing GSM3396168_matrix_G.mtx: 4082689 cells × 0 genes
+2025-09-20 22:41:52,616 | WARNING | Subsampling from 4082689 to 20000 cells
+2025-09-20 22:41:52,813 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:53,122 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:41:57,096 | INFO | Processing GSM3396169_matrix_H.mtx: 4035507 cells × 0 genes
+2025-09-20 22:41:57,096 | WARNING | Subsampling from 4035507 to 20000 cells
+2025-09-20 22:41:57,290 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:41:57,596 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:01,488 | INFO | Processing GSM3396170_matrix_J.mtx: 4055348 cells × 0 genes
+2025-09-20 22:42:01,488 | WARNING | Subsampling from 4055348 to 20000 cells
+2025-09-20 22:42:01,682 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:01,981 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:08,831 | INFO | Processing GSM3396171_matrix_K.mtx: 6933343 cells × 0 genes
+2025-09-20 22:42:08,831 | WARNING | Subsampling from 6933343 to 20000 cells
+2025-09-20 22:42:09,185 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:09,506 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:14,260 | INFO | Processing GSM3396172_matrix_L.mtx: 4861013 cells × 0 genes
+2025-09-20 22:42:14,260 | WARNING | Subsampling from 4861013 to 20000 cells
+2025-09-20 22:42:14,501 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:14,816 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:18,863 | INFO | Processing GSM3396173_matrix_M.mtx: 4132898 cells × 0 genes
+2025-09-20 22:42:18,863 | WARNING | Subsampling from 4132898 to 20000 cells
+2025-09-20 22:42:19,056 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:19,346 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:23,846 | INFO | Processing GSM3396174_matrix_N.mtx: 4593478 cells × 0 genes
+2025-09-20 22:42:23,846 | WARNING | Subsampling from 4593478 to 20000 cells
+2025-09-20 22:42:24,069 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:24,361 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:29,396 | INFO | Processing GSM3396175_matrix_O.mtx: 5160999 cells × 0 genes
+2025-09-20 22:42:29,396 | WARNING | Subsampling from 5160999 to 20000 cells
+2025-09-20 22:42:29,654 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:29,968 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:36,179 | INFO | Processing GSM3396176_matrix_P.mtx: 6192630 cells × 0 genes
+2025-09-20 22:42:36,180 | WARNING | Subsampling from 6192630 to 20000 cells
+2025-09-20 22:42:36,484 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:36,784 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:38,117 | INFO | Processing GSM3396177_matrix_Q.mtx: 1368189 cells × 0 genes
+2025-09-20 22:42:38,117 | WARNING | Subsampling from 1368189 to 20000 cells
+2025-09-20 22:42:38,205 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:38,488 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:41,025 | INFO | Processing GSM3396178_matrix_R.mtx: 2683023 cells × 0 genes
+2025-09-20 22:42:41,025 | WARNING | Subsampling from 2683023 to 20000 cells
+2025-09-20 22:42:41,170 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:41,460 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:44,323 | INFO | Processing GSM3396179_matrix_S1.mtx: 2928551 cells × 0 genes
+2025-09-20 22:42:44,323 | WARNING | Subsampling from 2928551 to 20000 cells
+2025-09-20 22:42:44,468 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:44,779 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:45,685 | INFO | Processing GSM3396180_matrix_Sk1.mtx: 949291 cells × 0 genes
+2025-09-20 22:42:45,685 | WARNING | Subsampling from 949291 to 20000 cells
+2025-09-20 22:42:45,763 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:46,062 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:49,083 | INFO | Processing GSM3396181_matrix_S2.mtx: 3089751 cells × 0 genes
+2025-09-20 22:42:49,083 | WARNING | Subsampling from 3089751 to 20000 cells
+2025-09-20 22:42:49,235 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:49,536 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:53,765 | INFO | Processing GSM3396182_matrix_Sk2.mtx: 4310494 cells × 0 genes
+2025-09-20 22:42:53,765 | WARNING | Subsampling from 4310494 to 20000 cells
+2025-09-20 22:42:53,973 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:54,277 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:42:59,412 | INFO | Processing GSM3396183_matrix_T.mtx: 5243707 cells × 0 genes
+2025-09-20 22:42:59,412 | WARNING | Subsampling from 5243707 to 20000 cells
+2025-09-20 22:42:59,671 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:42:59,961 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:43:05,262 | INFO | Processing GSM3396184_matrix_U.mtx: 5445179 cells × 0 genes
+2025-09-20 22:43:05,262 | WARNING | Subsampling from 5445179 to 20000 cells
+2025-09-20 22:43:05,534 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:43:05,838 | INFO |   Results: 20000/20000 persisters (100.0%)
+2025-09-20 22:43:08,527 | INFO | Processing GSM3396185_matrix_W.mtx: 2754754 cells × 0 genes
+2025-09-20 22:43:08,527 | WARNING | Subsampling from 2754754 to 20000 cells
+2025-09-20 22:43:08,663 | INFO |   Gene coverage: 0.0%
+2025-09-20 22:43:08,965 | INFO |   Results: 20000/20000 persisters (100.0%)
+
+============================================================
+Model: reduced (1000 genes)
+Processed: 37 samples
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/results/inference/reduced_20250920_223816
+============================================================
+
+Summary:
+                                   sample  n_cells  persisters  persister_pct
+    GSM3516664_MSK_LX666_METASTASIS_dense     1316        1120      85.106383
+GSM3516665_MSK_LX675_PRIMARY_TUMOUR_dense     3435         224       6.521106
+        GSM3516666_MSK_LX675_NORMAL_dense     3061         126       4.116302
+GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense     4014         505      12.580967
+   GSM3516668_MSK_LX255B_METASTASIS_dense     3886        3373      86.798765
+    GSM3516671_MSK_LX681_METASTASIS_dense     1630         402      24.662577
+GSM3516669_MSK_LX679_PRIMARY_TUMOUR_dense     2017         866      42.935052
+GSM3516670_MSK_LX680_PRIMARY_TUMOUR_dense      941         272      28.905420
+GSM3516672_MSK_LX682_PRIMARY_TUMOUR_dense     4092         499      12.194526
+        GSM3516673_MSK_LX682_NORMAL_dense     4061         261       6.426988
+               filtered_feature_bc_matrix     9495        2888      30.416008
+               filtered_feature_bc_matrix     2451        1106      45.124439
+                  GSM3396161_matrix_A.mtx    20000       20000     100.000000
+                  GSM3396162_matrix_B.mtx    20000       20000     100.000000
+                 GSM3396163_matrix_C1.mtx    20000       20000     100.000000
+                 GSM3396164_matrix_Ck.mtx    20000       20000     100.000000
+                 GSM3396165_matrix_C2.mtx    20000       20000     100.000000
+                  GSM3396166_matrix_E.mtx    20000       20000     100.000000
+                  GSM3396167_matrix_F.mtx    20000       20000     100.000000
+                  GSM3396168_matrix_G.mtx    20000       20000     100.000000
+                  GSM3396169_matrix_H.mtx    20000       20000     100.000000
+                  GSM3396170_matrix_J.mtx    20000       20000     100.000000
+                  GSM3396171_matrix_K.mtx    20000       20000     100.000000
+                  GSM3396172_matrix_L.mtx    20000       20000     100.000000
+                  GSM3396173_matrix_M.mtx    20000       20000     100.000000
+                  GSM3396174_matrix_N.mtx    20000       20000     100.000000
+                  GSM3396175_matrix_O.mtx    20000       20000     100.000000
+                  GSM3396176_matrix_P.mtx    20000       20000     100.000000
+                  GSM3396177_matrix_Q.mtx    20000       20000     100.000000
+                  GSM3396178_matrix_R.mtx    20000       20000     100.000000
+                 GSM3396179_matrix_S1.mtx    20000       20000     100.000000
+                GSM3396180_matrix_Sk1.mtx    20000       20000     100.000000
+                 GSM3396181_matrix_S2.mtx    20000       20000     100.000000
+                GSM3396182_matrix_Sk2.mtx    20000       20000     100.000000
+                  GSM3396183_matrix_T.mtx    20000       20000     100.000000
+                  GSM3396184_matrix_U.mtx    20000       20000     100.000000
+                  GSM3396185_matrix_W.mtx    20000       20000     100.000000
+
+Overall statistics:
+  Mean persister %: 78.0%
+  Std persister %:  35.9%
+
+=========================================
+Inference Complete
+Finished: Sat Sep 20 22:43:10 EEST 2025
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/results/inference/reduced_20250920_223816
+=========================================
+
+Results Summary:
+----------------
+sample                                     model    n_cells  persisters  persister_pct       mean_prob            coverage
+GSM3516664_MSK_LX666_METASTASIS_dense      reduced  1316     1120        85.1063829787234    0.8093933463096619   100.0
+GSM3516665_MSK_LX675_PRIMARY_TUMOUR_dense  reduced  3435     224         6.521106259097525   0.1475650519132614   100.0
+GSM3516666_MSK_LX675_NORMAL_dense          reduced  3061     126         4.116301862136557   0.11297014355659485  100.0
+GSM3516667_MSK_LX676_PRIMARY_TUMOUR_dense  reduced  4014     505         12.580966616841055  0.23983561992645264  100.0
+GSM3516668_MSK_LX255B_METASTASIS_dense     reduced  3886     3373        86.79876479670612   0.7409812211990356   100.0
+GSM3516671_MSK_LX681_METASTASIS_dense      reduced  1630     402         24.662576687116562  0.38346749544143677  100.0
+GSM3516669_MSK_LX679_PRIMARY_TUMOUR_dense  reduced  2017     866         42.93505205751115   0.4777747392654419   98.8
+GSM3516670_MSK_LX680_PRIMARY_TUMOUR_dense  reduced  941      272         28.905419766206165  0.38558948040008545  99.5
+GSM3516672_MSK_LX682_PRIMARY_TUMOUR_dense  reduced  4092     499         12.194525904203324  0.21416828036308289  100.0
+GSM3516673_MSK_LX682_NORMAL_dense          reduced  4061     261         6.426988426495937   0.12324391305446625  99.4
+filtered_feature_bc_matrix                 reduced  9495     2888        30.4160084254871    0.39690977334976196  99.9
+filtered_feature_bc_matrix                 reduced  2451     1106        45.12443900448797   0.48089367151260376  99.1
+GSM3396161_matrix_A.mtx                    reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396162_matrix_B.mtx                    reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396163_matrix_C1.mtx                   reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396164_matrix_Ck.mtx                   reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396165_matrix_C2.mtx                   reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396166_matrix_E.mtx                    reduced  20000    20000       100.0               0.7756376266479492   0.0
+GSM3396167_matrix_F.mtx                    reduced  20000    20000       100.0               0.7756376266479492   0.0
+
+Overall Statistics:
+-------------------
+Samples processed: 37
+Mean persister %: 78.0%
+Std persister %: 35.9%
+Range: 4.1% - 100.0%
+
+Healthy/Primary samples: 16.2% ± 14.4%
+Metastasis samples: 65.5% ± 35.4%
+
+=========================================
+Job completed successfully
+=========================================

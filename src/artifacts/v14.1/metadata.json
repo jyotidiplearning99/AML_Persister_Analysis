@@ -1,0 +1,30 @@
+{
+  "version": "v14.1_study_aware",
+  "timestamp": "Sat Sep 20 16:06:58 2025",
+  "configuration": {
+    "seed": 42,
+    "target_specificity": 0.8,
+    "min_threshold": 0.3,
+    "max_threshold": 0.7,
+    "max_de_genes": 200,
+    "max_genes": 300
+  },
+  "threshold": {
+    "value": 0.432,
+    "metrics": {
+      "specificity": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "precision": 0.5,
+      "fp_rate": 0.33333333333333337
+    }
+  },
+  "msk_only_performance": {
+    "mean_auc": 0.3333333333333333,
+    "std_auc": 0.4714045207910317,
+    "n_folds": 3
+  },
+  "study_leakage": {
+    "AML10x": {
+      "mean": 0.8717065707436232,
+      "std": 0.002701437266484717,
+      "n": 

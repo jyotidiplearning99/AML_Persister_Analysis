@@ -1,0 +1,17 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-21 15:28:09.367078: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-21 15:28:16.697558: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+usage: inference_reduced_v2.py [-h] --model-dir MODEL_DIR --out-dir OUT_DIR
+                               [--genes-file GENES_FILE]
+                               [--threshold THRESHOLD] [--use-reduced]
+                               [--use-full] [--max-cells MAX_CELLS]
+                               [--batch-size BATCH_SIZE] [--aml-root AML_ROOT]
+                               [--healthy-root HEALTHY_ROOT]
+                               [--calibrate-healthy] [--target-fpr TARGET_FPR]
+                               [--clip-min CLIP_MIN] [--clip-max CLIP_MAX]
+                               [--save-threshold-to-modeldir]
+inference_reduced_v2.py: error: unrecognized arguments: joint_target --aml-target-pct 0.65
+srun: error: g2301: task 0: Exited with exit code 2
+srun: Terminating StepId=5132591.0

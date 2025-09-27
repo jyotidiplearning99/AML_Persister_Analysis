@@ -1,0 +1,14 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-21 10:27:08.942607: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-21 10:27:15.983311: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-21 10:27:18.078359: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/inference_reduced_v2.py", line 547, in <module>
+    main()
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/inference_reduced_v2.py", line 453, in main
+    if args.calibrate-healthy or (infer.threshold is None and args.healthy_root):
+AttributeError: 'Namespace' object has no attribute 'calibrate'
+srun: error: g3201: task 0: Exited with exit code 1
+srun: Terminating StepId=5131341.0

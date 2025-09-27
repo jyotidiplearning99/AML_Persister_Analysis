@@ -1,0 +1,13 @@
+=========================================
+Unified Persister Inference Pipeline
+Job ID: 5129811
+Node: g4201.mahti.csc.fi
+Started: Sat Sep 20 22:15:54 EEST 2025
+Working Dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src
+=========================================
+name, memory.total [MiB]
+NVIDIA A100-SXM4-40GB, 40960 MiB
+Processing 4 samples
+=========================================
+Running REDUCED model (1,000 genes)
+=========================================

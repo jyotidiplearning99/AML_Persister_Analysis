@@ -1,0 +1,62 @@
+{
+  "version": "v14.0_robust_small_sample",
+  "timestamp": "Sat Sep 20 15:37:59 2025",
+  "configuration": {
+    "seed": 42,
+    "min_threshold": 0.2,
+    "max_threshold": 0.6,
+    "target_recall": 0.85,
+    "fdr_threshold": 0.25,
+    "min_log_fc": 0.15,
+    "max_genes": 500
+  },
+  "threshold": {
+    "value": 0.264,
+    "metrics": {
+      "recall": 1.0,
+      "precision": 0.75,
+      "specificity": 0.3333333333333333,
+      "f1": 0.8571428571428571
+    }
+  },
+  "cv_performance": {
+    "mean_auc": 1.0,
+    "std_auc": 0.0,
+    "n_folds": 3
+  },
+  "genes": {
+    "n_stable": 445,
+    "n_final": 123,
+    "top_20": [
+      "SCGB1A1",
+      "GRP",
+      "RP11-81H14",
+      "SIGLEC14",
+      "MIA2",
+      "MMP12",
+      "IL33",
+      "RP11-973H7",
+      "CCL19",
+      "ALDH1A1",
+      "ASXL1",
+      "BCL2",
+      "CD24",
+      "CD33",
+      "CD34",
+      "CD38",
+      "CD44",
+      "CD47",
+      "CD99",
+      "CDH1"
+    ]
+  },
+  "data": {
+    "n_samples": 9,
+    "n_positive": 6,
+    "n_negative": 3,
+    "studies": [
+      "AML10x",
+      "MSK"
+    ]
+  }
+}

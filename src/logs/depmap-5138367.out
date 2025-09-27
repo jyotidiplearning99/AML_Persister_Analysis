@@ -1,0 +1,31 @@
+================================================================================
+DEPMAP PORTAL GENE REFINEMENT v4.0
+================================================================================
+2025-09-22 12:47:28,236 - INFO - Loaded 1000 genes from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt
+2025-09-22 12:47:28,236 - INFO - Downloading from DepMap Portal...
+2025-09-22 12:47:28,236 - INFO - Downloading crispr from DepMap Portal...
+2025-09-22 12:47:28,892 - WARNING - Portal download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:28,892 - INFO - Trying API endpoint for crispr...
+2025-09-22 12:47:29,462 - WARNING - API download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:29,462 - INFO - Downloading metadata from DepMap Portal...
+2025-09-22 12:47:30,029 - WARNING - Portal download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:30,029 - INFO - Trying API endpoint for metadata...
+2025-09-22 12:47:30,594 - WARNING - API download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:30,595 - INFO - Downloading essentials from DepMap Portal...
+2025-09-22 12:47:31,161 - WARNING - Portal download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:31,161 - INFO - Trying API endpoint for essentials...
+2025-09-22 12:47:31,727 - WARNING - API download failed: HTTP Error 404: NOT FOUND
+2025-09-22 12:47:31,728 - ERROR - 
+============================================================
+2025-09-22 12:47:31,728 - ERROR - MANUAL DOWNLOAD REQUIRED
+2025-09-22 12:47:31,728 - ERROR - ============================================================
+2025-09-22 12:47:31,728 - ERROR - Please manually download from:
+2025-09-22 12:47:31,728 - ERROR - 1. Go to: https://depmap.org/portal/data_page/?tab=currentRelease
+2025-09-22 12:47:31,728 - ERROR - 2. Download these files:
+2025-09-22 12:47:31,728 - ERROR -    - CRISPR (DepMap 24Q4 Public)
+2025-09-22 12:47:31,728 - ERROR -    - Model.csv (Cell Line Metadata)
+2025-09-22 12:47:31,728 - ERROR -    - Common Essential Genes
+2025-09-22 12:47:31,728 - ERROR - 3. Place in: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/depmap_portal_refined/depmap_cache
+2025-09-22 12:47:31,728 - ERROR - ============================================================
+2025-09-22 12:47:31,729 - ERROR - Failed to download DepMap data
+2025-09-22 12:47:31,729 - INFO - Creating fallback gene list...

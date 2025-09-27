@@ -1,0 +1,41 @@
+================================================================================
+MODEL-AWARE GENE REDUCTION PIPELINE
+================================================================================
+
+[DATA] Loading training samples...
+  META_664: 1316 cells, coverage: 100.0%
+  META_668: 3886 cells, coverage: 100.0%
+  NORM_666: 3061 cells, coverage: 100.0%
+  PRIM_665: 3435 cells, coverage: 100.0%
+
+Combined data: 7316 cells × 13369 genes
+[LOAD] Loading model components...
+  ✓ Model: final_model.h5
+  ✓ PCA: 100 components
+  ✓ Genes: 13369
+
+[METHOD A] DE on high-confidence predictions...
+  High confidence (P≥0.8): 1497 cells
+  Low confidence (P≤0.2): 3830 cells
+  Significant UP: 3191 genes
+  Selected: 1000 genes
+
+[METHOD B] PCA-based feature importance...
+  Selected: 1000 genes
+
+[METHOD C] Filtering and combining...
+  Removed 75 housekeeping genes
+  Kept 1875 genes present in ≥50% datasets
+
+[FINAL] Selected 1000 genes
+
+[TEST] Testing on independent datasets...
+
+================================================================================
+PIPELINE COMPLETE
+================================================================================
+✓ Method A (DE): 1000 genes
+✓ Method B (PCA): 1000 genes
+✓ Final selected: 1000 genes
+✓ Cancer markers retained: 16
+✓ Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/gene_reduction_model_aware

@@ -1,0 +1,348 @@
+gene,n_pathways,pathways
+C3,273,path:hsa00010; path:hsa00040; path:hsa00052; path:hsa00053; path:hsa00140
+F3,200,path:hsa00010; path:hsa00052; path:hsa00061; path:hsa00190; path:hsa00230
+DAP,168,path:hsa00190; path:hsa00563; path:hsa00564; path:hsa00565; path:hsa01100
+MET,157,path:hsa00010; path:hsa00061; path:hsa00062; path:hsa00071; path:hsa00100
+PI3,121,path:hsa00562; path:hsa00563; path:hsa01100; path:hsa01521; path:hsa01522
+AK1,113,path:hsa00040; path:hsa00051; path:hsa00052; path:hsa00230; path:hsa00561
+F12,112,path:hsa00562; path:hsa00563; path:hsa00650; path:hsa00750; path:hsa01100
+ID1,108,path:hsa00514; path:hsa01523; path:hsa03013; path:hsa03015; path:hsa03040
+CAMP,94,path:hsa00230; path:hsa01100; path:hsa01522; path:hsa04010; path:hsa04014
+PAM,92,path:hsa00350; path:hsa00531; path:hsa00561; path:hsa00564; path:hsa01100
+MALL,83,path:hsa01521; path:hsa03008; path:hsa03010; path:hsa03013; path:hsa03018
+PRKCA,74,path:hsa01521; path:hsa04010; path:hsa04012; path:hsa04014; path:hsa04015
+EGFR,73,path:hsa01521; path:hsa01522; path:hsa03272; path:hsa04010; path:hsa04012
+MYC,70,path:hsa01521; path:hsa01522; path:hsa03083; path:hsa04010; path:hsa04012
+BAD,59,path:hsa00010; path:hsa00053; path:hsa00071; path:hsa00230; path:hsa00280
+IL6,58,path:hsa00230; path:hsa00240; path:hsa01100; path:hsa01232; path:hsa01521
+RAD1,51,path:hsa01522; path:hsa01524; path:hsa03420; path:hsa03460; path:hsa04068
+CAP2,51,path:hsa00510; path:hsa00513; path:hsa01522; path:hsa01524; path:hsa04012
+CCND1,48,path:hsa01522; path:hsa04068; path:hsa04110; path:hsa04115; path:hsa04151
+AGT,47,path:hsa00250; path:hsa00260; path:hsa00270; path:hsa00280; path:hsa00510
+CDA,47,path:hsa00190; path:hsa00240; path:hsa00600; path:hsa00983; path:hsa01100
+CKB,44,path:hsa00330; path:hsa00564; path:hsa01100; path:hsa03008; path:hsa03083
+CAV1,43,path:hsa04010; path:hsa04020; path:hsa04022; path:hsa04024; path:hsa04144
+AK4,37,path:hsa00230; path:hsa00730; path:hsa01100; path:hsa01232; path:hsa01240
+ADK,37,path:hsa00230; path:hsa00730; path:hsa00760; path:hsa01100; path:hsa01232
+IGF1,36,path:hsa01521; path:hsa01522; path:hsa04010; path:hsa04014; path:hsa04015
+CREB3L4,35,path:hsa04022; path:hsa04024; path:hsa04151; path:hsa04152; path:hsa04211
+CREB3L1,35,path:hsa04022; path:hsa04024; path:hsa04151; path:hsa04152; path:hsa04211
+PPL,35,path:hsa00541; path:hsa00561; path:hsa00562; path:hsa00564; path:hsa00565
+CD33,34,path:hsa01521; path:hsa01522; path:hsa01523; path:hsa02010; path:hsa04010
+PTEN,32,path:hsa00562; path:hsa01100; path:hsa01521; path:hsa04068; path:hsa04070
+SHE,32,path:hsa00350; path:hsa01100; path:hsa04010; path:hsa04014; path:hsa04015
+TES,32,path:hsa00140; path:hsa00730; path:hsa00790; path:hsa01100; path:hsa01240
+TGFB2,31,path:hsa04010; path:hsa04060; path:hsa04068; path:hsa04110; path:hsa04218
+CTNNB1,31,path:hsa04015; path:hsa04310; path:hsa04390; path:hsa04510; path:hsa04520
+ICAM1,29,path:hsa04064; path:hsa04217; path:hsa04514; path:hsa04620; path:hsa04621
+RAC3,28,path:hsa01522; path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04024
+CXCL1,27,path:hsa04060; path:hsa04061; path:hsa04062; path:hsa04064; path:hsa04360
+NDN,26,path:hsa00310; path:hsa00562; path:hsa01100; path:hsa04020; path:hsa04070
+CAV2,24,path:hsa04010; path:hsa04020; path:hsa04144; path:hsa04510; path:hsa04721
+CSF1,22,path:hsa00280; path:hsa00650; path:hsa01100; path:hsa04010; path:hsa04014
+SHC3,22,path:hsa01521; path:hsa01522; path:hsa04012; path:hsa04014; path:hsa04062
+ST5,22,path:hsa00130; path:hsa00480; path:hsa00534; path:hsa00980; path:hsa00982
+FASN,21,path:hsa00061; path:hsa00062; path:hsa00190; path:hsa00780; path:hsa01100
+TST,20,path:hsa00051; path:hsa00270; path:hsa00541; path:hsa00920; path:hsa01100
+ASS1,19,path:hsa00220; path:hsa00250; path:hsa00600; path:hsa01100; path:hsa01230
+HLA-G,19,path:hsa04144; path:hsa04145; path:hsa04218; path:hsa04514; path:hsa04612
+ITGA2,19,path:hsa03271; path:hsa04015; path:hsa04145; path:hsa04151; path:hsa04510
+CDS1,19,path:hsa00564; path:hsa01100; path:hsa04015; path:hsa04070; path:hsa04110
+CPD,18,path:hsa00100; path:hsa00562; path:hsa00564; path:hsa00980; path:hsa00982
+CSF2,18,path:hsa04060; path:hsa04210; path:hsa04630; path:hsa04640; path:hsa04650
+CDKN2A,18,path:hsa01522; path:hsa01524; path:hsa04110; path:hsa04115; path:hsa04218
+CDH1,17,path:hsa03273; path:hsa04015; path:hsa04110; path:hsa04120; path:hsa04371
+WNT4,17,path:hsa04150; path:hsa04310; path:hsa04360; path:hsa04390; path:hsa04550
+CISH,16,path:hsa04120; path:hsa04380; path:hsa04630; path:hsa04668; path:hsa04910
+C1R,16,path:hsa03082; path:hsa04020; path:hsa04024; path:hsa04080; path:hsa04081
+WNT3,16,path:hsa04150; path:hsa04310; path:hsa04390; path:hsa04550; path:hsa04916
+PRKCZ,16,path:hsa04015; path:hsa04062; path:hsa04071; path:hsa04144; path:hsa04360
+ALDH7A1,15,path:hsa00010; path:hsa00053; path:hsa00071; path:hsa00260; path:hsa00280
+SLC25A4,15,path:hsa04020; path:hsa04022; path:hsa04217; path:hsa04218; path:hsa04613
+FZD6,15,path:hsa04150; path:hsa04310; path:hsa04390; path:hsa04550; path:hsa04916
+C1S,15,path:hsa04260; path:hsa04261; path:hsa04270; path:hsa04371; path:hsa04530
+WNT7B,15,path:hsa04150; path:hsa04310; path:hsa04390; path:hsa04550; path:hsa04916
+KDR,14,path:hsa01521; path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04020
+TNC,14,path:hsa00270; path:hsa01100; path:hsa04020; path:hsa04151; path:hsa04260
+MAOA,14,path:hsa00260; path:hsa00330; path:hsa00340; path:hsa00350; path:hsa00360
+CXCL2,14,path:hsa04060; path:hsa04061; path:hsa04062; path:hsa04064; path:hsa04621
+RRAS,14,path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04024; path:hsa04072
+SIRT1,13,path:hsa00760; path:hsa01100; path:hsa04068; path:hsa04148; path:hsa04152
+KCTD14,13,path:hsa00190; path:hsa01100; path:hsa04714; path:hsa04723; path:hsa04932
+PFKM,13,path:hsa00010; path:hsa00030; path:hsa00051; path:hsa00052; path:hsa01100
+PFKP,13,path:hsa00010; path:hsa00030; path:hsa00051; path:hsa00052; path:hsa01100
+IL1R1,13,path:hsa04010; path:hsa04060; path:hsa04064; path:hsa04380; path:hsa04640
+MGST1,13,path:hsa00480; path:hsa00590; path:hsa00980; path:hsa00982; path:hsa00983
+ITGA3,12,path:hsa04151; path:hsa04510; path:hsa04512; path:hsa04640; path:hsa04810
+GSTO2,12,path:hsa00480; path:hsa00980; path:hsa00982; path:hsa00983; path:hsa01100
+AMPH,12,path:hsa04010; path:hsa04012; path:hsa04144; path:hsa04151; path:hsa04350
+CSF3,12,path:hsa00061; path:hsa00280; path:hsa01100; path:hsa01212; path:hsa04060
+GSTT2B,12,path:hsa00480; path:hsa00980; path:hsa00982; path:hsa00983; path:hsa01100
+LAMB2,12,path:hsa04151; path:hsa04210; path:hsa04382; path:hsa04510; path:hsa04512
+PAK3,11,path:hsa04012; path:hsa04014; path:hsa04360; path:hsa04510; path:hsa04660
+FGF18,11,path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04020; path:hsa04151
+EIF2AK1,11,path:hsa04217; path:hsa05010; path:hsa05160; path:hsa05162; path:hsa05164
+GOT1,11,path:hsa00220; path:hsa00250; path:hsa00270; path:hsa00330; path:hsa00350
+MAP1B,10,path:hsa03250; path:hsa04137; path:hsa04140; path:hsa04216; path:hsa04371
+LRP6,10,path:hsa04150; path:hsa04310; path:hsa04621; path:hsa04928; path:hsa05010
+RPS6KA2,10,path:hsa04010; path:hsa04114; path:hsa04150; path:hsa04714; path:hsa04720
+PLA2G12A,10,path:hsa00564; path:hsa00565; path:hsa00590; path:hsa00591; path:hsa00592
+PLPP2,9,path:hsa00561; path:hsa00564; path:hsa00565; path:hsa00600; path:hsa01100
+LAMB3,9,path:hsa04151; path:hsa04382; path:hsa04510; path:hsa04512; path:hsa05145
+LRP5,9,path:hsa04150; path:hsa04310; path:hsa04928; path:hsa05010; path:hsa05022
+MAP1LC3A,9,path:hsa04137; path:hsa04140; path:hsa04216; path:hsa04371; path:hsa04621
+BMP2,9,path:hsa04060; path:hsa04350; path:hsa04390; path:hsa04550; path:hsa04919
+LAMC1,9,path:hsa04151; path:hsa04510; path:hsa04512; path:hsa05020; path:hsa05145
+ACACA,9,path:hsa00061; path:hsa00620; path:hsa00640; path:hsa01100; path:hsa01212
+ACTR3B,9,path:hsa04144; path:hsa04530; path:hsa04666; path:hsa04810; path:hsa05100
+SDC1,9,path:hsa00670; path:hsa01100; path:hsa01240; path:hsa04512; path:hsa04514
+ARPC1A,9,path:hsa04144; path:hsa04530; path:hsa04666; path:hsa04810; path:hsa05100
+RGL2,9,path:hsa04014; path:hsa04072; path:hsa04080; path:hsa04610; path:hsa04611
+ITGA10,9,path:hsa04151; path:hsa04510; path:hsa04512; path:hsa04810; path:hsa04820
+LAMA5,9,path:hsa04151; path:hsa04382; path:hsa04510; path:hsa04512; path:hsa05145
+KLC3,8,path:hsa04814; path:hsa05010; path:hsa05012; path:hsa05014; path:hsa05016
+FLT3,8,path:hsa04010; path:hsa04014; path:hsa04151; path:hsa04640; path:hsa05200
+PARD3,8,path:hsa04015; path:hsa04062; path:hsa04144; path:hsa04360; path:hsa04390
+THRA,8,path:hsa00380; path:hsa01100; path:hsa01240; path:hsa04080; path:hsa04081
+B4GALT2,8,path:hsa00052; path:hsa00510; path:hsa00513; path:hsa00514; path:hsa00515
+ENPP3,8,path:hsa00230; path:hsa00240; path:hsa00500; path:hsa00740; path:hsa00760
+BCAM,8,path:hsa00270; path:hsa00280; path:hsa00290; path:hsa00770; path:hsa01100
+WASL,8,path:hsa04144; path:hsa04520; path:hsa04810; path:hsa05100; path:hsa05130
+NPB,8,path:hsa00230; path:hsa01100; path:hsa04022; path:hsa04080; path:hsa04081
+ATG10,8,path:hsa04136; path:hsa04140; path:hsa04211; path:hsa05010; path:hsa05014
+CYP1B1,8,path:hsa00140; path:hsa00380; path:hsa00980; path:hsa04913; path:hsa05204
+UGDH,7,path:hsa00040; path:hsa00053; path:hsa00520; path:hsa00541; path:hsa01100
+THBS3,7,path:hsa04145; path:hsa04151; path:hsa04510; path:hsa04512; path:hsa04820
+CLDN12,7,path:hsa03272; path:hsa04382; path:hsa04514; path:hsa04530; path:hsa04670
+CLDN15,7,path:hsa03272; path:hsa04382; path:hsa04514; path:hsa04530; path:hsa04670
+AGRN,7,path:hsa03273; path:hsa04512; path:hsa04820; path:hsa05410; path:hsa05412
+ALDOC,7,path:hsa00010; path:hsa00030; path:hsa00051; path:hsa01100; path:hsa01200
+PSAT1,7,path:hsa00260; path:hsa00270; path:hsa00750; path:hsa01100; path:hsa01200
+TJP1,7,path:hsa04382; path:hsa04520; path:hsa04530; path:hsa04540; path:hsa05110
+WASF1,7,path:hsa04520; path:hsa04666; path:hsa04810; path:hsa05100; path:hsa05130
+ANK1,7,path:hsa00770; path:hsa01100; path:hsa01240; path:hsa04662; path:hsa04724
+GEM,7,path:hsa04514; path:hsa04610; path:hsa04613; path:hsa05144; path:hsa05150
+JUP,7,path:hsa04382; path:hsa04820; path:hsa05200; path:hsa05202; path:hsa05221
+PRKCI,7,path:hsa04015; path:hsa04144; path:hsa04390; path:hsa04530; path:hsa04611
+BMPR1B,7,path:hsa04060; path:hsa04081; path:hsa04350; path:hsa04360; path:hsa04390
+CACNA2D2,7,path:hsa04010; path:hsa04260; path:hsa04261; path:hsa04921; path:hsa05410
+CLDN4,7,path:hsa03272; path:hsa04382; path:hsa04514; path:hsa04530; path:hsa04670
+NQO1,7,path:hsa00130; path:hsa01100; path:hsa01240; path:hsa05200; path:hsa05208
+YAP1,7,path:hsa04024; path:hsa04080; path:hsa04390; path:hsa04392; path:hsa04713
+CLDN3,7,path:hsa03272; path:hsa04382; path:hsa04514; path:hsa04530; path:hsa04670
+ALDH6A1,6,path:hsa00280; path:hsa00410; path:hsa00562; path:hsa00640; path:hsa01100
+SMURF1,6,path:hsa04120; path:hsa04137; path:hsa04144; path:hsa04340; path:hsa04350
+CTTN,6,path:hsa04530; path:hsa04724; path:hsa05100; path:hsa05130; path:hsa05131
+RHOD,6,path:hsa00230; path:hsa01100; path:hsa04062; path:hsa04144; path:hsa04360
+PYGB,6,path:hsa00500; path:hsa01100; path:hsa04217; path:hsa04910; path:hsa04922
+ANK3,6,path:hsa00770; path:hsa01100; path:hsa01240; path:hsa04724; path:hsa04820
+GCSH,6,path:hsa00260; path:hsa00630; path:hsa00670; path:hsa00785; path:hsa01100
+NME2,6,path:hsa00230; path:hsa00240; path:hsa00983; path:hsa01100; path:hsa01232
+CD44,6,path:hsa04512; path:hsa04640; path:hsa05131; path:hsa05169; path:hsa05205
+NME4,6,path:hsa00230; path:hsa00240; path:hsa00983; path:hsa01100; path:hsa01232
+CX3CL1,6,path:hsa04060; path:hsa04061; path:hsa04062; path:hsa04148; path:hsa04668
+GGT1,6,path:hsa00430; path:hsa00480; path:hsa00590; path:hsa00900; path:hsa01100
+RCN1,6,path:hsa03082; path:hsa04714; path:hsa04919; path:hsa04921; path:hsa05167
+EFNA5,6,path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04151; path:hsa04360
+EFNA1,6,path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04151; path:hsa04360
+GPX3,6,path:hsa00480; path:hsa01100; path:hsa04918; path:hsa05014; path:hsa05016
+SMIM4,6,path:hsa04010; path:hsa04210; path:hsa05012; path:hsa05014; path:hsa05022
+GPX8,6,path:hsa00480; path:hsa01100; path:hsa04918; path:hsa05014; path:hsa05016
+EREG,6,path:hsa04010; path:hsa04012; path:hsa04151; path:hsa04621; path:hsa04921
+COL6A2,6,path:hsa04151; path:hsa04510; path:hsa04512; path:hsa04820; path:hsa04974
+GFPT2,6,path:hsa00250; path:hsa00520; path:hsa01100; path:hsa01250; path:hsa04931
+NME7,6,path:hsa00230; path:hsa00240; path:hsa00983; path:hsa01100; path:hsa01232
+DGAT2,5,path:hsa00561; path:hsa00830; path:hsa01100; path:hsa04975; path:hsa04977
+SDC4,5,path:hsa04512; path:hsa04514; path:hsa04820; path:hsa05205; path:hsa05418
+HIST1H2AC,5,path:hsa03082; path:hsa04217; path:hsa04613; path:hsa05034; path:hsa05322
+EPHA2,5,path:hsa04010; path:hsa04014; path:hsa04015; path:hsa04151; path:hsa04360
+ASNS,5,path:hsa00250; path:hsa01100; path:hsa01230; path:hsa04550; path:hsa04910
+EPHX1,5,path:hsa00980; path:hsa04976; path:hsa05204; path:hsa05207; path:hsa05208
+SNTA1,5,path:hsa04820; path:hsa05410; path:hsa05412; path:hsa05414; path:hsa05416
+MGLL,5,path:hsa00561; path:hsa01100; path:hsa04714; path:hsa04723; path:hsa04923
+MT1F,5,path:hsa00310; path:hsa01100; path:hsa04978; path:hsa05014; path:hsa05022
+DHTKD1,5,path:hsa00310; path:hsa00380; path:hsa00785; path:hsa01100; path:hsa01210
+SMPD1,5,path:hsa00600; path:hsa01100; path:hsa04071; path:hsa04142; path:hsa04217
+SGCB,5,path:hsa04820; path:hsa05410; path:hsa05412; path:hsa05414; path:hsa05416
+POLD2,5,path:hsa03030; path:hsa03410; path:hsa03420; path:hsa03430; path:hsa03440
+SSPN,5,path:hsa04820; path:hsa05410; path:hsa05412; path:hsa05414; path:hsa05416
+ADSSL1,5,path:hsa00230; path:hsa00250; path:hsa01100; path:hsa01232; path:hsa01240
+SLC27A5,5,path:hsa00120; path:hsa01100; path:hsa03320; path:hsa04931; path:hsa04976
+PMM1,5,path:hsa00051; path:hsa00520; path:hsa01100; path:hsa01240; path:hsa01250
+HIST3H2A,5,path:hsa03082; path:hsa04217; path:hsa04613; path:hsa05034; path:hsa05322
+ROR1,5,path:hsa04310; path:hsa04659; path:hsa04710; path:hsa05017; path:hsa05321
+GARS,5,path:hsa00230; path:hsa00670; path:hsa00970; path:hsa01100; path:hsa01523
+MPST,5,path:hsa00270; path:hsa00900; path:hsa00920; path:hsa01100; path:hsa04122
+BNIP3,5,path:hsa04068; path:hsa04137; path:hsa04140; path:hsa05131; path:hsa05134
+CFI,5,path:hsa00190; path:hsa03015; path:hsa03250; path:hsa04610; path:hsa05150
+C11ORF1,5,path:hsa00510; path:hsa00513; path:hsa04141; path:hsa04723; path:hsa04925
+NUDT16,5,path:hsa00230; path:hsa01100; path:hsa01232; path:hsa03018; path:hsa05205
+SGCE,5,path:hsa04820; path:hsa05410; path:hsa05412; path:hsa05414; path:hsa05416
+FBXO2,5,path:hsa04068; path:hsa04120; path:hsa04141; path:hsa04520; path:hsa05132
+SFN,5,path:hsa03008; path:hsa04110; path:hsa04115; path:hsa04742; path:hsa04960
+SREBF1,5,path:hsa04152; path:hsa04910; path:hsa04931; path:hsa04932; path:hsa04936
+AREG,5,path:hsa04010; path:hsa04012; path:hsa04151; path:hsa04390; path:hsa05210
+SOCS2,5,path:hsa04630; path:hsa04910; path:hsa04917; path:hsa04930; path:hsa04935
+LSR,5,path:hsa00230; path:hsa00240; path:hsa01100; path:hsa01232; path:hsa05169
+TMEM25,4,path:hsa00510; path:hsa00513; path:hsa04141; path:hsa04514
+NEDD4L,4,path:hsa04120; path:hsa04144; path:hsa04530; path:hsa04960
+FOLR1,4,path:hsa01523; path:hsa04144; path:hsa04981; path:hsa05215
+MYL6B,4,path:hsa04270; path:hsa04530; path:hsa04814; path:hsa04921
+MYO10,4,path:hsa04148; path:hsa04666; path:hsa04814; path:hsa05130
+GUCY2D,4,path:hsa00230; path:hsa01100; path:hsa04740; path:hsa04744
+MECR,4,path:hsa00061; path:hsa00062; path:hsa01100; path:hsa01212
+PTPRF,4,path:hsa04514; path:hsa04520; path:hsa04910; path:hsa04931
+MT1A,4,path:hsa00310; path:hsa00330; path:hsa01100; path:hsa04978
+NECTIN2,4,path:hsa03266; path:hsa04514; path:hsa04520; path:hsa05168
+VIM,4,path:hsa04141; path:hsa04820; path:hsa05169; path:hsa05206
+ITPKA,4,path:hsa00562; path:hsa01100; path:hsa04020; path:hsa04070
+SLC4A2,4,path:hsa04970; path:hsa04971; path:hsa04972; path:hsa04976
+FAH,4,path:hsa00350; path:hsa00565; path:hsa01100; path:hsa03460
+GGT5,4,path:hsa00430; path:hsa00480; path:hsa00590; path:hsa01100
+PSPH,4,path:hsa00260; path:hsa01100; path:hsa01200; path:hsa01230
+CDC25B,4,path:hsa04010; path:hsa04110; path:hsa04914; path:hsa05206
+MT1M,4,path:hsa04668; path:hsa04912; path:hsa04928; path:hsa04978
+CFB,4,path:hsa04144; path:hsa04610; path:hsa05150; path:hsa05171
+DNAH5,4,path:hsa04814; path:hsa05014; path:hsa05016; path:hsa05022
+HSD11B1L,4,path:hsa00140; path:hsa00980; path:hsa01100; path:hsa05204
+GPAT4,4,path:hsa00561; path:hsa00564; path:hsa01100; path:hsa04072
+CAMK1D,4,path:hsa04020; path:hsa04921; path:hsa04925; path:hsa05214
+TMPRSS2,4,path:hsa05164; path:hsa05171; path:hsa05202; path:hsa05215
+AP2B1,4,path:hsa04144; path:hsa04721; path:hsa04961; path:hsa05016
+ELOVL6,4,path:hsa00062; path:hsa01040; path:hsa01100; path:hsa01212
+DNAH14,4,path:hsa04814; path:hsa05014; path:hsa05016; path:hsa05022
+IMPDH2,4,path:hsa00230; path:hsa00983; path:hsa01100; path:hsa01232
+SPTB,4,path:hsa04071; path:hsa04820; path:hsa05017; path:hsa05022
+CCL28,4,path:hsa04060; path:hsa04061; path:hsa04062; path:hsa04672
+HIST1H2BD,4,path:hsa04613; path:hsa05034; path:hsa05203; path:hsa05322
+SSH3,4,path:hsa04360; path:hsa04810; path:hsa05130; path:hsa05132
+FOSL1,4,path:hsa04310; path:hsa04380; path:hsa04657; path:hsa05166
+MCL1,4,path:hsa04151; path:hsa04210; path:hsa04630; path:hsa05206
+BAIAP2,4,path:hsa04520; path:hsa04810; path:hsa05130; path:hsa05135
+DNALI1,4,path:hsa04814; path:hsa05014; path:hsa05016; path:hsa05022
+MT1E,4,path:hsa00310; path:hsa01100; path:hsa04550; path:hsa04978
+LPCAT1,3,path:hsa00564; path:hsa00565; path:hsa01100
+CKAP4,3,path:hsa04141; path:hsa04630; path:hsa04917
+SLC4A4,3,path:hsa04964; path:hsa04972; path:hsa04976
+NAGLU,3,path:hsa00531; path:hsa01100; path:hsa04142
+SMARCD3,3,path:hsa03082; path:hsa04714; path:hsa05225
+GGT7,3,path:hsa00430; path:hsa00480; path:hsa01100
+EEF1A2,3,path:hsa03013; path:hsa05134; path:hsa05140
+LIFR,3,path:hsa04060; path:hsa04550; path:hsa04630
+PTGES,3,path:hsa00590; path:hsa01100; path:hsa05207
+TUSC3,3,path:hsa00510; path:hsa00513; path:hsa04141
+SGPP2,3,path:hsa00600; path:hsa01100; path:hsa04071
+GPC1,3,path:hsa04115; path:hsa05205; path:hsa05418
+SLC39A4,3,path:hsa04978; path:hsa05010; path:hsa05012
+QPRT,3,path:hsa00760; path:hsa01100; path:hsa01240
+HYAL2,3,path:hsa00531; path:hsa01100; path:hsa04142
+HYAL3,3,path:hsa00531; path:hsa01100; path:hsa04142
+TRAF4,3,path:hsa04657; path:hsa05200; path:hsa05222
+ENAH,3,path:hsa04015; path:hsa04360; path:hsa04810
+P2RX6,3,path:hsa04020; path:hsa04080; path:hsa04082
+RORC,3,path:hsa04659; path:hsa04710; path:hsa05321
+ENDOG,3,path:hsa04080; path:hsa04210; path:hsa04371
+LLGL2,3,path:hsa04390; path:hsa04530; path:hsa05165
+IDUA,3,path:hsa00531; path:hsa01100; path:hsa04142
+ALOX15B,3,path:hsa00590; path:hsa01100; path:hsa04726
+NUDT13,3,path:hsa00760; path:hsa01100; path:hsa04146
+GAMT,3,path:hsa00260; path:hsa00330; path:hsa01100
+B3GALNT1,3,path:hsa00601; path:hsa00603; path:hsa01100
+ZBTB16,3,path:hsa05200; path:hsa05202; path:hsa05221
+CXADR,3,path:hsa03267; path:hsa04514; path:hsa05416
+MGAT4B,3,path:hsa00510; path:hsa00513; path:hsa01100
+HSD11B2,3,path:hsa00140; path:hsa01100; path:hsa04960
+AHCY,3,path:hsa00270; path:hsa00670; path:hsa01100
+SDR16C5,3,path:hsa00830; path:hsa01100; path:hsa01240
+CDK7,3,path:hsa03022; path:hsa03420; path:hsa04110
+PYCR1,3,path:hsa00330; path:hsa01100; path:hsa01230
+NCKAP1,3,path:hsa04810; path:hsa05130; path:hsa05132
+PMS2,3,path:hsa03010; path:hsa03430; path:hsa03460
+OSMR,3,path:hsa04060; path:hsa04151; path:hsa04630
+GALNT14,3,path:hsa00512; path:hsa00514; path:hsa01100
+MBOAT2,3,path:hsa00561; path:hsa00564; path:hsa01100
+KRT18,3,path:hsa04382; path:hsa04915; path:hsa05150
+DSG2,3,path:hsa04382; path:hsa04820; path:hsa05412
+GALNT7,3,path:hsa00512; path:hsa00514; path:hsa01100
+KRT19,3,path:hsa04382; path:hsa04915; path:hsa05150
+RAMP1,3,path:hsa04081; path:hsa04142; path:hsa04270
+HGSNAT,3,path:hsa00531; path:hsa01100; path:hsa04142
+RFX5,3,path:hsa04612; path:hsa05152; path:hsa05340
+PIP5KL1,3,path:hsa00562; path:hsa01100; path:hsa04144
+ARPIN,3,path:hsa04217; path:hsa04621; path:hsa05131
+PHOSPHO2,3,path:hsa00750; path:hsa01100; path:hsa01240
+FMO5,3,path:hsa00430; path:hsa00982; path:hsa01100
+E2F5,3,path:hsa04110; path:hsa04218; path:hsa04350
+BOK,3,path:hsa00030; path:hsa01100; path:hsa04215
+OXCT1,3,path:hsa00280; path:hsa00650; path:hsa01100
+DSEL,3,path:hsa00310; path:hsa00532; path:hsa01100
+CTF1,3,path:hsa03013; path:hsa04060; path:hsa04630
+CERS2,3,path:hsa00600; path:hsa01100; path:hsa04071
+BCL3,2,path:hsa04625; path:hsa04668
+ST3GAL4,2,path:hsa00601; path:hsa01100
+DPP4,2,path:hsa03272; path:hsa04974
+HOMER3,2,path:hsa04068; path:hsa04724
+CHMP4C,2,path:hsa04144; path:hsa04217
+TM7SF2,2,path:hsa00100; path:hsa01100
+SMYD2,2,path:hsa00310; path:hsa01100
+ASPH,2,path:hsa04020; path:hsa04260
+BDH1,2,path:hsa00650; path:hsa01100
+SMYD3,2,path:hsa00310; path:hsa01100
+NUP155,2,path:hsa03013; path:hsa05014
+MYO1D,2,path:hsa04814; path:hsa05130
+MRC2,2,path:hsa04145; path:hsa05152
+SCNN1B,2,path:hsa04742; path:hsa04960
+CHPF,2,path:hsa00532; path:hsa01100
+ST7,2,path:hsa00532; path:hsa04740
+ROS1,2,path:hsa04148; path:hsa04610
+DHCR24,2,path:hsa00100; path:hsa01100
+STEAP3,2,path:hsa04115; path:hsa04216
+SRD5A1,2,path:hsa00140; path:hsa01100
+SELENBP1,2,path:hsa00920; path:hsa01100
+ARSE,2,path:hsa03060; path:hsa05208
+PLOD2,2,path:hsa00310; path:hsa01100
+ALDH1A1,2,path:hsa00830; path:hsa01100
+WWTR1,2,path:hsa04390; path:hsa04392
+NNMT,2,path:hsa00760; path:hsa01100
+DROSHA,2,path:hsa03008; path:hsa05205
+TEAD1,2,path:hsa04390; path:hsa04392
+ETNK2,2,path:hsa00564; path:hsa01100
+CNN3,2,path:hsa04911; path:hsa04929
+TLE6,2,path:hsa04310; path:hsa04330
+AP1S1,2,path:hsa04142; path:hsa05170
+MYO5C,2,path:hsa04814; path:hsa05130
+KISS1,2,path:hsa04080; path:hsa04929
+PAICS,2,path:hsa00230; path:hsa01100
+MMP24,2,path:hsa04141; path:hsa04928
+NECTIN3,2,path:hsa04514; path:hsa04520
+LTK,2,path:hsa04010; path:hsa04722
+GCAT,2,path:hsa00260; path:hsa01100
+LCN2,2,path:hsa04657; path:hsa04978
+MUC5B,2,path:hsa04657; path:hsa04970
+TCN2,2,path:hsa04977; path:hsa04980
+SCNN1A,2,path:hsa04742; path:hsa04960
+VIPR1,2,path:hsa04080; path:hsa04081
+TLE2,2,path:hsa04310; path:hsa04330
+MARCKSL1,2,path:hsa04666; path:hsa05140
+RUVBL1,2,path:hsa03082; path:hsa04310
+CFH,2,path:hsa04610; path:hsa05150
+IFT57,2,path:hsa05016; path:hsa05022
+TARS,2,path:hsa00970; path:hsa04330
+PLTP,2,path:hsa03320; path:hsa04979
+TEAD4,2,path:hsa04390; path:hsa04392
+KLF4,2,path:hsa04550; path:hsa05207
+HIBADH,2,path:hsa00280; path:hsa01100
+PCGF2,2,path:hsa03083; path:hsa04550
+CRB3,2,path:hsa04530; path:hsa05165
+P4HA2,2,path:hsa00330; path:hsa01100
+AKAP1,2,path:hsa04928; path:hsa05163
+DHCR7,2,path:hsa00100; path:hsa01100
+FOXA2,2,path:hsa04213; path:hsa04950
+SLC34A2,2,path:hsa04928; path:hsa04978
+CD99L2,2,path:hsa04514; path:hsa04670
+SIGMAR1,2,path:hsa05014; path:hsa05022
+SNAI2,2,path:hsa04390; path:hsa04520
+PARP3,2,path:hsa03410; path:hsa04210
+SYNPO,2,path:hsa04530; path:hsa04820
+TNNT1,2,path:hsa04814; path:hsa04820
+RPL36A,2,path:hsa03010; path:hsa05171

@@ -1,0 +1,34 @@
+{
+  "version": "v15.6_final",
+  "timestamp": "Sat Sep 20 17:04:00 2025",
+  "CRITICAL_NOTE": "NO TRANSFORMER - too complex for N=9 samples",
+  "metrics": {
+    "msk_only_auc": 0.6666666666666667,
+    "study_auc_msk_genes": 0.9845069444444444,
+    "study_auc_global_genes": 0.9681561033207043,
+    "batch_effect_detected": true,
+    "inference_auc_no_leakage": 0.5,
+    "reliability_score": 30.0
+  },
+  "threshold": {
+    "value": 0.39499999999999996,
+    "target_specificity": 0.8
+  },
+  "msk_operating_point": {
+    "threshold": 0.39499999999999996,
+    "TP": 2,
+    "FP": 1,
+    "TN": 2,
+    "FN": 1,
+    "sensitivity": 0.6666666666666666,
+    "specificity": 0.6666666666666666
+  },
+  "n_genes": 200,
+  "n_genes_after_zero_var": 200,
+  "warnings": [
+    "Sample size too small (N=9)",
+    "Study confounding present",
+    "Batch effect detected",
+    "Use for hypothesis generation only"
+  ]
+}

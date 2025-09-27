@@ -1,0 +1,27 @@
+# Virtual Environments
+.venv*/
+venv*/
+env/
+*_env/
+*.venv/
+
+# Large data files  
+*.gz
+*.zip
+*.tar
+GSE13159_data/
+GTEx_v8_gene_tpm.gct
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+GSE13159_data/

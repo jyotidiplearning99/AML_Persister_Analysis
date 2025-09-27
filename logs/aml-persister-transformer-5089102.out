@@ -1,0 +1,37 @@
+=========================================
+AML-Enhanced Persister Classifier (Transformer)
+Started: Sat Sep 13 16:22:21 EEST 2025
+Node: g5201.mahti.csc.fi
+Job ID: 5089102
+=========================================
+name, memory.total [MiB], driver_version
+NVIDIA A100-SXM4-40GB, 40960 MiB, 535.261.03
+
+[2025-09-13 16:22:21] Starting training...
+
+============================================================
+PRODUCTION Persister Classifier v2.0
+Started: Sat Sep 13 16:22:33 2025
+============================================================
+
+[DATA] Loading datasets...
+  Loaded META_1: 1316 cells
+  Loaded META_2: 3886 cells
+  Loaded META_3: 1630 cells
+  Loaded NORM_1: 3061 cells
+  Loaded PRIM_1: 3435 cells
+  Loaded PRIM_2: 4014 cells
+
+[GENES] Finding common genes...
+  Found 0 common genes
+
+[MIX] Creating mixed training data...
+  Mixed data: (6000, 0)
+  Class distribution: [3095 2905]
+
+[SPLIT] Train: 4800, Test: 1200
+  Train classes: [2476 2324]
+  Test classes: [619 581]
+
+[VALIDATION] Running stratified k-fold...
+ERROR: Training failed with exit code 1

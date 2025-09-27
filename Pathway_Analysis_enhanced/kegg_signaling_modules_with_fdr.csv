@@ -1,0 +1,108 @@
+pathway,pathway_id,n_genes,pathway_size,odds_ratio,p_value,p_adj_bh,is_signaling,genes
+Nucleotide excision repair - Homo sapiens (human),path:hsa03420,3,63,45.544,6.123790042078113e-05,0.006552455345023581,False,"CDK7, POLD2, RAD1"
+MicroRNAs in cancer - Homo sapiens (human),path:hsa05206,4,320,11.849,0.0005821499723810223,0.015558090279956199,False,"MCL1, MYC, RAD1, ZEB2"
+Cell cycle - Homo sapiens (human),path:hsa04110,3,158,17.562,0.0009201511706898635,0.015558090279956199,False,"CDK7, MYC, RAD1"
+Thyroid cancer - Homo sapiens (human),path:hsa05216,2,37,50.243,0.000926173778021237,0.015558090279956199,False,"MYC, RAD1"
+One carbon pool by folate - Homo sapiens (human),path:hsa00670,2,39,47.523,0.0010289181272863884,0.015558090279956199,False,"AHCY, GCSH"
+JAK-STAT signaling pathway - Homo sapiens (human),path:hsa04630,3,168,16.491,0.0010983997813329418,0.015558090279956199,True,"MCL1, MYC, RAD1"
+Bladder cancer - Homo sapiens (human),path:hsa05219,2,41,45.082,0.001136896442402488,0.015558090279956199,False,"MYC, RAD1"
+Wnt signaling pathway - Homo sapiens (human),path:hsa04310,3,174,15.908,0.0012151225368555406,0.015558090279956199,True,"MYC, RAD1, RUVBL1"
+Basal transcription factors - Homo sapiens (human),path:hsa03022,2,44,41.857,0.001308624416071082,0.015558090279956199,False,"CDK7, TAF10"
+Proteoglycans in cancer - Homo sapiens (human),path:hsa05205,3,204,13.517,0.0019156984170085496,0.02049797306199148,False,"DROSHA, MYC, RAD1"
+Endometrial cancer - Homo sapiens (human),path:hsa05213,2,59,30.823,0.002340242877846544,0.022764180720870927,False,"MYC, RAD1"
+Acute myeloid leukemia - Homo sapiens (human),path:hsa05221,2,68,26.61,0.003094704573555517,0.027594449114203362,True,"MYC, RAD1"
+Glioma - Homo sapiens (human),path:hsa05214,2,76,23.726,0.0038485190138316957,0.02816362980655409,False,"MYC, RAD1"
+Pancreatic cancer - Homo sapiens (human),path:hsa05212,2,77,23.409,0.003948172402787956,0.02816362980655409,False,"MYC, RAD1"
+Chronic myeloid leukemia - Homo sapiens (human),path:hsa05220,2,77,23.409,0.003948172402787956,0.02816362980655409,True,"MYC, RAD1"
+Colorectal cancer - Homo sapiens (human),path:hsa05210,2,87,20.646,0.005010035398317595,0.03350461172624892,False,"MYC, RAD1"
+Small cell lung cancer - Homo sapiens (human),path:hsa05222,2,93,19.28,0.005703398191861575,0.03589785920759933,False,"MYC, RAD1"
+Endocrine resistance - Homo sapiens (human),path:hsa01522,2,99,18.083,0.006438205030931243,0.0382715521283135,False,"MYC, RAD1"
+Prostate cancer - Homo sapiens (human),path:hsa05215,2,106,16.861,0.007347062704647453,0.04137556365248829,False,"MYC, RAD1"
+ATP-dependent chromatin remodeling - Homo sapiens (human),path:hsa03082,2,117,15.242,0.008885338451022684,0.04479205962813104,False,"MRGBP, RUVBL1"
+PI3K-Akt signaling pathway - Homo sapiens (human),path:hsa04151,3,362,7.519,0.009471865457399746,0.04479205962813104,True,"MCL1, MYC, RAD1"
+AMPK signaling pathway - Homo sapiens (human),path:hsa04152,2,122,14.604,0.009628199733149663,0.04479205962813104,True,"MYC, RAD1"
+Thyroid hormone signaling pathway - Homo sapiens (human),path:hsa04919,2,122,14.604,0.009628199733149663,0.04479205962813104,True,"MYC, RAD1"
+Purine metabolism - Homo sapiens (human),path:hsa00230,2,128,13.905,0.010554994956036791,0.04705768584566403,False,"IMPDH2, PAICS"
+Apelin signaling pathway - Homo sapiens (human),path:hsa04371,2,140,12.689,0.012522137624620615,0.05359474903337623,True,"MYC, RAD1"
+Breast cancer - Homo sapiens (human),path:hsa05224,2,148,11.99,0.013915879749031933,0.056568983725532415,False,"MYC, RAD1"
+Gastric cancer - Homo sapiens (human),path:hsa05226,2,150,11.827,0.014274416454106308,0.056568983725532415,False,"MYC, RAD1"
+Cellular senescence - Homo sapiens (human),path:hsa04218,2,157,11.29,0.015560661542444629,0.05684210622292605,False,"MYC, RAD1"
+Hippo signaling pathway - Homo sapiens (human),path:hsa04390,2,157,11.29,0.015560661542444629,0.05684210622292605,True,"MYC, RAD1"
+Hepatitis C - Homo sapiens (human),path:hsa05160,2,159,11.145,0.01593703912792319,0.05684210622292605,False,"MYC, RAD1"
+Hepatocellular carcinoma - Homo sapiens (human),path:hsa05225,2,170,10.411,0.018076468181996208,0.06239297082172885,False,"MYC, RAD1"
+Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human),path:hsa05167,2,196,9.006,0.023584593067186514,0.07794066661049436,False,"MYC, RAD1"
+Lipoic acid metabolism - Homo sapiens (human),path:hsa00785,1,20,44.71,0.024037775683610405,0.07794066661049436,False,GCSH
+Epstein-Barr virus infection - Homo sapiens (human),path:hsa05169,2,205,8.603,0.02563325079614911,0.08066934809376339,False,"MYC, RAD1"
+Mismatch repair - Homo sapiens (human),path:hsa03430,1,23,38.608,0.027594917938261004,0.08234312567480565,False,POLD2
+Cornified envelope formation - Homo sapiens (human),path:hsa04382,2,217,8.119,0.028473791121194473,0.08234312567480565,False,"KRT8, MYC"
+Chemical carcinogenesis - receptor activation - Homo sapiens (human),path:hsa05207,2,217,8.119,0.028473791121194473,0.08234312567480565,True,"MYC, RAD1"
+Human T-cell leukemia virus 1 infection - Homo sapiens (human),path:hsa05166,2,224,7.861,0.03018688532638569,0.08486877375110992,True,"MYC, RAD1"
+Human cytomegalovirus infection - Homo sapiens (human),path:hsa05163,2,227,7.755,0.030933478283114827,0.08486877375110992,False,"MYC, RAD1"
+Autophagy - other - Homo sapiens (human),path:hsa04136,1,32,27.389,0.038191309549334314,0.09967000297021394,False,MYC
+Glyoxylate and dicarboxylate metabolism - Homo sapiens (human),path:hsa00630,1,32,27.389,0.038191309549334314,0.09967000297021394,False,GCSH
+DNA replication - Homo sapiens (human),path:hsa03030,1,36,24.255,0.042864907154876696,0.10920345394218588,False,POLD2
+Homologous recombination - Homo sapiens (human),path:hsa03440,1,41,21.219,0.048676039662331486,0.11837127826976065,False,POLD2
+"Glycine, serine and threonine metabolism - Homo sapiens (human)",path:hsa00260,1,41,21.219,0.048676039662331486,0.11837127826976065,False,GCSH
+Base excision repair - Homo sapiens (human),path:hsa03410,1,44,19.736,0.05214633278716305,0.12399239129392102,False,POLD2
+Type II diabetes mellitus - Homo sapiens (human),path:hsa04930,1,47,18.447,0.05560438726372076,0.12934063993952438,False,MYC
+Cysteine and methionine metabolism - Homo sapiens (human),path:hsa00270,1,52,16.635,0.06134072753443966,0.13735571429672058,False,AHCY
+Human papillomavirus infection - Homo sapiens (human),path:hsa05165,2,333,5.249,0.061617516693855956,0.13735571429672058,False,"MYC, RAD1"
+Fanconi anemia pathway - Homo sapiens (human),path:hsa03460,1,55,15.709,0.06476634900628787,0.14103784469934408,True,RAD1
+Hedgehog signaling pathway - Homo sapiens (human),path:hsa04340,1,56,15.423,0.06590553490623555,0.14103784469934408,True,RAD1
+Longevity regulating pathway - multiple species - Homo sapiens (human),path:hsa04213,1,62,13.902,0.07271253389319804,0.15255374757984685,True,MYC
+Amyotrophic lateral sclerosis - Homo sapiens (human),path:hsa05014,2,371,4.701,0.07438955134905575,0.15307080758363395,False,"MYC, NUP155"
+Adipocytokine signaling pathway - Homo sapiens (human),path:hsa04920,1,70,12.286,0.08171398049657203,0.15567952261316384,True,MYC
+Viral myocarditis - Homo sapiens (human),path:hsa05416,1,70,12.286,0.08171398049657203,0.15567952261316384,False,RAD1
+Central carbon metabolism in cancer - Homo sapiens (human),path:hsa05230,1,71,12.11,0.08283320453919427,0.15567952261316384,False,MYC
+Prolactin signaling pathway - Homo sapiens (human),path:hsa04917,1,71,12.11,0.08283320453919427,0.15567952261316384,True,RAD1
+Melanoma - Homo sapiens (human),path:hsa05218,1,73,11.773,0.08506769798395489,0.15567952261316384,False,RAD1
+Non-small cell lung cancer - Homo sapiens (human),path:hsa05223,1,73,11.773,0.08506769798395489,0.15567952261316384,False,RAD1
+Platinum drug resistance - Homo sapiens (human),path:hsa01524,1,75,11.454,0.08729692856812925,0.15567952261316384,False,RAD1
+p53 signaling pathway - Homo sapiens (human),path:hsa04115,1,75,11.454,0.08729692856812925,0.15567952261316384,True,RAD1
+EGFR tyrosine kinase inhibitor resistance - Homo sapiens (human),path:hsa01521,1,80,10.727,0.09284705849585421,0.1621449743655974,True,MYC
+Drug metabolism - other enzymes - Homo sapiens (human),path:hsa00983,1,81,10.592,0.09395316271651438,0.1621449743655974,False,IMPDH2
+Polycomb repressive complex - Homo sapiens (human),path:hsa03083,1,83,10.333,0.09616146128669177,0.16332184694723842,False,MYC
+Nucleotide metabolism - Homo sapiens (human),path:hsa01232,1,85,10.086,0.09836455657961923,0.16373330410222994,False,IMPDH2
+ErbB signaling pathway - Homo sapiens (human),path:hsa04012,1,86,9.967,0.09946415669761631,0.16373330410222994,True,MYC
+Longevity regulating pathway - Homo sapiens (human),path:hsa04211,1,90,9.518,0.10384960809928563,0.1658493741287099,True,MYC
+PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human),path:hsa05235,1,90,9.518,0.10384960809928563,0.1658493741287099,True,MYC
+Choline metabolism in cancer - Homo sapiens (human),path:hsa05231,1,99,8.64,0.113641523023307,0.17881827887490956,False,MYC
+AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human),path:hsa04933,1,101,8.467,0.11580341610416796,0.17957921048037642,True,RAD1
+Nucleocytoplasmic transport - Homo sapiens (human),path:hsa03013,1,108,7.911,0.12332997390020004,0.18142141898061395,False,NUP155
+Th17 cell differentiation - Homo sapiens (human),path:hsa04659,1,109,7.837,0.12440012774065386,0.18142141898061395,False,MYC
+Insulin resistance - Homo sapiens (human),path:hsa04931,1,109,7.837,0.12440012774065386,0.18142141898061395,False,MYC
+HIF-1 signaling pathway - Homo sapiens (human),path:hsa04066,1,110,7.765,0.12546901873425637,0.18142141898061395,True,MYC
+TGF-beta signaling pathway - Homo sapiens (human),path:hsa04350,1,110,7.765,0.12546901873425637,0.18142141898061395,True,MYC
+Carbon metabolism - Homo sapiens (human),path:hsa01200,1,117,7.294,0.13291601664686237,0.18962685041619032,False,GCSH
+"Growth hormone synthesis, secretion and action - Homo sapiens (human)",path:hsa04935,1,122,6.991,0.1381977307861299,0.19456785781731448,False,MYC
+FoxO signaling pathway - Homo sapiens (human),path:hsa04068,1,133,6.406,0.14970825543190466,0.2076445866651936,True,RAD1
+Apoptosis - Homo sapiens (human),path:hsa04210,1,137,6.217,0.15385693986650012,0.2076445866651936,False,MCL1
+Insulin signaling pathway - Homo sapiens (human),path:hsa04910,1,138,6.171,0.15489104960716113,0.2076445866651936,True,MYC
+Measles - Homo sapiens (human),path:hsa05162,1,139,6.126,0.1559239375934638,0.2076445866651936,False,RAD1
+Spinocerebellar ataxia - Homo sapiens (human),path:hsa05017,1,144,5.911,0.16107009993655202,0.2076445866651936,False,MYC
+Signaling pathways regulating pluripotency of stem cells - Homo sapiens (human),path:hsa04550,1,144,5.911,0.16107009993655202,0.2076445866651936,True,MYC
+Alcoholic liver disease - Homo sapiens (human),path:hsa04936,1,144,5.911,0.16107009993655202,0.2076445866651936,False,RAD1
+Phospholipase D signaling pathway - Homo sapiens (human),path:hsa04072,1,149,5.71,0.16618592682990857,0.21168921631905022,True,MYC
+Oxytocin signaling pathway - Homo sapiens (human),path:hsa04921,1,155,5.486,0.1722851193882031,0.21435474156439224,True,RAD1
+Cushing syndrome - Homo sapiens (human),path:hsa04934,1,155,5.486,0.1722851193882031,0.21435474156439224,False,RAD1
+mTOR signaling pathway - Homo sapiens (human),path:hsa04150,1,158,5.38,0.1753185205238653,0.2156216286902711,True,MYC
+Hepatitis B - Homo sapiens (human),path:hsa05161,1,163,5.213,0.18035032384246544,0.2192895983084523,False,MYC
+Autophagy - animal - Homo sapiens (human),path:hsa04140,1,169,5.026,0.186349319502506,0.22273240891881066,False,MYC
+Tight junction - Homo sapiens (human),path:hsa04530,1,170,4.996,0.18734501684759775,0.22273240891881066,False,RAD1
+Herpes simplex virus 1 infection - Homo sapiens (human),path:hsa05168,1,183,4.637,0.20018238102591968,0.23537928318432313,False,MYC
+Neutrophil extracellular trap formation - Homo sapiens (human),path:hsa04613,1,196,4.325,0.21282361191305949,0.24683770052775916,False,MYC
+Transcriptional misregulation in cancer - Homo sapiens (human),path:hsa05202,1,201,4.216,0.21763401298738244,0.24683770052775916,False,MYC
+Focal adhesion - Homo sapiens (human),path:hsa04510,1,203,4.174,0.21955020613440832,0.24683770052775916,False,RAD1
+Diabetic cardiomyopathy - Homo sapiens (human),path:hsa05415,1,205,4.133,0.22146186215574654,0.24683770052775916,False,MYC
+Viral carcinogenesis - Homo sapiens (human),path:hsa05203,1,205,4.133,0.22146186215574654,0.24683770052775916,False,RAD1
+Human immunodeficiency virus 1 infection - Homo sapiens (human),path:hsa05170,1,214,3.957,0.23000844492004419,0.25372065573654357,False,MYC
+Thermogenesis - Homo sapiens (human),path:hsa04714,1,235,3.599,0.24959924711683387,0.27252162695409415,False,MYC
+Coronavirus disease - COVID-19 - Homo sapiens (human),path:hsa05171,1,238,3.553,0.25235829606204746,0.27275088564281896,False,RPL36A
+Salmonella infection - Homo sapiens (human),path:hsa05132,1,251,3.366,0.2642012758334414,0.28180950286925394,False,MYC
+Shigellosis - Homo sapiens (human),path:hsa05131,1,253,3.339,0.2660071008392023,0.28180950286925394,False,MYC
+Ribosome biogenesis in eukaryotes - Homo sapiens (human),path:hsa03008,2,889,1.914,0.2943269801141318,0.30875477325698136,False,"DROSHA, NOB1"
+MAPK signaling pathway - Homo sapiens (human),path:hsa04010,1,300,2.809,0.30723151906227364,0.31916284019090563,True,MYC
+Huntington disease - Homo sapiens (human),path:hsa05016,1,311,2.708,0.3165515141604128,0.325682807838117,False,MYC
+Alzheimer disease - Homo sapiens (human),path:hsa05010,1,391,2.145,0.3807798361418886,0.3880327854017341,False,MYC
+Pathways of neurodegeneration - multiple diseases - Homo sapiens (human),path:hsa05022,1,483,1.729,0.44743884870412065,0.4516599699183105,True,MYC
+Ribosome - Homo sapiens (human),path:hsa03010,1,928,0.883,0.6834559538657421,0.6834559538657421,False,RPL36A

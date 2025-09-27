@@ -1,0 +1,92 @@
+{
+  "version": "v12.0_production_final",
+  "timestamp": "Sat Sep 20 14:29:32 2025",
+  "random_state": {
+    "seed": 42,
+    "rng_algorithm": "PCG64",
+    "tensorflow_seed": 42,
+    "numpy_seed": 42,
+    "python_hash_seed": "42"
+  },
+  "configuration": {
+    "force_threshold_range": true,
+    "min_threshold": 0.2,
+    "max_threshold": 0.6,
+    "default_threshold": 0.35,
+    "target_recall": 0.85,
+    "target_specificity": 0.8,
+    "fdr_threshold": 0.1,
+    "min_log_fc": 0.25,
+    "max_genes": 500,
+    "min_gene_presence": 0.8,
+    "min_genes_fallback": 100,
+    "min_precision_for_threshold": 0.3,
+    "threshold_grid_points": 401,
+    "batch_correction": "None",
+    "pseudobulk_method": "expm1_sum_cpm_log1p"
+  },
+  "thresholds": {
+    "recall_optimized": 0.33,
+    "specificity_optimized": 0.33,
+    "metrics_recall": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "metrics_specificity": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "thresholds_source": "nested_cv_out_of_fold_probs"
+  },
+  "cv_performance": {
+    "mean_auc": 0.22222222222222224,
+    "std_auc": 0.0,
+    "n_folds": 1
+  },
+  "genes": {
+    "n_stable": 55,
+    "n_final": 100,
+    "top_20": [
+      "ABCB1",
+      "ABCC1",
+      "ABCG2",
+      "AKT1",
+      "ASXL1",
+      "AZU1",
+      "BCL2",
+      "BCL2A1",
+      "BCL2L1",
+      "BIRC3",
+      "CCNA2",
+      "CCNB1",
+      "CD33",
+      "CD34",
+      "CD38",
+      "CD47",
+      "CD99",
+      "CDK1",
+      "CDKN1A",
+      "CEBPA"
+    ],
+    "selection_method": "deterministic_priority_order"
+  },
+  "data": {
+    "n_samples": 9,
+    "n_positive": 6,
+    "n_negative": 3,
+    "studies": [
+      "AML10x",
+      "MSK"
+    ]
+  },
+  "model": {
+    "pca_components": 50,
+    "pca_variance_explained": 0.6303861141204834,
+    "pca_whiten": true,
+    "final_training": "all_data_no_validation"
+  }
+}

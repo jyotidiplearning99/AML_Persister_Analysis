@@ -1,0 +1,8 @@
+/var/spool/slurmd/job5131477/slurm_script: line 44: SLURM_OUTPUT: unbound variable
+mkdir: cannot create directory ‘’: No such file or directory
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-21 11:35:16.101796: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-21 11:35:27.427726: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-21 11:35:29.434715: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.

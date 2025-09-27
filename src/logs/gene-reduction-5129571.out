@@ -1,0 +1,39 @@
+================================================================================
+REDUCED MODEL TRAINING WITH DISTILLATION
+================================================================================
+[SETUP] Selected genes: 1000
+
+[DATA] Loading training data...
+  Combined: 7316 cells × 1000 selected genes
+
+[TEACHER] Getting predictions from original model...
+  Teacher positive rate: 40.1%
+  Teacher prob range: [0.000, 1.000]
+
+[TRAIN] Training reduced model with distillation...
+  PCA: 100 components, 0.390 variance
+  Threshold calibrated to: 0.551 (matches teacher rate)
+  AUC: 0.955
+  F1: 0.867
+  Agreement with teacher: 77.9%
+
+[TEST] Testing on independent datasets...
+  Testing GSM3516671_METASTASIS...
+  Testing GSM3516667_PRIMARY...
+  Testing FH_5897_2_AML...
+  Testing FH_6333_2_AML...
+
+[TEST RESULTS]
+               sample  n_cells  true_label  positive_pct  mean_prob  accuracy
+GSM3516671_METASTASIS     1630           1     24.662577   0.383467 24.662577
+   GSM3516667_PRIMARY     2000           0     12.200000   0.238794 87.800000
+
+[SAVE] Saving model...
+  Model saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+
+================================================================================
+TRAINING COMPLETE
+================================================================================
+✓ Model trained with 1000 genes
+✓ Threshold: 0.551
+✓ Saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled

@@ -1,0 +1,23 @@
+/appl/soft/ai/bin/python
+PYTHON: /appl/soft/ai/bin/python
+NUMPY : 1.24.3
+PANDAS: 2.0.3
+SKLEARN: 1.3.0
+TF    : 2.13.0
+=========================================
+Persister Inference - REDUCED MODEL (1000 genes)
+Started: Sat Sep 20 23:32:08 EEST 2025
+Node:    g3102.mahti.csc.fi
+Job ID:  5130077
+=========================================
+name, memory.total [MiB], driver_version
+NVIDIA A100-SXM4-40GB, 40960 MiB, 535.261.03
+Checking reduced model files...
+Creating compatibility links...
+/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src
+Model directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+Using genes from: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt
+Threshold: 0.551
+Output directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_233208
+Using manifest with 21 samples
+Running: srun Running: python Running: -u Running: inference_reduced_gene.py Running: --model-dir Running: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled Running: --out-dir Running: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_233208 Running: --genes-file Running: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt Running: --threshold Running: 0.551 Running: --max-cells Running: 20000 Running: --manifest Running: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_233208/sample_manifest.csv Running: --no-discover 

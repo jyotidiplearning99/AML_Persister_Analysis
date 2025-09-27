@@ -1,0 +1,5 @@
+module1,module2,n_shared,shared_genes
+GO_morphogenesis_epithelium,Cell_adhesion_Ephrins,10,"CD44, CELSR1, DDR1, EFNB2, EPHA2, EPHA4, FERMT1, FERMT2, SDC4, TNC"
+GO_morphogenesis_epithelium,WNT_pathway,7,"CTNNB1, FZD6, LGR4, LRP5, PRICKLE1, WNT4, WNT7B"
+GO_morphogenesis_epithelium,RTK_signaling,6,"AREG, CSF1, EGFR, KDR, MDK, MET"
+GO_morphogenesis_epithelium,Stemness_markers,6,"CD44, KLF4, MYC, SNAI2, SOX9, YAP1"

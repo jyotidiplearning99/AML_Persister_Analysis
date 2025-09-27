@@ -1,0 +1,44 @@
+{
+  "n_aml_lines": 43,
+  "n_genes_analyzed": 914,
+  "n_genes_unmatched": 86,
+  "top_10_dependencies": [
+    "MYC",
+    "RUVBL1",
+    "CDK7",
+    "EIF3B",
+    "BOP1",
+    "POLD2",
+    "PSMG3",
+    "RPL36A",
+    "NUP155",
+    "NOB1"
+  ],
+  "known_targets_in_top30": 3,
+  "median_effect_range": [
+    -2.217341899871826,
+    0.2527272701263428
+  ],
+  "top_5_strongest": [
+    {
+      "gene": "MYC",
+      "effect": -2.217341899871826
+    },
+    {
+      "gene": "RUVBL1",
+      "effect": -1.9004014730453491
+    },
+    {
+      "gene": "CDK7",
+      "effect": -1.8457452058792114
+    },
+    {
+      "gene": "EIF3B",
+      "effect": -1.5750633478164673
+    },
+    {
+      "gene": "BOP1",
+      "effect": -1.209976077079773
+    }
+  ]
+}

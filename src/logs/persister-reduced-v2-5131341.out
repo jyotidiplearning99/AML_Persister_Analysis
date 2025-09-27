@@ -1,0 +1,39 @@
+=========================================
+Persister Inference - REDUCED Model v2
+Started: Sun Sep 21 10:27:06 EEST 2025
+Output dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+Sun Sep 21 10:27:06 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.261.03             Driver Version: 535.261.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:03:00.0 Off |                    0 |
+| N/A   38C    P0              53W / 400W |      0MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+TF version: 2.13.0
+GPUs: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+=========================================
+2025-09-21 10:27:17,501 | INFO | Starting inference at 2025-09-21 10:27:17.501840
+2025-09-21 10:27:17,502 | INFO | Model directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+2025-09-21 10:27:17,502 | INFO | Output directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+2025-09-21 10:27:18,627 | INFO | [LOAD] scaler loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/scaler_reduced.pkl
+2025-09-21 10:27:18,756 | INFO | [LOAD] pca loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/pca_reduced.pkl
+2025-09-21 10:27:18,789 | INFO | [THRESH] Loaded threshold: 0.551
+2025-09-21 10:27:18,789 | INFO | [MODEL] Type: REDUCED (1000 genes)
+2025-09-21 10:27:18,789 | INFO | [MODEL] Genes: 1000
+2025-09-21 10:27:18,789 | INFO | [MODEL] PCA components: 100
+2025-09-21 10:27:18,789 | INFO | [MODEL] Threshold: 0.551
+2025-09-21 10:27:18,791 | INFO | [DISCOVER] Healthy GSM-tag groups formed: 25
+2025-09-21 10:27:18,791 | INFO | [DISCOVER] Total samples to process: 25

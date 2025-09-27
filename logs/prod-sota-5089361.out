@@ -1,0 +1,477 @@
+=========================================
+State-of-the-Art Production Model
+Started: Sat Sep 13 16:34:14 EEST 2025
+=========================================
+
+============================================================
+Fixed Persister Classifier v12
+Started: Sat Sep 13 16:34:28 2025
+============================================================
+2025-09-13 16:34:30,481 | INFO | [GENES] Built ID mapping with 73192 entries
+2025-09-13 16:34:30,521 | INFO | [AML] train: ['FH_5143_2', 'FH_6088_2', 'FH_5238_2']
+2025-09-13 16:34:30,521 | INFO | [AML] holdout: ['FH_6088_3', 'FH_6333_3']
+2025-09-13 16:34:38,333 | INFO | [LOAD] GSM3516666_NORMAL: 3061 cells, 17926 genes
+2025-09-13 16:34:47,315 | INFO | [LOAD] GSM3516673_NORMAL: 4061 cells, 18494 genes
+2025-09-13 16:34:53,308 | INFO | [LOAD] GSM3516675_NORMAL: 2475 cells, 17464 genes
+2025-09-13 16:35:00,507 | INFO | [LOAD] GSM3516676_NORMAL: 3124 cells, 17673 genes
+2025-09-13 16:35:03,126 | INFO | [LOAD] GSM3516662_PRIMARY: 392 cells, 16039 genes
+2025-09-13 16:35:12,102 | INFO | [LOAD] GSM3516665_PRIMARY: 3435 cells, 19504 genes
+2025-09-13 16:35:21,035 | INFO | [LOAD] GSM3516667_PRIMARY: 4014 cells, 17879 genes
+2025-09-13 16:35:26,374 | INFO | [LOAD] GSM3516669_PRIMARY: 2017 cells, 17231 genes
+2025-09-13 16:35:30,284 | INFO | [LOAD] GSM3516670_PRIMARY: 941 cells, 18414 genes
+2025-09-13 16:35:39,903 | INFO | [LOAD] GSM3516672_PRIMARY: 4092 cells, 19133 genes
+2025-09-13 16:35:42,345 | INFO | [LOAD] GSM3516674_PRIMARY: 378 cells, 16062 genes
+2025-09-13 16:35:46,762 | INFO | [LOAD] GSM3516664_METASTASIS: 1316 cells, 17395 genes
+2025-09-13 16:35:54,431 | INFO | [LOAD] GSM3516668_METASTASIS: 3886 cells, 16150 genes
+2025-09-13 16:35:59,333 | INFO | [LOAD] GSM3516671_METASTASIS: 1630 cells, 18167 genes
+2025-09-13 16:36:05,625 | INFO | [LOAD] GSM3516677_METASTASIS: 2671 cells, 17202 genes
+2025-09-13 16:36:08,781 | INFO | [LOAD] GSM3516678_METASTASIS: 788 cells, 15579 genes
+2025-09-13 16:36:20,843 | INFO | [LOAD] AML_FH_5143_2: 8116 cells, 32401 genes
+2025-09-13 16:36:31,990 | INFO | [LOAD] AML_FH_6088_2: 7373 cells, 32401 genes
+2025-09-13 16:36:39,321 | INFO | [LOAD] AML_FH_5238_2: 5053 cells, 32401 genes
+2025-09-13 16:36:39,324 | INFO | [GENES] Final common genes: 35174
+2025-09-13 16:36:55,919 | INFO | [DATA] Combined shape: (38281, 35174)
+2025-09-13 16:36:55,936 | INFO | [SPLIT] Mixed SIDs: 0, Pos-only: 5, Neg-only: 11
+2025-09-13 16:36:55,938 | INFO | [SPLIT] Train size: 29780, Test size: 8501
+2025-09-13 16:36:55,938 | INFO | [SPLIT] Train dist: [20805  8975]
+2025-09-13 16:36:55,938 | INFO | [SPLIT] Test  dist: [7185 1316]
+2025-09-13 16:37:36,292 | INFO | [HVG] Selected 4000 HVGs
+2025-09-13 16:37:37,203 | INFO | [VAL] Train: 20861, Val: 8919
+2025-09-13 16:37:37,203 | INFO | [VAL] Train dist: [15772  5089]
+2025-09-13 16:37:37,203 | INFO | [VAL] Val   dist: [5033 3886]
+2025-09-13 16:37:49,765 | INFO | [PCA] Components: 75, Explained variance: 0.169
+2025-09-13 16:37:51,404 | INFO | [CLASS_WEIGHTS] {0: 1.9839906162820187, 1: 2.0496168205934366}
+2025-09-13 16:37:51,421 | INFO | Starting training...
+Epoch 1/100
+
+Epoch 1: val_auprc improved from -inf to 0.40250, saving model to best_model.keras
+82/82 - 13s - 164ms/step - auc: 0.7088 - auprc: 0.4683 - loss: 1.0912 - precision: 0.5226 - recall: 0.3425 - val_auc: 0.5094 - val_auprc: 0.4025 - val_loss: 0.9443 - val_precision: 0.0603 - val_recall: 0.0018
+Epoch 2/100
+
+Epoch 2: val_auprc did not improve from 0.40250
+82/82 - 1s - 9ms/step - auc: 0.9301 - auprc: 0.8665 - loss: 0.5781 - precision: 0.8715 - recall: 0.6995 - val_auc: 0.3901 - val_auprc: 0.3473 - val_loss: 1.3445 - val_precision: 0.0648 - val_recall: 0.0108
+Epoch 3/100
+
+Epoch 3: val_auprc did not improve from 0.40250
+82/82 - 1s - 9ms/step - auc: 0.9702 - auprc: 0.9348 - loss: 0.3975 - precision: 0.9106 - recall: 0.8182 - val_auc: 0.4137 - val_auprc: 0.3560 - val_loss: 1.4848 - val_precision: 0.0814 - val_recall: 0.0193
+Epoch 4/100
+
+Epoch 4: val_auprc did not improve from 0.40250
+82/82 - 1s - 9ms/step - auc: 0.9811 - auprc: 0.9574 - loss: 0.3209 - precision: 0.9298 - recall: 0.8636 - val_auc: 0.4806 - val_auprc: 0.3858 - val_loss: 1.4565 - val_precision: 0.1509 - val_recall: 0.0407
+Epoch 5/100
+
+Epoch 5: val_auprc improved from 0.40250 to 0.43131, saving model to best_model.keras
+82/82 - 1s - 10ms/step - auc: 0.9861 - auprc: 0.9675 - loss: 0.2773 - precision: 0.9378 - recall: 0.8892 - val_auc: 0.5577 - val_auprc: 0.4313 - val_loss: 1.3281 - val_precision: 0.2721 - val_recall: 0.0777
+Epoch 6/100
+
+Epoch 6: val_auprc improved from 0.43131 to 0.43943, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9909 - auprc: 0.9778 - loss: 0.2367 - precision: 0.9442 - recall: 0.9076 - val_auc: 0.5741 - val_auprc: 0.4394 - val_loss: 1.3130 - val_precision: 0.2919 - val_recall: 0.0888
+Epoch 7/100
+
+Epoch 7: val_auprc improved from 0.43943 to 0.46164, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9920 - auprc: 0.9804 - loss: 0.2182 - precision: 0.9486 - recall: 0.9210 - val_auc: 0.6075 - val_auprc: 0.4616 - val_loss: 1.2567 - val_precision: 0.3722 - val_recall: 0.1428
+Epoch 8/100
+
+Epoch 8: val_auprc improved from 0.46164 to 0.47761, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9946 - auprc: 0.9868 - loss: 0.1880 - precision: 0.9557 - recall: 0.9361 - val_auc: 0.6281 - val_auprc: 0.4776 - val_loss: 1.2062 - val_precision: 0.4022 - val_recall: 0.1529
+Epoch 9/100
+
+Epoch 9: val_auprc improved from 0.47761 to 0.51114, saving model to best_model.keras
+82/82 - 1s - 10ms/step - auc: 0.9959 - auprc: 0.9887 - loss: 0.1741 - precision: 0.9594 - recall: 0.9369 - val_auc: 0.6648 - val_auprc: 0.5111 - val_loss: 1.1594 - val_precision: 0.4936 - val_recall: 0.2180
+Epoch 10/100
+
+Epoch 10: val_auprc improved from 0.51114 to 0.54777, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9965 - auprc: 0.9909 - loss: 0.1619 - precision: 0.9569 - recall: 0.9460 - val_auc: 0.7057 - val_auprc: 0.5478 - val_loss: 1.1007 - val_precision: 0.5515 - val_recall: 0.2398
+Epoch 11/100
+
+Epoch 11: val_auprc improved from 0.54777 to 0.56781, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9969 - auprc: 0.9922 - loss: 0.1494 - precision: 0.9655 - recall: 0.9513 - val_auc: 0.7183 - val_auprc: 0.5678 - val_loss: 1.0699 - val_precision: 0.6010 - val_recall: 0.2764
+Epoch 12/100
+
+Epoch 12: val_auprc improved from 0.56781 to 0.59051, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9976 - auprc: 0.9929 - loss: 0.1388 - precision: 0.9686 - recall: 0.9530 - val_auc: 0.7362 - val_auprc: 0.5905 - val_loss: 1.0236 - val_precision: 0.6392 - val_recall: 0.3273
+Epoch 13/100
+
+Epoch 13: val_auprc did not improve from 0.59051
+82/82 - 1s - 9ms/step - auc: 0.9980 - auprc: 0.9945 - loss: 0.1254 - precision: 0.9704 - recall: 0.9613 - val_auc: 0.7075 - val_auprc: 0.5588 - val_loss: 1.1248 - val_precision: 0.5968 - val_recall: 0.2903
+Epoch 14/100
+
+Epoch 14: val_auprc did not improve from 0.59051
+82/82 - 1s - 9ms/step - auc: 0.9983 - auprc: 0.9954 - loss: 0.1212 - precision: 0.9740 - recall: 0.9636 - val_auc: 0.7310 - val_auprc: 0.5816 - val_loss: 1.0356 - val_precision: 0.6335 - val_recall: 0.3675
+Epoch 15/100
+
+Epoch 15: val_auprc improved from 0.59051 to 0.64769, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9984 - auprc: 0.9951 - loss: 0.1158 - precision: 0.9750 - recall: 0.9674 - val_auc: 0.7752 - val_auprc: 0.6477 - val_loss: 0.9411 - val_precision: 0.7077 - val_recall: 0.4249
+Epoch 16/100
+
+Epoch 16: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9981 - auprc: 0.9950 - loss: 0.1160 - precision: 0.9780 - recall: 0.9678 - val_auc: 0.7661 - val_auprc: 0.6251 - val_loss: 0.9659 - val_precision: 0.6759 - val_recall: 0.3945
+Epoch 17/100
+
+Epoch 17: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9990 - auprc: 0.9968 - loss: 0.1050 - precision: 0.9796 - recall: 0.9717 - val_auc: 0.7440 - val_auprc: 0.6051 - val_loss: 1.0403 - val_precision: 0.6656 - val_recall: 0.4092
+Epoch 18/100
+
+Epoch 18: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9988 - auprc: 0.9971 - loss: 0.1018 - precision: 0.9788 - recall: 0.9725 - val_auc: 0.7455 - val_auprc: 0.5930 - val_loss: 1.1063 - val_precision: 0.6423 - val_recall: 0.3327
+Epoch 19/100
+
+Epoch 19: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9991 - auprc: 0.9976 - loss: 0.0974 - precision: 0.9783 - recall: 0.9741 - val_auc: 0.7562 - val_auprc: 0.6185 - val_loss: 1.1193 - val_precision: 0.6784 - val_recall: 0.3469
+Epoch 20/100
+
+Epoch 20: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9991 - auprc: 0.9977 - loss: 0.0957 - precision: 0.9816 - recall: 0.9731 - val_auc: 0.7459 - val_auprc: 0.6048 - val_loss: 1.0965 - val_precision: 0.6579 - val_recall: 0.3780
+Epoch 21/100
+
+Epoch 21: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9992 - auprc: 0.9976 - loss: 0.0921 - precision: 0.9801 - recall: 0.9758 - val_auc: 0.7699 - val_auprc: 0.6331 - val_loss: 1.0309 - val_precision: 0.6938 - val_recall: 0.4238
+Epoch 22/100
+
+Epoch 22: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9993 - auprc: 0.9978 - loss: 0.0887 - precision: 0.9834 - recall: 0.9768 - val_auc: 0.7592 - val_auprc: 0.6163 - val_loss: 1.1006 - val_precision: 0.6710 - val_recall: 0.3852
+Epoch 23/100
+
+Epoch 23: val_auprc did not improve from 0.64769
+82/82 - 1s - 9ms/step - auc: 0.9990 - auprc: 0.9971 - loss: 0.0900 - precision: 0.9830 - recall: 0.9776 - val_auc: 0.7714 - val_auprc: 0.6446 - val_loss: 1.0930 - val_precision: 0.7018 - val_recall: 0.4099
+Epoch 24/100
+
+Epoch 24: val_auprc improved from 0.64769 to 0.68447, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9990 - auprc: 0.9977 - loss: 0.0890 - precision: 0.9820 - recall: 0.9756 - val_auc: 0.7951 - val_auprc: 0.6845 - val_loss: 0.9569 - val_precision: 0.7472 - val_recall: 0.4792
+Epoch 25/100
+
+Epoch 25: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9981 - loss: 0.0867 - precision: 0.9800 - recall: 0.9802 - val_auc: 0.7623 - val_auprc: 0.6265 - val_loss: 1.0995 - val_precision: 0.6864 - val_recall: 0.3942
+Epoch 26/100
+
+Epoch 26: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9985 - loss: 0.0818 - precision: 0.9821 - recall: 0.9802 - val_auc: 0.7850 - val_auprc: 0.6597 - val_loss: 1.0164 - val_precision: 0.7232 - val_recall: 0.4653
+Epoch 27/100
+
+Epoch 27: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9984 - loss: 0.0789 - precision: 0.9866 - recall: 0.9813 - val_auc: 0.7805 - val_auprc: 0.6566 - val_loss: 1.0132 - val_precision: 0.7181 - val_recall: 0.4956
+Epoch 28/100
+
+Epoch 28: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9991 - auprc: 0.9981 - loss: 0.0813 - precision: 0.9856 - recall: 0.9805 - val_auc: 0.7398 - val_auprc: 0.6044 - val_loss: 1.1419 - val_precision: 0.6672 - val_recall: 0.4627
+Epoch 29/100
+
+Epoch 29: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9992 - auprc: 0.9984 - loss: 0.0761 - precision: 0.9860 - recall: 0.9825 - val_auc: 0.7780 - val_auprc: 0.6664 - val_loss: 1.0767 - val_precision: 0.7288 - val_recall: 0.4717
+Epoch 30/100
+
+Epoch 30: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9988 - loss: 0.0703 - precision: 0.9870 - recall: 0.9837 - val_auc: 0.7821 - val_auprc: 0.6749 - val_loss: 1.1151 - val_precision: 0.7447 - val_recall: 0.4835
+Epoch 31/100
+
+Epoch 31: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9988 - loss: 0.0720 - precision: 0.9858 - recall: 0.9839 - val_auc: 0.7791 - val_auprc: 0.6794 - val_loss: 1.1002 - val_precision: 0.7433 - val_recall: 0.4843
+Epoch 32/100
+
+Epoch 32: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9989 - loss: 0.0684 - precision: 0.9880 - recall: 0.9860 - val_auc: 0.7552 - val_auprc: 0.6262 - val_loss: 1.2437 - val_precision: 0.6811 - val_recall: 0.3996
+Epoch 33/100
+
+Epoch 33: val_auprc did not improve from 0.68447
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9985 - loss: 0.0723 - precision: 0.9870 - recall: 0.9833 - val_auc: 0.7847 - val_auprc: 0.6675 - val_loss: 1.0932 - val_precision: 0.7274 - val_recall: 0.4799
+Epoch 34/100
+
+Epoch 34: val_auprc improved from 0.68447 to 0.71986, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9986 - loss: 0.0712 - precision: 0.9856 - recall: 0.9853 - val_auc: 0.8039 - val_auprc: 0.7199 - val_loss: 0.9767 - val_precision: 0.7634 - val_recall: 0.5371
+Epoch 35/100
+
+Epoch 35: val_auprc did not improve from 0.71986
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9991 - loss: 0.0653 - precision: 0.9896 - recall: 0.9886 - val_auc: 0.7939 - val_auprc: 0.6879 - val_loss: 1.0694 - val_precision: 0.7492 - val_recall: 0.4565
+Epoch 36/100
+
+Epoch 36: val_auprc did not improve from 0.71986
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9990 - loss: 0.0680 - precision: 0.9866 - recall: 0.9859 - val_auc: 0.8053 - val_auprc: 0.7159 - val_loss: 1.0173 - val_precision: 0.7685 - val_recall: 0.5203
+Epoch 37/100
+
+Epoch 37: val_auprc improved from 0.71986 to 0.72078, saving model to best_model.keras
+82/82 - 1s - 10ms/step - auc: 0.9996 - auprc: 0.9988 - loss: 0.0671 - precision: 0.9886 - recall: 0.9855 - val_auc: 0.8107 - val_auprc: 0.7208 - val_loss: 0.9709 - val_precision: 0.7579 - val_recall: 0.5211
+Epoch 38/100
+
+Epoch 38: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0654 - precision: 0.9893 - recall: 0.9855 - val_auc: 0.7977 - val_auprc: 0.7013 - val_loss: 1.0648 - val_precision: 0.7586 - val_recall: 0.4982
+Epoch 39/100
+
+Epoch 39: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9984 - loss: 0.0692 - precision: 0.9896 - recall: 0.9862 - val_auc: 0.8026 - val_auprc: 0.6926 - val_loss: 1.0384 - val_precision: 0.7439 - val_recall: 0.4604
+Epoch 40/100
+
+Epoch 40: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9990 - loss: 0.0616 - precision: 0.9892 - recall: 0.9888 - val_auc: 0.7983 - val_auprc: 0.7025 - val_loss: 1.1013 - val_precision: 0.7585 - val_recall: 0.4380
+Epoch 41/100
+
+Epoch 41: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9990 - loss: 0.0634 - precision: 0.9884 - recall: 0.9898 - val_auc: 0.7680 - val_auprc: 0.6541 - val_loss: 1.2162 - val_precision: 0.7178 - val_recall: 0.4334
+Epoch 42/100
+
+Epoch 42: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9988 - loss: 0.0665 - precision: 0.9884 - recall: 0.9859 - val_auc: 0.7661 - val_auprc: 0.6559 - val_loss: 1.1705 - val_precision: 0.7034 - val_recall: 0.4645
+Epoch 43/100
+
+Epoch 43: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9986 - loss: 0.0650 - precision: 0.9872 - recall: 0.9878 - val_auc: 0.7967 - val_auprc: 0.7108 - val_loss: 1.0684 - val_precision: 0.7714 - val_recall: 0.4699
+Epoch 44/100
+
+Epoch 44: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9987 - loss: 0.0650 - precision: 0.9892 - recall: 0.9860 - val_auc: 0.7873 - val_auprc: 0.6689 - val_loss: 1.0423 - val_precision: 0.7194 - val_recall: 0.4907
+Epoch 45/100
+
+Epoch 45: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9994 - loss: 0.0563 - precision: 0.9913 - recall: 0.9902 - val_auc: 0.7763 - val_auprc: 0.6593 - val_loss: 1.1287 - val_precision: 0.7170 - val_recall: 0.4936
+Epoch 46/100
+
+Epoch 46: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9993 - loss: 0.0559 - precision: 0.9906 - recall: 0.9902 - val_auc: 0.7961 - val_auprc: 0.7148 - val_loss: 1.0731 - val_precision: 0.7620 - val_recall: 0.5134
+Epoch 47/100
+
+Epoch 47: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9995 - loss: 0.0580 - precision: 0.9909 - recall: 0.9884 - val_auc: 0.7939 - val_auprc: 0.7046 - val_loss: 1.1014 - val_precision: 0.7555 - val_recall: 0.5193
+Epoch 48/100
+
+Epoch 48: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9989 - loss: 0.0602 - precision: 0.9900 - recall: 0.9896 - val_auc: 0.7953 - val_auprc: 0.6937 - val_loss: 1.1304 - val_precision: 0.7430 - val_recall: 0.4665
+Epoch 49/100
+
+Epoch 49: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9994 - auprc: 0.9982 - loss: 0.0636 - precision: 0.9886 - recall: 0.9876 - val_auc: 0.7917 - val_auprc: 0.6894 - val_loss: 1.1203 - val_precision: 0.7494 - val_recall: 0.4771
+Epoch 50/100
+
+Epoch 50: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9987 - loss: 0.0601 - precision: 0.9908 - recall: 0.9898 - val_auc: 0.7998 - val_auprc: 0.7129 - val_loss: 1.1102 - val_precision: 0.7675 - val_recall: 0.4375
+Epoch 51/100
+
+Epoch 51: val_auprc did not improve from 0.72078
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9991 - loss: 0.0610 - precision: 0.9900 - recall: 0.9890 - val_auc: 0.7884 - val_auprc: 0.6883 - val_loss: 1.0833 - val_precision: 0.7395 - val_recall: 0.5077
+Epoch 52/100
+
+Epoch 52: val_auprc improved from 0.72078 to 0.73704, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9989 - loss: 0.0591 - precision: 0.9911 - recall: 0.9892 - val_auc: 0.8226 - val_auprc: 0.7370 - val_loss: 0.9736 - val_precision: 0.7735 - val_recall: 0.5432
+Epoch 53/100
+
+Epoch 53: val_auprc did not improve from 0.73704
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9989 - loss: 0.0585 - precision: 0.9896 - recall: 0.9888 - val_auc: 0.8058 - val_auprc: 0.7162 - val_loss: 1.0418 - val_precision: 0.7630 - val_recall: 0.4938
+Epoch 54/100
+
+Epoch 54: val_auprc did not improve from 0.73704
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9994 - loss: 0.0580 - precision: 0.9911 - recall: 0.9892 - val_auc: 0.8037 - val_auprc: 0.7144 - val_loss: 1.0601 - val_precision: 0.7672 - val_recall: 0.4979
+Epoch 55/100
+
+Epoch 55: val_auprc did not improve from 0.73704
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9990 - loss: 0.0568 - precision: 0.9915 - recall: 0.9894 - val_auc: 0.8047 - val_auprc: 0.7254 - val_loss: 1.0816 - val_precision: 0.7818 - val_recall: 0.4905
+Epoch 56/100
+
+Epoch 56: val_auprc did not improve from 0.73704
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9993 - loss: 0.0563 - precision: 0.9915 - recall: 0.9906 - val_auc: 0.7628 - val_auprc: 0.6345 - val_loss: 1.2310 - val_precision: 0.6874 - val_recall: 0.4295
+Epoch 57/100
+
+Epoch 57: val_auprc improved from 0.73704 to 0.74191, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9996 - loss: 0.0527 - precision: 0.9919 - recall: 0.9900 - val_auc: 0.8196 - val_auprc: 0.7419 - val_loss: 0.9966 - val_precision: 0.7811 - val_recall: 0.5610
+Epoch 58/100
+
+Epoch 58: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0568 - precision: 0.9902 - recall: 0.9906 - val_auc: 0.8016 - val_auprc: 0.7146 - val_loss: 1.1722 - val_precision: 0.7774 - val_recall: 0.4161
+Epoch 59/100
+
+Epoch 59: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0586 - precision: 0.9913 - recall: 0.9880 - val_auc: 0.7949 - val_auprc: 0.6926 - val_loss: 1.0782 - val_precision: 0.7360 - val_recall: 0.5244
+Epoch 60/100
+
+Epoch 60: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9995 - loss: 0.0535 - precision: 0.9931 - recall: 0.9896 - val_auc: 0.7942 - val_auprc: 0.6810 - val_loss: 1.0960 - val_precision: 0.7211 - val_recall: 0.5044
+Epoch 61/100
+
+Epoch 61: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9985 - loss: 0.0531 - precision: 0.9919 - recall: 0.9910 - val_auc: 0.7881 - val_auprc: 0.6959 - val_loss: 1.2295 - val_precision: 0.7532 - val_recall: 0.3973
+Epoch 62/100
+
+Epoch 62: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9993 - loss: 0.0537 - precision: 0.9913 - recall: 0.9906 - val_auc: 0.7827 - val_auprc: 0.6758 - val_loss: 1.2298 - val_precision: 0.7422 - val_recall: 0.4601
+Epoch 63/100
+
+Epoch 63: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9995 - loss: 0.0522 - precision: 0.9917 - recall: 0.9908 - val_auc: 0.8126 - val_auprc: 0.7291 - val_loss: 1.0677 - val_precision: 0.7809 - val_recall: 0.4779
+Epoch 64/100
+
+Epoch 64: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9991 - loss: 0.0549 - precision: 0.9911 - recall: 0.9890 - val_auc: 0.7648 - val_auprc: 0.6506 - val_loss: 1.3104 - val_precision: 0.7156 - val_recall: 0.4591
+Epoch 65/100
+
+Epoch 65: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9991 - loss: 0.0560 - precision: 0.9904 - recall: 0.9888 - val_auc: 0.7950 - val_auprc: 0.7037 - val_loss: 1.1522 - val_precision: 0.7606 - val_recall: 0.5036
+Epoch 66/100
+
+Epoch 66: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9994 - loss: 0.0515 - precision: 0.9904 - recall: 0.9904 - val_auc: 0.7856 - val_auprc: 0.6974 - val_loss: 1.1798 - val_precision: 0.7539 - val_recall: 0.5283
+Epoch 67/100
+
+Epoch 67: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9997 - loss: 0.0490 - precision: 0.9927 - recall: 0.9906 - val_auc: 0.7830 - val_auprc: 0.6727 - val_loss: 1.1799 - val_precision: 0.7264 - val_recall: 0.4694
+Epoch 68/100
+
+Epoch 68: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9995 - loss: 0.0498 - precision: 0.9923 - recall: 0.9925 - val_auc: 0.7629 - val_auprc: 0.6633 - val_loss: 1.3487 - val_precision: 0.7240 - val_recall: 0.4732
+Epoch 69/100
+
+Epoch 69: val_auprc did not improve from 0.74191
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9996 - loss: 0.0517 - precision: 0.9921 - recall: 0.9910 - val_auc: 0.7815 - val_auprc: 0.6818 - val_loss: 1.2096 - val_precision: 0.7310 - val_recall: 0.5069
+Epoch 70/100
+
+Epoch 70: val_auprc improved from 0.74191 to 0.74345, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9989 - loss: 0.0521 - precision: 0.9921 - recall: 0.9906 - val_auc: 0.8118 - val_auprc: 0.7435 - val_loss: 1.0803 - val_precision: 0.7825 - val_recall: 0.5443
+Epoch 71/100
+
+Epoch 71: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9989 - loss: 0.0501 - precision: 0.9929 - recall: 0.9927 - val_auc: 0.7946 - val_auprc: 0.6871 - val_loss: 1.1882 - val_precision: 0.7426 - val_recall: 0.4411
+Epoch 72/100
+
+Epoch 72: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9991 - loss: 0.0504 - precision: 0.9914 - recall: 0.9925 - val_auc: 0.8060 - val_auprc: 0.7165 - val_loss: 1.0976 - val_precision: 0.7563 - val_recall: 0.5798
+Epoch 73/100
+
+Epoch 73: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9994 - loss: 0.0526 - precision: 0.9923 - recall: 0.9904 - val_auc: 0.8031 - val_auprc: 0.7046 - val_loss: 1.0694 - val_precision: 0.7358 - val_recall: 0.5618
+Epoch 74/100
+
+Epoch 74: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9994 - loss: 0.0483 - precision: 0.9941 - recall: 0.9925 - val_auc: 0.7993 - val_auprc: 0.7004 - val_loss: 1.1158 - val_precision: 0.7365 - val_recall: 0.5373
+Epoch 75/100
+
+Epoch 75: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9989 - loss: 0.0488 - precision: 0.9929 - recall: 0.9923 - val_auc: 0.7992 - val_auprc: 0.7017 - val_loss: 1.1359 - val_precision: 0.7492 - val_recall: 0.5059
+Epoch 76/100
+
+Epoch 76: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0510 - precision: 0.9917 - recall: 0.9914 - val_auc: 0.7874 - val_auprc: 0.6805 - val_loss: 1.2148 - val_precision: 0.7265 - val_recall: 0.4429
+Epoch 77/100
+
+Epoch 77: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9994 - loss: 0.0507 - precision: 0.9919 - recall: 0.9900 - val_auc: 0.7883 - val_auprc: 0.6904 - val_loss: 1.1563 - val_precision: 0.7263 - val_recall: 0.5211
+Epoch 78/100
+
+Epoch 78: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9991 - loss: 0.0510 - precision: 0.9929 - recall: 0.9919 - val_auc: 0.7817 - val_auprc: 0.6805 - val_loss: 1.1957 - val_precision: 0.7201 - val_recall: 0.5203
+Epoch 79/100
+
+Epoch 79: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 1.0000 - auprc: 0.9998 - loss: 0.0433 - precision: 0.9951 - recall: 0.9933 - val_auc: 0.7652 - val_auprc: 0.6478 - val_loss: 1.3231 - val_precision: 0.7060 - val_recall: 0.4647
+Epoch 80/100
+
+Epoch 80: val_auprc did not improve from 0.74345
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9997 - loss: 0.0455 - precision: 0.9943 - recall: 0.9925 - val_auc: 0.8118 - val_auprc: 0.7186 - val_loss: 1.0540 - val_precision: 0.7509 - val_recall: 0.5618
+Epoch 81/100
+
+Epoch 81: val_auprc improved from 0.74345 to 0.74471, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9996 - loss: 0.0472 - precision: 0.9923 - recall: 0.9925 - val_auc: 0.8245 - val_auprc: 0.7447 - val_loss: 1.0207 - val_precision: 0.7826 - val_recall: 0.5448
+Epoch 82/100
+
+Epoch 82: val_auprc did not improve from 0.74471
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9994 - loss: 0.0485 - precision: 0.9935 - recall: 0.9910 - val_auc: 0.8128 - val_auprc: 0.7298 - val_loss: 1.0874 - val_precision: 0.7668 - val_recall: 0.5340
+Epoch 83/100
+
+Epoch 83: val_auprc improved from 0.74471 to 0.75031, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9991 - loss: 0.0503 - precision: 0.9917 - recall: 0.9906 - val_auc: 0.8313 - val_auprc: 0.7503 - val_loss: 1.0330 - val_precision: 0.7867 - val_recall: 0.5221
+Epoch 84/100
+
+Epoch 84: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9995 - loss: 0.0524 - precision: 0.9925 - recall: 0.9900 - val_auc: 0.8191 - val_auprc: 0.7175 - val_loss: 1.0816 - val_precision: 0.7676 - val_recall: 0.5304
+Epoch 85/100
+
+Epoch 85: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9990 - loss: 0.0498 - precision: 0.9927 - recall: 0.9921 - val_auc: 0.8285 - val_auprc: 0.7251 - val_loss: 1.0737 - val_precision: 0.7720 - val_recall: 0.5463
+Epoch 86/100
+
+Epoch 86: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9996 - loss: 0.0483 - precision: 0.9914 - recall: 0.9916 - val_auc: 0.7951 - val_auprc: 0.6887 - val_loss: 1.2449 - val_precision: 0.7495 - val_recall: 0.4681
+Epoch 87/100
+
+Epoch 87: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9995 - auprc: 0.9989 - loss: 0.0534 - precision: 0.9913 - recall: 0.9902 - val_auc: 0.8312 - val_auprc: 0.7496 - val_loss: 1.0186 - val_precision: 0.7878 - val_recall: 0.4902
+Epoch 88/100
+
+Epoch 88: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9995 - loss: 0.0469 - precision: 0.9941 - recall: 0.9925 - val_auc: 0.8090 - val_auprc: 0.7149 - val_loss: 1.2318 - val_precision: 0.7723 - val_recall: 0.4390
+Epoch 89/100
+
+Epoch 89: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9996 - auprc: 0.9993 - loss: 0.0473 - precision: 0.9939 - recall: 0.9914 - val_auc: 0.8186 - val_auprc: 0.7357 - val_loss: 1.0487 - val_precision: 0.7703 - val_recall: 0.5504
+Epoch 90/100
+
+Epoch 90: val_auprc did not improve from 0.75031
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9989 - loss: 0.0465 - precision: 0.9935 - recall: 0.9929 - val_auc: 0.8202 - val_auprc: 0.7412 - val_loss: 1.1042 - val_precision: 0.7874 - val_recall: 0.4804
+Epoch 91/100
+
+Epoch 91: val_auprc improved from 0.75031 to 0.75300, saving model to best_model.keras
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9994 - loss: 0.0440 - precision: 0.9943 - recall: 0.9933 - val_auc: 0.8360 - val_auprc: 0.7530 - val_loss: 1.0216 - val_precision: 0.7909 - val_recall: 0.5178
+Epoch 92/100
+
+Epoch 92: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9992 - loss: 0.0470 - precision: 0.9933 - recall: 0.9929 - val_auc: 0.8201 - val_auprc: 0.7284 - val_loss: 1.0598 - val_precision: 0.7708 - val_recall: 0.5685
+Epoch 93/100
+
+Epoch 93: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0465 - precision: 0.9931 - recall: 0.9935 - val_auc: 0.8208 - val_auprc: 0.7464 - val_loss: 1.0986 - val_precision: 0.7896 - val_recall: 0.5455
+Epoch 94/100
+
+Epoch 94: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9995 - loss: 0.0457 - precision: 0.9937 - recall: 0.9916 - val_auc: 0.8062 - val_auprc: 0.7261 - val_loss: 1.2015 - val_precision: 0.7801 - val_recall: 0.4967
+Epoch 95/100
+
+Epoch 95: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0478 - precision: 0.9925 - recall: 0.9916 - val_auc: 0.7988 - val_auprc: 0.7133 - val_loss: 1.2401 - val_precision: 0.7672 - val_recall: 0.4810
+Epoch 96/100
+
+Epoch 96: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9995 - loss: 0.0449 - precision: 0.9927 - recall: 0.9943 - val_auc: 0.7960 - val_auprc: 0.6905 - val_loss: 1.2081 - val_precision: 0.7396 - val_recall: 0.5605
+Epoch 97/100
+
+Epoch 97: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9993 - loss: 0.0428 - precision: 0.9955 - recall: 0.9943 - val_auc: 0.8231 - val_auprc: 0.7516 - val_loss: 1.0893 - val_precision: 0.7925 - val_recall: 0.5494
+Epoch 98/100
+
+Epoch 98: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9997 - auprc: 0.9992 - loss: 0.0417 - precision: 0.9939 - recall: 0.9939 - val_auc: 0.7949 - val_auprc: 0.7177 - val_loss: 1.2534 - val_precision: 0.7769 - val_recall: 0.5134
+Epoch 99/100
+
+Epoch 99: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9998 - auprc: 0.9991 - loss: 0.0483 - precision: 0.9927 - recall: 0.9919 - val_auc: 0.7708 - val_auprc: 0.6565 - val_loss: 1.3130 - val_precision: 0.7069 - val_recall: 0.4792
+Epoch 100/100
+
+Epoch 100: val_auprc did not improve from 0.75300
+82/82 - 1s - 9ms/step - auc: 0.9999 - auprc: 0.9998 - loss: 0.0430 - precision: 0.9943 - recall: 0.9943 - val_auc: 0.8201 - val_auprc: 0.7529 - val_loss: 1.1799 - val_precision: 0.8112 - val_recall: 0.4789
+Restoring model weights from the end of the best epoch: 91.
+2025-09-13 16:39:18,818 | INFO | [THRESHOLD] Wilson-CI precision control -> threshold=0.824 (target_precision=0.9, ci=0.99, F0.3)
+
+============================================================
+TEST RESULTS
+============================================================
+Confusion Matrix:
+  True Neg  | False Pos
+      7140 |       45
+  ---------+----------
+  False Neg | True Pos
+      1235 |       81
+
+Balanced Accuracy: 0.5276
+MCC: 0.1655
+AUC-ROC (scores): 0.7911
+Average Precision (scores): 0.3929
+Persister Recall: 0.0616
+Persister Precision: 0.6429
+Threshold (Wilson-CI): 0.824
+
+=== Per-SID test metrics ===
+[GSM3516664_METASTASIS] n0=0 n1=1316 ACC=0.062 AUC=NA BA=NA CallRate=0.062 CM=[[0, 0], [1235, 81]]
+[GSM3516673_NORMAL] n0=4061 n1=0 ACC=0.993 AUC=NA BA=NA CallRate=0.007 CM=[[4033, 28], [0, 0]]
+[GSM3516676_NORMAL] n0=3124 n1=0 ACC=0.995 AUC=NA BA=NA CallRate=0.005 CM=[[3107, 17], [0, 0]]
+2025-09-13 16:39:33,233 | INFO | [PREDICT] FH_6088_3: 6801 cells, call-rate=0.198 -> /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/FH_6088_3_predictions.csv
+2025-09-13 16:39:38,480 | INFO | [PREDICT] FH_6333_3: 2815 cells, call-rate=0.110 -> /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/FH_6333_3_predictions.csv
+
+============================================================
+Fixed Persister Classifier v12
+Training Complete!
+============================================================
+Completed: Sat Sep 13 16:39:41 EEST 2025

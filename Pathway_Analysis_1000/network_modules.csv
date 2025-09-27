@@ -1,0 +1,639 @@
+node,module,node_type
+Virion - Hepatitis viruses - Homo sapiens (human),0,pathway
+CLDN12,0,gene
+CLDN15,0,gene
+CLDN3,0,gene
+CLDN4,0,gene
+DPP4,0,gene
+EPCAM,0,gene
+CPD,0,gene
+SDC1,0,gene
+TNC,0,gene
+PTEN,0,gene
+IGF1,0,gene
+TRAF4,0,gene
+C1S,0,gene
+CACNA2D2,0,gene
+ITGA2,0,gene
+PI3K-Akt signaling pathway - Homo sapiens (human),0,pathway
+COL6A2,0,gene
+ITGA10,0,gene
+ITGA3,0,gene
+LAMA5,0,gene
+LAMB2,0,gene
+LAMB3,0,gene
+LAMC1,0,gene
+OSMR,0,gene
+THBS3,0,gene
+Focal adhesion - Homo sapiens (human),0,pathway
+EMP2,0,gene
+FLNB,0,gene
+NECTIN2,0,gene
+NECTIN3,0,gene
+JUP,0,gene
+SDC4,0,gene
+Leukocyte transendothelial migration - Homo sapiens (human),0,pathway
+CD99L2,0,gene
+Tight junction - Homo sapiens (human),0,pathway
+AMOTL2,0,gene
+CRB3,0,gene
+LLGL2,0,gene
+MICALL2,0,gene
+SYNPO,0,gene
+TJP3,0,gene
+Inositol phosphate metabolism - Homo sapiens (human),0,pathway
+Cytoskeleton in muscle cells - Homo sapiens (human),0,pathway
+AGRN,0,gene
+DSG2,0,gene
+FBLN1,0,gene
+FHOD3,0,gene
+NEBL,0,gene
+PDLIM4,0,gene
+SGCB,0,gene
+SGCE,0,gene
+SNTA1,0,gene
+SSPN,0,gene
+SUN1,0,gene
+Hypertrophic cardiomyopathy - Homo sapiens (human),0,pathway
+Dilated cardiomyopathy - Homo sapiens (human),0,pathway
+ECM-receptor interaction - Homo sapiens (human),0,pathway
+SV2A,0,gene
+Human papillomavirus infection - Homo sapiens (human),0,pathway
+HES4,0,gene
+Cell adhesion molecules - Homo sapiens (human),0,pathway
+CNTNAP1,0,gene
+CXADR,0,gene
+Viral myocarditis - Homo sapiens (human),0,pathway
+Cornified envelope formation - Homo sapiens (human),0,pathway
+KRT7,0,gene
+KRT8,0,gene
+S100A13,0,gene
+S100A14,0,gene
+S100A16,0,gene
+S100A2,0,gene
+S100A3,0,gene
+Small cell lung cancer - Homo sapiens (human),0,pathway
+Arrhythmogenic right ventricular cardiomyopathy - Homo sapiens (human),0,pathway
+C3,1,gene
+MAOA,1,gene
+Drug metabolism - cytochrome P450 - Homo sapiens (human),1,pathway
+FMO5,1,gene
+GSTO2,1,gene
+GSTT2B,1,gene
+MGST1,1,gene
+ST5,1,gene
+NQO1,1,gene
+THRA,1,gene
+AP2B1,1,gene
+GPC1,1,gene
+CYP1B1,1,gene
+Chemical carcinogenesis - reactive oxygen species - Homo sapiens (human),1,pathway
+ARSE,1,gene
+EPHX1,1,gene
+Fluid shear stress and atherosclerosis - Homo sapiens (human),1,pathway
+Metabolism of xenobiotics by cytochrome P450 - Homo sapiens (human),1,pathway
+HSD11B1L,1,gene
+NEDD4L,1,gene
+Tryptophan metabolism - Homo sapiens (human),1,pathway
+KLF4,1,gene
+p53 signaling pathway - Homo sapiens (human),1,pathway
+SFN,1,gene
+STEAP3,1,gene
+Base excision repair - Homo sapiens (human),1,pathway
+NTHL1,1,gene
+PARP3,1,gene
+POLD2,1,gene
+CDK7,1,gene
+RORC,1,gene
+Chemical carcinogenesis - receptor activation - Homo sapiens (human),1,pathway
+PTGES,1,gene
+Basal transcription factors - Homo sapiens (human),1,pathway
+TAF10,1,gene
+GGT1,1,gene
+Synaptic vesicle cycle - Homo sapiens (human),1,pathway
+CPLX1,1,gene
+STXBP1,1,gene
+SYT1,1,gene
+Aldosterone-regulated sodium reabsorption - Homo sapiens (human),1,pathway
+HSD11B2,1,gene
+SCNN1A,1,gene
+SCNN1B,1,gene
+SLC9A3R2,1,gene
+Arachidonic acid metabolism - Homo sapiens (human),1,pathway
+ALOX15B,1,gene
+GGT5,1,gene
+Glutathione metabolism - Homo sapiens (human),1,pathway
+GGT7,1,gene
+Platinum drug resistance - Homo sapiens (human),1,pathway
+Hedgehog signaling pathway - Homo sapiens (human),1,pathway
+IQCE,1,gene
+Circadian rhythm - Homo sapiens (human),1,pathway
+EGFR,2,gene
+F12,2,gene
+PAM,2,gene
+AK1,2,gene
+AK4,2,gene
+CAMK1D,2,gene
+DAP,2,gene
+MYC,2,gene
+PI3,2,gene
+SHC3,2,gene
+ID1,2,gene
+BAD,2,gene
+EIF2AK1,2,gene
+SMIM4,2,gene
+Prostate cancer - Homo sapiens (human),2,pathway
+CAP2,2,gene
+CCND1,2,gene
+RAD1,2,gene
+FOSL1,2,gene
+Relaxin signaling pathway - Homo sapiens (human),2,pathway
+Bladder cancer - Homo sapiens (human),2,pathway
+CDKN2A,2,gene
+ICAM1,2,gene
+TGFB2,2,gene
+EGFR tyrosine kinase inhibitor resistance - Homo sapiens (human),2,pathway
+CDC25B,2,gene
+EREG,2,gene
+RAC3,2,gene
+MCL1,2,gene
+MicroRNAs in cancer - Homo sapiens (human),2,pathway
+CISH,2,gene
+FSCN1,2,gene
+ZEB2,2,gene
+Renal cell carcinoma - Homo sapiens (human),2,pathway
+Melanoma - Homo sapiens (human),2,pathway
+Non-small cell lung cancer - Homo sapiens (human),2,pathway
+Endocrine resistance - Homo sapiens (human),2,pathway
+AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human),2,pathway
+Hepatitis B - Homo sapiens (human),2,pathway
+Alcoholic liver disease - Homo sapiens (human),2,pathway
+cAMP signaling pathway - Homo sapiens (human),2,pathway
+SOX9,2,gene
+Hepatitis C - Homo sapiens (human),2,pathway
+Influenza A - Homo sapiens (human),2,pathway
+Human T-cell leukemia virus 1 infection - Homo sapiens (human),2,pathway
+HLA-G,2,gene
+MSX1,2,gene
+Chronic myeloid leukemia - Homo sapiens (human),2,pathway
+Cell cycle - Homo sapiens (human),2,pathway
+E2F5,2,gene
+TRIP13,2,gene
+FoxO signaling pathway - Homo sapiens (human),2,pathway
+FBXO32,2,gene
+JAK-STAT signaling pathway - Homo sapiens (human),2,pathway
+CKAP4,2,gene
+SOCS2,2,gene
+Natural killer cell mediated cytotoxicity - Homo sapiens (human),2,pathway
+T cell receptor signaling pathway - Homo sapiens (human),2,pathway
+Neurotrophin signaling pathway - Homo sapiens (human),2,pathway
+BEX3,2,gene
+Adipocytokine signaling pathway - Homo sapiens (human),2,pathway
+Herpes simplex virus 1 infection - Homo sapiens (human),2,pathway
+PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human),2,pathway
+Oxytocin signaling pathway - Homo sapiens (human),2,pathway
+ENDOG,2,gene
+Pertussis - Homo sapiens (human),2,pathway
+Choline metabolism in cancer - Homo sapiens (human),2,pathway
+SLC44A4,2,gene
+Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human),2,pathway
+Epstein-Barr virus infection - Homo sapiens (human),2,pathway
+Toll-like receptor signaling pathway - Homo sapiens (human),2,pathway
+Chagas disease - Homo sapiens (human),2,pathway
+ErbB signaling pathway - Homo sapiens (human),2,pathway
+Cellular senescence - Homo sapiens (human),2,pathway
+Neutrophil extracellular trap formation - Homo sapiens (human),2,pathway
+HIST1H2BD,2,gene
+Th17 cell differentiation - Homo sapiens (human),2,pathway
+Type II diabetes mellitus - Homo sapiens (human),2,pathway
+"Growth hormone synthesis, secretion and action - Homo sapiens (human)",2,pathway
+Human cytomegalovirus infection - Homo sapiens (human),2,pathway
+Human immunodeficiency virus 1 infection - Homo sapiens (human),2,pathway
+Colorectal cancer - Homo sapiens (human),2,pathway
+Pancreatic cancer - Homo sapiens (human),2,pathway
+Glioma - Homo sapiens (human),2,pathway
+Acute myeloid leukemia - Homo sapiens (human),2,pathway
+Endometrial cancer - Homo sapiens (human),2,pathway
+Thyroid cancer - Homo sapiens (human),2,pathway
+VEGF signaling pathway - Homo sapiens (human),2,pathway
+B cell receptor signaling pathway - Homo sapiens (human),2,pathway
+IFITM1,2,gene
+Fc epsilon RI signaling pathway - Homo sapiens (human),2,pathway
+Osteoclast differentiation - Homo sapiens (human),2,pathway
+Viral carcinogenesis - Homo sapiens (human),2,pathway
+Prolactin signaling pathway - Homo sapiens (human),2,pathway
+Apoptosis - Homo sapiens (human),2,pathway
+NOL3,2,gene
+Measles - Homo sapiens (human),2,pathway
+Apoptosis - multiple species - Homo sapiens (human),2,pathway
+BOK,2,gene
+Toxoplasmosis - Homo sapiens (human),2,pathway
+Leishmaniasis - Homo sapiens (human),2,pathway
+Tyrosine metabolism - Homo sapiens (human),5,pathway
+FAH,5,gene
+GOT1,5,gene
+MET,5,gene
+"Glycine, serine and threonine metabolism - Homo sapiens (human)",5,pathway
+ALDH7A1,5,gene
+GAMT,5,gene
+GCAT,5,gene
+GCSH,5,gene
+PSAT1,5,gene
+PSPH,5,gene
+One carbon pool by folate - Homo sapiens (human),5,pathway
+AHCY,5,gene
+GARS,5,gene
+Biosynthesis of cofactors - Homo sapiens (human),5,pathway
+ADSSL1,5,gene
+BCAM,5,gene
+FASN,5,gene
+NME2,5,gene
+NME4,5,gene
+NME7,5,gene
+PHOSPHO2,5,gene
+PMM1,5,gene
+QPRT,5,gene
+SDR16C5,5,gene
+UGDH,5,gene
+CDA,5,gene
+FOLR1,5,gene
+PRKCZ,5,gene
+FLT3,5,gene
+PTPRF,5,gene
+NUDT16,5,gene
+SIRT1,5,gene
+Central carbon metabolism in cancer - Homo sapiens (human),5,pathway
+PFKM,5,gene
+PFKP,5,gene
+TDRP,5,gene
+Diabetic cardiomyopathy - Homo sapiens (human),5,pathway
+GFPT2,5,gene
+MT1A,5,gene
+Glycolysis / Gluconeogenesis - Homo sapiens (human),5,pathway
+ALDOC,5,gene
+ACACA,5,gene
+SREBF1,5,gene
+AMPK signaling pathway - Homo sapiens (human),5,pathway
+Biosynthesis of amino acids - Homo sapiens (human),5,pathway
+ASNS,5,gene
+PYCR1,5,gene
+Antifolate resistance - Homo sapiens (human),5,pathway
+Cysteine and methionine metabolism - Homo sapiens (human),5,pathway
+MPST,5,gene
+"Valine, leucine and isoleucine degradation - Homo sapiens (human)",5,pathway
+ALDH6A1,5,gene
+HIBADH,5,gene
+OXCT1,5,gene
+Peroxisome - Homo sapiens (human),5,pathway
+DECR2,5,gene
+MLPH,5,gene
+NUDT13,5,gene
+PEX11A,5,gene
+PEX6,5,gene
+PXMP2,5,gene
+"Alanine, aspartate and glutamate metabolism - Homo sapiens (human)",5,pathway
+HIF-1 signaling pathway - Homo sapiens (human),5,pathway
+Fatty acid biosynthesis - Homo sapiens (human),5,pathway
+MECR,5,gene
+Fatty acid metabolism - Homo sapiens (human),5,pathway
+ELOVL6,5,gene
+Purine metabolism - Homo sapiens (human),5,pathway
+ENPP3,5,gene
+GUCY2D,5,gene
+IMPDH2,5,gene
+LSR,5,gene
+PAICS,5,gene
+Nucleotide metabolism - Homo sapiens (human),5,pathway
+Arginine and proline metabolism - Homo sapiens (human),5,pathway
+P4HA2,5,gene
+Nicotinate and nicotinamide metabolism - Homo sapiens (human),5,pathway
+NNMT,5,gene
+Drug metabolism - other enzymes - Homo sapiens (human),5,pathway
+Pyrimidine metabolism - Homo sapiens (human),5,pathway
+Insulin resistance - Homo sapiens (human),5,pathway
+PYGB,5,gene
+Glucagon signaling pathway - Homo sapiens (human),5,pathway
+Longevity regulating pathway - multiple species - Homo sapiens (human),5,pathway
+FOXA2,5,gene
+Insulin signaling pathway - Homo sapiens (human),5,pathway
+PRKAR1B,5,gene
+TRIP10,5,gene
+Fructose and mannose metabolism - Homo sapiens (human),5,pathway
+Galactose metabolism - Homo sapiens (human),5,pathway
+Biosynthesis of nucleotide sugars - Homo sapiens (human),5,pathway
+F3,4,gene
+TES,4,gene
+C1R,4,gene
+CKB,4,gene
+KDR,4,gene
+CSF1,4,gene
+IL6,4,gene
+TMPRSS2,4,gene
+IL-17 signaling pathway - Homo sapiens (human),4,pathway
+CSF2,4,gene
+CSF3,4,gene
+CXCL1,4,gene
+CXCL2,4,gene
+MUC5B,4,gene
+Coronavirus disease - COVID-19 - Homo sapiens (human),4,pathway
+CFB,4,gene
+GEM,4,gene
+RPL36A,4,gene
+Rheumatoid arthritis - Homo sapiens (human),4,pathway
+Lipid and atherosclerosis - Homo sapiens (human),4,pathway
+IL1R1,4,gene
+Epithelial cell signaling in Helicobacter pylori infection - Homo sapiens (human),4,pathway
+Malaria - Homo sapiens (human),4,pathway
+Transcriptional misregulation in cancer - Homo sapiens (human),4,pathway
+ETV1,4,gene
+HOXA10,4,gene
+ROM1,4,gene
+ZBTB16,4,gene
+TNF signaling pathway - Homo sapiens (human),4,pathway
+BCL3,4,gene
+CX3CL1,4,gene
+Polycomb repressive complex - Homo sapiens (human),4,pathway
+FOXK1,4,gene
+PCGF2,4,gene
+Chemokine signaling pathway - Homo sapiens (human),4,pathway
+CCL28,4,gene
+Efferocytosis - Homo sapiens (human),4,pathway
+ATP11A,4,gene
+GULP1,4,gene
+MFGE8,4,gene
+RAB17,4,gene
+ROS1,4,gene
+LIFR,4,gene
+Hematopoietic cell lineage - Homo sapiens (human),4,pathway
+C-type lectin receptor signaling pathway - Homo sapiens (human),4,pathway
+CTF1,4,gene
+Complement and coagulation cascades - Homo sapiens (human),4,pathway
+CFH,4,gene
+CFI,4,gene
+PROCR,4,gene
+TFPI,4,gene
+Staphylococcus aureus infection - Homo sapiens (human),4,pathway
+KRT18,4,gene
+KRT19,4,gene
+NF-kappa B signaling pathway - Homo sapiens (human),4,pathway
+NOD-like receptor signaling pathway - Homo sapiens (human),4,pathway
+TRIP6,4,gene
+Amoebiasis - Homo sapiens (human),4,pathway
+Cytokine-cytokine receptor interaction - Homo sapiens (human),4,pathway
+Viral protein interaction with cytokine and cytokine receptor - Homo sapiens (human),4,pathway
+Intestinal immune network for IgA production - Homo sapiens (human),4,pathway
+Legionellosis - Homo sapiens (human),4,pathway
+EEF1A2,4,gene
+SHE,6,gene
+ANK1,6,gene
+ANK3,6,gene
+Calcium signaling pathway - Homo sapiens (human),6,pathway
+ASPH,6,gene
+CAMP,6,gene
+CAV1,6,gene
+CAV2,6,gene
+ITPKA,6,gene
+MST1R,6,gene
+NDN,6,gene
+P2RX6,6,gene
+PRKCA,6,gene
+SLC25A4,6,gene
+TPCN1,6,gene
+Long-term potentiation - Homo sapiens (human),6,pathway
+RPS6KA2,6,gene
+Glutamatergic synapse - Homo sapiens (human),6,pathway
+HOMER3,6,gene
+Alzheimer disease - Homo sapiens (human),6,pathway
+ATG10,6,gene
+BACE2,6,gene
+CTNNB1,6,gene
+FZD6,6,gene
+KCTD14,6,gene
+KLC3,6,gene
+LRP5,6,gene
+LRP6,6,gene
+TST,6,gene
+WNT3,6,gene
+WNT4,6,gene
+WNT7B,6,gene
+Huntington disease - Homo sapiens (human),6,pathway
+AMPH,6,gene
+CREB3L1,6,gene
+CREB3L4,6,gene
+DNAH14,6,gene
+DNAH5,6,gene
+DNALI1,6,gene
+GPX3,6,gene
+GPX8,6,gene
+IFT57,6,gene
+Pathways of neurodegeneration - multiple diseases - Homo sapiens (human),6,pathway
+SIGMAR1,6,gene
+SPTB,6,gene
+BMPR1B,6,gene
+BMP2,6,gene
+Proteoglycans in cancer - Homo sapiens (human),6,pathway
+CD44,6,gene
+DROSHA,6,gene
+Hepatocellular carcinoma - Homo sapiens (human),6,pathway
+RCN1,6,gene
+SMARCD3,6,gene
+Gastric cancer - Homo sapiens (human),6,pathway
+GnRH signaling pathway - Homo sapiens (human),6,pathway
+Cocaine addiction - Homo sapiens (human),6,pathway
+GPSM1,6,gene
+YAP1,6,gene
+Notch signaling pathway - Homo sapiens (human),6,pathway
+DTX2,6,gene
+NUMBL,6,gene
+TARS,6,gene
+TLE2,6,gene
+TLE6,6,gene
+Thermogenesis - Homo sapiens (human),6,pathway
+Cushing syndrome - Homo sapiens (human),6,pathway
+Longevity regulating pathway - Homo sapiens (human),6,pathway
+Signaling pathways regulating pluripotency of stem cells - Homo sapiens (human),6,pathway
+"Parathyroid hormone synthesis, secretion and action - Homo sapiens (human)",6,pathway
+AKAP1,6,gene
+GnRH secretion - Homo sapiens (human),6,pathway
+CNN3,6,gene
+KISS1,6,gene
+Wnt signaling pathway - Homo sapiens (human),6,pathway
+LGR4,6,gene
+LZTS2,6,gene
+PRICKLE1,6,gene
+ROR1,6,gene
+SFRP4,6,gene
+Spinocerebellar ataxia - Homo sapiens (human),6,pathway
+mTOR signaling pathway - Homo sapiens (human),6,pathway
+GRB10,6,gene
+Thyroid hormone signaling pathway - Homo sapiens (human),6,pathway
+Breast cancer - Homo sapiens (human),6,pathway
+Hippo signaling pathway - Homo sapiens (human),6,pathway
+TEAD1,6,gene
+TEAD4,6,gene
+WWTR1,6,gene
+Insulin secretion - Homo sapiens (human),6,pathway
+Prion disease - Homo sapiens (human),6,pathway
+Melanogenesis - Homo sapiens (human),6,pathway
+Amphetamine addiction - Homo sapiens (human),6,pathway
+Basal cell carcinoma - Homo sapiens (human),6,pathway
+Hippo signaling pathway - multiple species - Homo sapiens (human),6,pathway
+Vibrio cholerae infection - Homo sapiens (human),6,pathway
+KDELR3,6,gene
+AGT,9,gene
+ADK,9,gene
+PPL,9,gene
+CD33,9,gene
+FGF18,9,gene
+Phospholipase D signaling pathway - Homo sapiens (human),9,pathway
+GPAT4,9,gene
+PLPP2,9,gene
+RGL2,9,gene
+RRAS,9,gene
+CTTN,9,gene
+MALL,9,gene
+MAP1B,9,gene
+MAP1LC3A,9,gene
+CDH1,9,gene
+CDS1,9,gene
+MAPK signaling pathway - Homo sapiens (human),9,pathway
+AREG,9,gene
+EFNA1,9,gene
+EFNA5,9,gene
+EPHA2,9,gene
+LTK,9,gene
+MAPK8IP1,9,gene
+MAPK8IP2,9,gene
+Ras signaling pathway - Homo sapiens (human),9,pathway
+PAK3,9,gene
+PLA2G12A,9,gene
+Rap1 signaling pathway - Homo sapiens (human),9,pathway
+ASS1,9,gene
+ENAH,9,gene
+MAGI3,9,gene
+PARD3,9,gene
+PRKCI,9,gene
+Axon guidance - Homo sapiens (human),9,pathway
+EFNB2,9,gene
+EPHA4,9,gene
+EPHB2,9,gene
+EPHB4,9,gene
+RHOD,9,gene
+SEMA3B,9,gene
+SEMA4B,9,gene
+SSH3,9,gene
+Adherens junction - Homo sapiens (human),9,pathway
+BAIAP2,9,gene
+FBXO2,9,gene
+SMURF1,9,gene
+SNAI2,9,gene
+TJP1,9,gene
+WASF1,9,gene
+WASL,9,gene
+Bacterial invasion of epithelial cells - Homo sapiens (human),9,pathway
+ACTR3B,9,gene
+ARPC1A,9,gene
+ELMO3,9,gene
+LMO3,9,gene
+Regulation of actin cytoskeleton - Homo sapiens (human),9,pathway
+NCKAP1,9,gene
+MYO10,9,gene
+Bile secretion - Homo sapiens (human),9,pathway
+SLC27A5,9,gene
+SLC4A2,9,gene
+SLC4A4,9,gene
+MGLL,9,gene
+Mitophagy - animal - Homo sapiens (human),9,pathway
+BEX5,9,gene
+BNIP3,9,gene
+CCZ1B,9,gene
+TBC1D17,9,gene
+PIP5KL1,9,gene
+Pathogenic Escherichia coli infection - Homo sapiens (human),9,pathway
+BAIAP2L1,9,gene
+Glycerophospholipid metabolism - Homo sapiens (human),9,pathway
+ETNK2,9,gene
+LPCAT1,9,gene
+MBOAT2,9,gene
+Apelin signaling pathway - Homo sapiens (human),9,pathway
+Yersinia infection - Homo sapiens (human),9,pathway
+Fc gamma R-mediated phagocytosis - Homo sapiens (human),9,pathway
+MARCKSL1,9,gene
+Glycerolipid metabolism - Homo sapiens (human),9,pathway
+DGAT2,9,gene
+Autophagy - animal - Homo sapiens (human),9,pathway
+Shigellosis - Homo sapiens (human),9,pathway
+FNBP1L,9,gene
+Salmonella infection - Homo sapiens (human),9,pathway
+AHNAK2,9,gene
+Endocytosis - Homo sapiens (human),9,pathway
+AGAP1,9,gene
+EHD2,9,gene
+SLC39A4,3,gene
+MT1F,3,gene
+LCN2,3,gene
+MT1M,3,gene
+Lysine degradation - Homo sapiens (human),3,pathway
+DHTKD1,3,gene
+DSEL,3,gene
+MT1E,3,gene
+PLOD2,3,gene
+SMYD2,3,gene
+SMYD3,3,gene
+Mineral absorption - Homo sapiens (human),3,pathway
+CYB561,3,gene
+MT1X,3,gene
+SLC34A2,3,gene
+STEAP1,3,gene
+STEAP2,3,gene
+VIM,10,gene
+MMP24,10,gene
+TMEM25,10,gene
+Protein processing in endoplasmic reticulum - Homo sapiens (human),10,pathway
+C11ORF1,10,gene
+MARCH6,10,gene
+TRAM1L1,10,gene
+TUSC3,10,gene
+N-Glycan biosynthesis - Homo sapiens (human),10,pathway
+B4GALT2,10,gene
+MGAT4B,10,gene
+Various types of N-glycan biosynthesis - Homo sapiens (human),10,pathway
+MYL6B,8,gene
+NPB,8,gene
+MYO1D,8,gene
+MYO5C,8,gene
+Vascular smooth muscle contraction - Homo sapiens (human),8,pathway
+CALD1,8,gene
+RAMP1,8,gene
+Motor proteins - Homo sapiens (human),8,pathway
+KIF9,8,gene
+MYO9A,8,gene
+TNNT1,8,gene
+Hormone signaling - Homo sapiens (human),8,pathway
+VIPR1,8,gene
+ATP-dependent chromatin remodeling - Homo sapiens (human),7,pathway
+FRK,7,gene
+HIST1H2AC,7,gene
+HIST3H2A,7,gene
+MRGBP,7,gene
+RUVBL1,7,gene
+SMARCA1,7,gene
+Necroptosis - Homo sapiens (human),7,pathway
+ARPIN,7,gene
+CHMP4C,7,gene
+SMPD1,7,gene
+AP1S1,7,gene
+Lysosome - Homo sapiens (human),7,pathway
+HGSNAT,7,gene
+HYAL2,7,gene
+HYAL3,7,gene
+IDUA,7,gene
+LAMP3,7,gene
+LAPTM4B,7,gene
+NAGLU,7,gene
+NAPSA,7,gene
+Sphingolipid signaling pathway - Homo sapiens (human),7,pathway
+CERS2,7,gene
+SGPP2,7,gene
+Sphingolipid metabolism - Homo sapiens (human),7,pathway
+Glycosaminoglycan degradation - Homo sapiens (human),7,pathway

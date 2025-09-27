@@ -1,0 +1,12 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-21 08:30:35.841372: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+usage: inference_reduced_gene.py [-h] --model-dir MODEL_DIR
+                                 [--genes-file GENES_FILE]
+                                 [--threshold THRESHOLD] --out-dir OUT_DIR
+                                 [--max-cells MAX_CELLS] [--use-reduced]
+                                 [--use-full]
+inference_reduced_gene.py: error: unrecognized arguments: --aml-dir /scratch/project_2010751/AML_scRNA_decrypted --healthy-dir /scratch/project_2010751/GSE120221_RAW
+srun: error: g2301: task 0: Exited with exit code 2
+srun: Terminating StepId=5131053.0

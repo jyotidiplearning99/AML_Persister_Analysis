@@ -1,0 +1,15 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-20 23:32:03.505214: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-20 23:32:05.105143: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-09-20 23:32:12.591237: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+usage: inference_reduced_gene.py [-h] --model-dir MODEL_DIR
+                                 [--genes-file GENES_FILE]
+                                 [--threshold THRESHOLD] --out-dir OUT_DIR
+                                 [--max-cells MAX_CELLS] [--use-reduced]
+                                 [--use-full]
+inference_reduced_gene.py: error: unrecognized arguments: --manifest /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_233208/sample_manifest.csv --no-discover
+srun: error: g3102: task 0: Exited with exit code 2
+srun: Terminating StepId=5130077.0

@@ -1,0 +1,92 @@
+{
+  "version": "v13.0_fixed_cv_strategy",
+  "timestamp": "Sat Sep 20 15:14:32 2025",
+  "random_state": {
+    "seed": 42,
+    "rng_algorithm": "PCG64",
+    "tensorflow_seed": 42,
+    "numpy_seed": 42,
+    "python_hash_seed": "42"
+  },
+  "configuration": {
+    "cv_strategy": "stratified",
+    "force_threshold_range": true,
+    "min_threshold": 0.2,
+    "max_threshold": 0.6,
+    "default_threshold": 0.35,
+    "target_recall": 0.85,
+    "target_specificity": 0.8,
+    "fdr_threshold": 0.1,
+    "min_log_fc": 0.25,
+    "max_genes": 500,
+    "min_gene_presence": 0.5,
+    "min_genes_fallback": 100,
+    "min_precision_for_threshold": 0.3,
+    "threshold_grid_points": 401,
+    "pseudobulk_method": "expm1_sum_cpm_log1p"
+  },
+  "thresholds": {
+    "recall_optimized": 0.316,
+    "specificity_optimized": 0.316,
+    "metrics_recall": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "metrics_specificity": {
+      "recall": 0.8333333333333334,
+      "precision": 0.625,
+      "specificity": 0.0,
+      "f1": 0.7142857142857143
+    },
+    "thresholds_source": "stratified_cv_out_of_fold_probs"
+  },
+  "cv_performance": {
+    "mean_auc": 1.0,
+    "std_auc": 0.0,
+    "n_folds": 3
+  },
+  "genes": {
+    "n_stable": 548,
+    "n_final": 508,
+    "top_20": [
+      "AC007952",
+      "CALB2",
+      "ELANE",
+      "GRP",
+      "BCKDHA",
+      "MS4A4E",
+      "CXCL6",
+      "FABP4",
+      "SRXN1",
+      "TSPAN8",
+      "EGFL6",
+      "WNK3",
+      "ELN",
+      "TRIM29",
+      "DIO3OS",
+      "SERPINB5",
+      "LSAMP",
+      "KRT5",
+      "PLA2G5",
+      "TCEAL7"
+    ],
+    "selection_method": "deterministic_priority_order"
+  },
+  "data": {
+    "n_samples": 9,
+    "n_positive": 6,
+    "n_negative": 3,
+    "studies": [
+      "AML10x",
+      "MSK"
+    ]
+  },
+  "model": {
+    "pca_components": 50,
+    "pca_variance_explained": 0.508245050907135,
+    "pca_whiten": true,
+    "final_training": "all_data_no_validation"
+  }
+}

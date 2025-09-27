@@ -1,0 +1,85 @@
+================================================================================
+OPTIMIZED DEPMAP GENE REFINEMENT PIPELINE v2.0
+================================================================================
+Loaded 1000 persister genes
+
+Loading metadata...
+Found 87 AML cell lines in metadata
+Loading CRISPR effect data...
+Filtered to 43 AML lines with CRISPR data
+
+Building gene map...
+Matched 914/1000 genes
+First 10 unmatched: ['MAL2', 'SLC9A3R2', 'SLC22A31', 'C5ORF38', 'MTRNR2L12', 'C1R', 'MTRNR2L8', 'SFTA3', 'CRNDE', 'SNHG25']
+
+Calculating AML dependency metrics...
+
+Adding dependency probability...
+✓ Added dependency probability metrics
+
+Adding expression data...
+✓ Added expression metrics
+
+Ranking genes for wet lab validation...
+
+============================================================
+OUTPUTS FOR WET LAB
+============================================================
+✓ Full ranked list: 914 genes
+✓ Wet lab list: Top 100 genes
+✓ Reduced gene list: 500 genes
+✓ Unmatched genes: 86
+
+============================================================
+SUMMARY FOR WET LAB
+============================================================
+Total AML lines analyzed: 43
+Genes matched: 914/1000
+
+Top 30 genes for immediate validation:
+------------------------------------------------------------
+⭐ MYC          | Effect:  -2.22 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   RUVBL1       | Effect:  -1.90 | Dep@-0.5:  97.7% | Dep@-0.3:  97.7%
+   CDK7         | Effect:  -1.85 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   EIF3B        | Effect:  -1.58 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   BOP1         | Effect:  -1.21 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   POLD2        | Effect:  -1.17 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   PSMG3        | Effect:  -1.18 | Dep@-0.5:  97.7% | Dep@-0.3: 100.0%
+   RPL36A       | Effect:  -1.30 | Dep@-0.5:  87.5% | Dep@-0.3:  87.5%
+   NUP155       | Effect:  -1.05 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   NOB1         | Effect:  -0.98 | Dep@-0.5:  95.3% | Dep@-0.3: 100.0%
+   WDR70        | Effect:  -1.06 | Dep@-0.5:  87.5% | Dep@-0.3:  87.5%
+   PAICS        | Effect:  -0.99 | Dep@-0.5:  90.7% | Dep@-0.3:  95.3%
+   UBAP1        | Effect:  -0.86 | Dep@-0.5: 100.0% | Dep@-0.3: 100.0%
+   ECT2         | Effect:  -0.95 | Dep@-0.5:  86.0% | Dep@-0.3:  95.3%
+   TAF10        | Effect:  -0.84 | Dep@-0.5:  95.3% | Dep@-0.3: 100.0%
+   RRP15        | Effect:  -0.82 | Dep@-0.5:  97.7% | Dep@-0.3: 100.0%
+   RAD1         | Effect:  -0.76 | Dep@-0.5:  93.0% | Dep@-0.3: 100.0%
+⭐ MCL1         | Effect:  -0.84 | Dep@-0.5:  81.4% | Dep@-0.3:  95.3%
+   IMPDH2       | Effect:  -0.76 | Dep@-0.5:  81.4% | Dep@-0.3:  95.3%
+   ICE1         | Effect:  -0.73 | Dep@-0.5:  81.4% | Dep@-0.3:  97.7%
+⭐ NPM1         | Effect:  -0.77 | Dep@-0.5:  75.0% | Dep@-0.3: 100.0%
+   MRGBP        | Effect:  -0.69 | Dep@-0.5:  69.8% | Dep@-0.3:  86.0%
+   CCDC86       | Effect:  -0.64 | Dep@-0.5:  72.1% | Dep@-0.3:  93.0%
+   AHCY         | Effect:  -0.64 | Dep@-0.5:  67.4% | Dep@-0.3:  93.0%
+   ZEB2         | Effect:  -0.70 | Dep@-0.5:  67.4% | Dep@-0.3:  83.7%
+   EXOC3        | Effect:  -0.57 | Dep@-0.5:  69.8% | Dep@-0.3:  95.3%
+   KRT8         | Effect:  -0.59 | Dep@-0.5:  62.5% | Dep@-0.3: 100.0%
+   DROSHA       | Effect:  -0.62 | Dep@-0.5:  60.5% | Dep@-0.3:  90.7%
+   GCSH         | Effect:  -0.51 | Dep@-0.5:  51.2% | Dep@-0.3:  86.0%
+   PPP1R14B     | Effect:  -0.43 | Dep@-0.5:  30.2% | Dep@-0.3:  79.1%
+
+============================================================
+COMPLETE
+============================================================
+All outputs saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/depmap_refined
+
+Key files for wet lab:
+  1. wet_lab_top100_genes.csv - Prioritized genes for validation
+  2. aml_dependencies_ranked.csv - Full ranked list with metrics
+  3. genes_500_depmap.txt - Reduced gene panel for model
+
+Interpretation guide:
+  • median_effect: More negative → stronger essentiality in AML
+  • frac_dep_lt_minus05: Fraction of AML lines with effect < -0.5 (strong dependency)
+  • dep_prob_median: Higher → more confident dependency (if available)

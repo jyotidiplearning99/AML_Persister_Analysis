@@ -1,0 +1,90 @@
+================================================================================
+GENE REDUCTION & INDEPENDENT TESTING PIPELINE
+================================================================================
+
+[STEP 1] Loading model components...
+  PCA: 100 components
+  Genes: 13369
+
+[STEP 2] Loading training data...
+  GSM3516664_MSK_LX666_METASTASIS_dense.csv: 1316 cells
+  GSM3516668_MSK_LX255B_METASTASIS_dense.csv: 2000 cells
+  GSM3516666_MSK_LX675_NORMAL_dense.csv: 2000 cells
+  GSM3516665_MSK_LX675_PRIMARY_TUMOUR_dense.csv: 2000 cells
+  Total: 7316 cells × 13369 genes
+
+[STEP 3] Gene selection...
+
+[GENE SELECTION] Selecting 1000 genes from 13369...
+  1. Expression filtering...
+  2. Variance scores...
+  3. Mutual information...
+  4. Differential expression...
+  5. PCA importance...
+  6. Prioritizing known markers...
+
+  Selection Summary:
+    total_candidates: 13369
+    expression_filtered: 12032
+    high_variance: 3342
+    known_markers_selected: 51
+    final_selected: 1000
+
+  Top 20 genes:
+     1. VIM (score: 6.720) [MARKER]
+     2. CD44 (score: 6.070) [MARKER]
+     3. ZEB2 (score: 6.015) [MARKER]
+     4. MCL1 (score: 5.803) [MARKER]
+     5. MET (score: 5.582) [MARKER]
+     6. RPL37 (score: 5.355)
+     7. ALDH1A1 (score: 5.276) [MARKER]
+     8. RPS29 (score: 5.274)
+     9. RPS27 (score: 5.186)
+    10. NPM1 (score: 5.183) [MARKER]
+    11. EPCAM (score: 5.108) [MARKER]
+    12. CD33 (score: 5.039) [MARKER]
+    13. KLF4 (score: 5.011) [MARKER]
+    14. THY1 (score: 4.854) [MARKER]
+    15. CD47 (score: 4.851) [MARKER]
+    16. HAVCR2 (score: 4.812) [MARKER]
+    17. VEGFA (score: 4.802) [MARKER]
+    18. FTL (score: 4.794)
+    19. PCNA (score: 4.790) [MARKER]
+    20. EGFR (score: 4.704) [MARKER]
+
+[STEP 4] Training reduced model...
+
+[TRAINING] Training model with selected genes...
+  PCA: 100 components, 0.479 variance
+  Performance: AUC=1.000, F1=0.992
+
+[STEP 5] Testing on independent datasets...
+
+[TESTING] Testing on independent datasets...
+  GSM3516671_METASTASIS...
+  GSM3516667_PRIMARY...
+  FH_5897_2_AML...
+  FH_6333_2_AML...
+
+================================================================================
+RESULTS
+================================================================================
+               sample  n_cells  true_label  positive_pct  mean_prob  accuracy
+GSM3516671_METASTASIS     1630           1     13.742331   0.175859 13.742331
+   GSM3516667_PRIMARY     2000           0      4.350000   0.062329 95.650000
+        FH_5897_2_AML     2000           1      2.800000   0.080067  2.800000
+        FH_6333_2_AML     2000           1     23.700000   0.250497 23.700000
+
+[SUMMARY]
+  Selected genes: 1000
+  Reduced model AUC: 1.000
+  Mean positive %: 11.1%
+  Mean accuracy: 34.0%
+
+================================================================================
+COMPLETE
+================================================================================
+✓ Selected 1000 genes
+✓ Trained reduced model
+✓ Tested on independent datasets
+✓ Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/gene_reduction_output

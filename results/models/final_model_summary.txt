@@ -1,0 +1,20 @@
+Model class: Functional
+  0. input_6                        InputLayer             
+  1. reshape_5                      Reshape                
+  2. dense_30                       Dense                  units=64, activation=linear, use_bias=True
+  3. multi_head_attention_5         MultiHeadAttention     use_bias=True
+  4. add_10                         Add                    
+  5. layer_normalization_10         LayerNormalization     
+  6. dense_31                       Dense                  units=256, activation=gelu, use_bias=True
+  7. dropout_15                     Dropout                rate=0.2
+  8. dense_32                       Dense                  units=64, activation=linear, use_bias=True
+  9. add_11                         Add                    
+ 10. layer_normalization_11         LayerNormalization     
+ 11. global_average_pooling1d_5     GlobalAveragePooling1D data_format=channels_last
+ 12. dense_33                       Dense                  units=256, activation=relu, use_bias=True
+ 13. batch_normalization_10         BatchNormalization     
+ 14. dropout_16                     Dropout                rate=0.4
+ 15. dense_34                       Dense                  units=128, activation=relu, use_bias=True
+ 16. batch_normalization_11         BatchNormalization     
+ 17. dropout_17                     Dropout                rate=0.3
+ 18. dense_35                       Dense                  units=1, activation=sigmoid, use_bias=True

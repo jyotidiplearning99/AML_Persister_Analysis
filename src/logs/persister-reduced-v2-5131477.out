@@ -1,0 +1,173 @@
+=========================================
+Persister Inference - REDUCED Model v2
+Started: Sun Sep 21 11:35:09 EEST 2025
+Output dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+Sun Sep 21 11:35:09 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.261.03             Driver Version: 535.261.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  | 00000000:44:00.0 Off |                    0 |
+| N/A   37C    P0              55W / 400W |      0MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+TF version: 2.13.0
+GPUs: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+=========================================
+2025-09-21 11:35:23,406 | INFO | Running inference with healthy calibration (target FPR=0.05)
+2025-09-21 11:35:28,824 | INFO | Starting inference at 2025-09-21 11:35:28.824077
+2025-09-21 11:35:28,824 | INFO | Model directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+2025-09-21 11:35:28,824 | INFO | Output directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+2025-09-21 11:35:28,824 | INFO | [MODEL] Loading /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/model_reduced.h5
+2025-09-21 11:35:30,596 | INFO | [LOAD] scaler loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/scaler_reduced.pkl
+2025-09-21 11:35:30,745 | INFO | [LOAD] pca loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/pca_reduced.pkl
+2025-09-21 11:35:30,758 | INFO | [THRESH] Loaded threshold: 0.750
+2025-09-21 11:35:30,773 | INFO | [GENES] Loaded 1000 genes from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt
+2025-09-21 11:35:30,773 | INFO | [MODEL] Type: REDUCED (1000 genes)
+2025-09-21 11:35:30,773 | INFO | [MODEL] Genes: 1000
+2025-09-21 11:35:30,773 | INFO | [MODEL] PCA components: 100
+2025-09-21 11:35:30,773 | INFO | [MODEL] Threshold: 0.750
+2025-09-21 11:35:30,775 | INFO | [DISCOVER] Healthy GSM-tag groups formed: 25
+2025-09-21 11:38:27,436 | INFO | [CALIBRATE] Healthy-based threshold @ FPR=0.050 -> 0.776 (clipped to (0.25, 0.75))
+2025-09-21 11:38:27,439 | INFO | [CALIBRATE] Saved calibrated threshold to /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/threshold_reduced.pkl
+2025-09-21 11:38:27,554 | INFO | [DISCOVER] AML datasets seen: 6 under /scratch/project_2010751/AML_scRNA_decrypted
+2025-09-21 11:38:27,555 | INFO | [DISCOVER] Healthy GSM-tag groups formed: 25
+2025-09-21 11:38:27,557 | INFO | [DISCOVER] AML datasets seen: 6 under /scratch/project_2010751/AML_scRNA_decrypted
+2025-09-21 11:38:27,557 | INFO | [DISCOVER] Healthy GSM-tag groups formed: 25
+2025-09-21 11:38:27,557 | INFO | [DISCOVER] Total samples to process: 37
+2025-09-21 11:38:39,444 | INFO | [LOAD] FH_5238_2: 5,053 cells × 36,601 genes
+2025-09-21 11:38:39,447 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:38:39,574 | INFO | [RESULT] FH_5238_2: 5053 persisters (100.0%), 0 non-persisters
+2025-09-21 11:38:47,100 | INFO | [LOAD] FH_6333_3: 2,815 cells × 36,601 genes
+2025-09-21 11:38:47,102 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:38:47,184 | INFO | [RESULT] FH_6333_3: 2815 persisters (100.0%), 0 non-persisters
+2025-09-21 11:40:37,040 | INFO | [LOAD] AGG_AML_deep_NVS-IC_Batch1-2: 30,486 cells × 36,601 genes
+2025-09-21 11:40:37,042 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:40:37,559 | INFO | [RESULT] AGG_AML_deep_NVS-IC_Batch1-2: 30486 persisters (100.0%), 0 non-persisters
+2025-09-21 11:41:10,087 | INFO | [LOAD] FH_5143_2: 8,116 cells × 36,601 genes
+2025-09-21 11:41:10,089 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:41:10,248 | INFO | [RESULT] FH_5143_2: 8116 persisters (100.0%), 0 non-persisters
+2025-09-21 11:41:41,796 | INFO | [LOAD] FH_6088_2: 7,373 cells × 36,601 genes
+2025-09-21 11:41:41,798 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:41:41,948 | INFO | [RESULT] FH_6088_2: 7373 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:10,866 | INFO | [LOAD] FH_6088_3: 6,801 cells × 36,601 genes
+2025-09-21 11:42:10,868 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:11,006 | INFO | [RESULT] FH_6088_3: 6801 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:19,686 | INFO | [LOAD] GSM3396161_HEALTHY: 2,994 cells × 33,694 genes
+2025-09-21 11:42:19,688 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:19,773 | INFO | [RESULT] GSM3396161_HEALTHY: 2994 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:26,255 | INFO | [LOAD] GSM3396162_HEALTHY: 3,293 cells × 33,694 genes
+2025-09-21 11:42:26,257 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:26,349 | INFO | [RESULT] GSM3396162_HEALTHY: 3293 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:31,729 | INFO | [LOAD] GSM3396163_HEALTHY: 3,556 cells × 33,694 genes
+2025-09-21 11:42:31,731 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:31,826 | INFO | [RESULT] GSM3396163_HEALTHY: 3556 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:33,499 | INFO | [LOAD] GSM3396164_HEALTHY: 1,052 cells × 33,694 genes
+2025-09-21 11:42:33,501 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:33,556 | INFO | [RESULT] GSM3396164_HEALTHY: 1052 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:38,366 | INFO | [LOAD] GSM3396165_HEALTHY: 3,136 cells × 33,694 genes
+2025-09-21 11:42:38,368 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:38,452 | INFO | [RESULT] GSM3396165_HEALTHY: 3136 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:43,073 | INFO | [LOAD] GSM3396166_HEALTHY: 3,939 cells × 33,694 genes
+2025-09-21 11:42:43,075 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:43,171 | INFO | [RESULT] GSM3396166_HEALTHY: 3939 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:49,944 | INFO | [LOAD] GSM3396167_HEALTHY: 3,746 cells × 33,694 genes
+2025-09-21 11:42:49,946 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:50,082 | INFO | [RESULT] GSM3396167_HEALTHY: 3746 persisters (100.0%), 0 non-persisters
+2025-09-21 11:42:57,415 | INFO | [LOAD] GSM3396168_HEALTHY: 4,283 cells × 33,694 genes
+2025-09-21 11:42:57,417 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:42:57,529 | INFO | [RESULT] GSM3396168_HEALTHY: 4283 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:04,836 | INFO | [LOAD] GSM3396169_HEALTHY: 4,516 cells × 33,694 genes
+2025-09-21 11:43:04,839 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:04,956 | INFO | [RESULT] GSM3396169_HEALTHY: 4516 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:12,266 | INFO | [LOAD] GSM3396170_HEALTHY: 3,446 cells × 33,694 genes
+2025-09-21 11:43:12,268 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:12,375 | INFO | [RESULT] GSM3396170_HEALTHY: 3446 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:24,653 | INFO | [LOAD] GSM3396171_HEALTHY: 7,247 cells × 33,694 genes
+2025-09-21 11:43:24,655 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:24,808 | INFO | [RESULT] GSM3396171_HEALTHY: 7247 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:33,535 | INFO | [LOAD] GSM3396172_HEALTHY: 4,548 cells × 33,694 genes
+2025-09-21 11:43:33,537 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:33,661 | INFO | [RESULT] GSM3396172_HEALTHY: 4548 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:41,149 | INFO | [LOAD] GSM3396173_HEALTHY: 3,964 cells × 33,694 genes
+2025-09-21 11:43:41,151 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:41,256 | INFO | [RESULT] GSM3396173_HEALTHY: 3964 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:49,640 | INFO | [LOAD] GSM3396174_HEALTHY: 4,522 cells × 33,694 genes
+2025-09-21 11:43:49,642 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:49,755 | INFO | [RESULT] GSM3396174_HEALTHY: 4522 persisters (100.0%), 0 non-persisters
+2025-09-21 11:43:59,178 | INFO | [LOAD] GSM3396175_HEALTHY: 5,013 cells × 33,694 genes
+2025-09-21 11:43:59,180 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:43:59,299 | INFO | [RESULT] GSM3396175_HEALTHY: 5013 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:10,427 | INFO | [LOAD] GSM3396176_HEALTHY: 3,383 cells × 33,694 genes
+2025-09-21 11:44:10,429 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:10,526 | INFO | [RESULT] GSM3396176_HEALTHY: 3383 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:13,044 | INFO | [LOAD] GSM3396177_HEALTHY: 1,700 cells × 33,694 genes
+2025-09-21 11:44:13,046 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:13,119 | INFO | [RESULT] GSM3396177_HEALTHY: 1700 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:18,025 | INFO | [LOAD] GSM3396178_HEALTHY: 3,593 cells × 33,694 genes
+2025-09-21 11:44:18,027 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:18,132 | INFO | [RESULT] GSM3396178_HEALTHY: 3593 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:23,395 | INFO | [LOAD] GSM3396179_HEALTHY: 2,437 cells × 33,694 genes
+2025-09-21 11:44:23,397 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:23,482 | INFO | [RESULT] GSM3396179_HEALTHY: 2437 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:25,252 | INFO | [LOAD] GSM3396180_HEALTHY: 1,138 cells × 33,694 genes
+2025-09-21 11:44:25,254 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:25,324 | INFO | [RESULT] GSM3396180_HEALTHY: 1138 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:30,918 | INFO | [LOAD] GSM3396181_HEALTHY: 2,367 cells × 33,694 genes
+2025-09-21 11:44:30,920 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:31,004 | INFO | [RESULT] GSM3396181_HEALTHY: 2367 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:38,792 | INFO | [LOAD] GSM3396182_HEALTHY: 4,726 cells × 33,694 genes
+2025-09-21 11:44:38,794 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:38,908 | INFO | [RESULT] GSM3396182_HEALTHY: 4726 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:48,526 | INFO | [LOAD] GSM3396183_HEALTHY: 4,293 cells × 33,694 genes
+2025-09-21 11:44:48,528 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:48,641 | INFO | [RESULT] GSM3396183_HEALTHY: 4293 persisters (100.0%), 0 non-persisters
+2025-09-21 11:44:58,435 | INFO | [LOAD] GSM3396184_HEALTHY: 4,118 cells × 33,694 genes
+2025-09-21 11:44:58,436 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:44:58,545 | INFO | [RESULT] GSM3396184_HEALTHY: 4118 persisters (100.0%), 0 non-persisters
+2025-09-21 11:45:03,695 | INFO | [LOAD] GSM3396185_HEALTHY: 3,643 cells × 33,694 genes
+2025-09-21 11:45:03,697 | INFO | [ALIGN] Gene coverage: 0/1000 (0.0%)
+2025-09-21 11:45:03,798 | INFO | [RESULT] GSM3396185_HEALTHY: 3643 persisters (100.0%), 0 non-persisters
+2025-09-21 11:45:04,879 | INFO | [LOAD] GSM3516664_METASTASIS: 1,316 cells × 17,625 genes
+2025-09-21 11:45:04,880 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:04,959 | INFO | [RESULT] GSM3516664_METASTASIS: 1127 persisters (85.6%), 189 non-persisters
+2025-09-21 11:45:08,137 | INFO | [LOAD] GSM3516665_PRIMARY: 3,435 cells × 19,856 genes
+2025-09-21 11:45:08,139 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:08,255 | INFO | [RESULT] GSM3516665_PRIMARY: 711 persisters (20.7%), 2724 non-persisters
+2025-09-21 11:45:10,634 | INFO | [LOAD] GSM3516666_NORMAL: 3,061 cells × 18,158 genes
+2025-09-21 11:45:10,635 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:10,736 | INFO | [RESULT] GSM3516666_NORMAL: 441 persisters (14.4%), 2620 non-persisters
+2025-09-21 11:45:13,555 | INFO | [LOAD] GSM3516667_PRIMARY: 4,014 cells × 18,082 genes
+2025-09-21 11:45:13,556 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:13,674 | INFO | [RESULT] GSM3516667_PRIMARY: 1007 persisters (25.1%), 3007 non-persisters
+2025-09-21 11:45:16,379 | INFO | [LOAD] GSM3516668_METASTASIS: 3,886 cells × 16,287 genes
+2025-09-21 11:45:16,380 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:16,492 | INFO | [RESULT] GSM3516668_METASTASIS: 2556 persisters (65.8%), 1330 non-persisters
+2025-09-21 11:45:17,878 | INFO | [LOAD] GSM3516671_METASTASIS: 1,630 cells × 18,444 genes
+2025-09-21 11:45:17,879 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-21 11:45:17,963 | INFO | [RESULT] GSM3516671_METASTASIS: 323 persisters (19.8%), 1307 non-persisters
+2025-09-21 11:45:17,972 | INFO | 
+================================================================================
+2025-09-21 11:45:17,973 | INFO | INFERENCE COMPLETE
+2025-09-21 11:45:17,973 | INFO | ================================================================================
+2025-09-21 11:45:17,973 | INFO | Processed: 37 samples
+2025-09-21 11:45:17,974 | INFO | Total cells: 168,639
+2025-09-21 11:45:17,974 | INFO | Mean persister %: 90.0%
+2025-09-21 11:45:17,974 | INFO | Results saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+2025-09-21 11:45:17,974 | INFO | Threshold was calibrated from healthy (target FPR=0.050).
+2025-09-21 11:45:19,128 | INFO | Summary rows (samples): 37 at /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced/inference_results_summary.csv
+=========================================
+Finished: Sun Sep 21 11:45:19 EEST 2025
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+=========================================

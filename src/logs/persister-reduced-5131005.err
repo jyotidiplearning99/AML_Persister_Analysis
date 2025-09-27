@@ -1,0 +1,6 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+/appl/soft/ai/bin/python: can't open file '/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/inference_persister_transformer_reduced.py': [Errno 2] No such file or directory
+srun: error: g2301: task 0: Exited with exit code 2
+srun: Terminating StepId=5131005.0

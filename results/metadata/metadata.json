@@ -1,0 +1,15 @@
+{
+  "threshold": 0.3099900007247925,
+  "validation_method": "stratified_kfold",
+  "force_threshold_range": true,
+  "min_threshold": 0.25,
+  "max_threshold": 0.75,
+  "test_auc": 0.9408879676023598,
+  "test_ba": 0.8561612295485757,
+  "test_mcc": 0.6959464848958177,
+  "test_recall": 0.8735974353102817,
+  "test_precision": 0.9183919114106885,
+  "test_f1": 0.8954348081211125,
+  "n_genes": 13369,
+  "pca_components": 100
+}

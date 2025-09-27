@@ -1,0 +1,41 @@
+{
+  "analysis_date": "2025-09-24T00:16:32.395281",
+  "n_genes_analyzed": 30,
+  "background_size": "Auto-estimated",
+  "analyses_performed": [
+    "kegg",
+    "pathwaycommons",
+    "depmap",
+    "integrated_pathways",
+    "tf",
+    "network"
+  ],
+  "kegg": {
+    "n_pathways": 107,
+    "n_signaling_modules": 107,
+    "n_significant_fdr05": 24
+  },
+  "pathwaycommons": {
+    "n_pathways": 0,
+    "n_sources": 0
+  },
+  "depmap": {
+    "n_essential_genes": 0,
+    "essential_genes": []
+  },
+  "tf": {
+    "n_modules": 19,
+    "n_significant_fdr05": 11
+  },
+  "network": {
+    "n_modules": 10,
+    "n_hub_genes": 16,
+    "top_hubs": [
+      "MYC",
+      "RAD1",
+      "POLD2",
+      "GCSH",
+      "MCL1"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "n_samples": 32,
+  "n_genes": 31733,
+  "samples_per_condition": {
+    "Healthy": 26,
+    "AML": 6
+  },
+  "data_types": {
+    "loose_triplet": 25,
+    "dense_csv": 5,
+    "10x": 2
+  },
+  "top_expressed_genes": [
+    "HBB",
+    "HBA2",
+    "MALAT1",
+    "HBA1",
+    "RPS27",
+    "TMSB4X",
+    "B2M",
+    "RPL41",
+    "EEF1A1",
+    "RPL10",
+    "RPL21",
+    "RPL34",
+    "RPS18",
+    "RPLP1",
+    "RPL13",
+    "MT-CO1",
+    "RPL13A",
+    "FTH1",
+    "RPS12",
+    "RPS29"
+  ],
+  "files_created": [
+    "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/Expression_Data_for_Predictive_Score/pseudobulk_expression.csv",
+    "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/Expression_Data_for_Predictive_Score/pseudobulk_expression_log1p.csv",
+    "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/Expression_Data_for_Predictive_Score/sample_metadata.csv"
+  ]
+}

@@ -1,0 +1,24 @@
+NOTE: This module uses Singularity. Some commands execute inside the container
+(e.g. python3, pip3).
+
+2025-09-13 17:42:48.675926: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1757774568.906191 3685987 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1757774568.957871 3685987 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+usage: new_training_model_12092025.py [-h] --aml-root AML_ROOT
+                                      [--epochs EPOCHS]
+                                      [--batch-size BATCH_SIZE] [--seed SEED]
+                                      [--hvg-top-n HVG_TOP_N]
+                                      [--pca-max PCA_MAX] [--loss {bce,focal}]
+                                      [--focal-gamma FOCAL_GAMMA]
+                                      [--focal-alpha FOCAL_ALPHA]
+                                      [--neg-weight-multiplier NEG_WEIGHT_MULTIPLIER]
+                                      [--target-precision TARGET_PRECISION]
+                                      [--precision-ci PRECISION_CI]
+                                      [--f-beta F_BETA] [--fdr-q FDR_Q]
+                                      [--max-call-rate MAX_CALL_RATE]
+                                      [--use-isotonic] [--knn-k KNN_K]
+                                      [--min-neighbor-mean MIN_NEIGHBOR_MEAN]
+new_training_model_12092025.py: error: unrecognized arguments: --target-recall 0.80
+srun: error: g5301: task 0: Exited with exit code 2
+srun: Terminating StepId=5089494.0

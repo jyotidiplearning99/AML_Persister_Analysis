@@ -1,0 +1,187 @@
+{
+  "analysis_date": "2025-09-23T18:37:15.466800",
+  "n_genes_analyzed": 30,
+  "background_size": 19000,
+  "kegg_pathways": 107,
+  "signaling_modules": 107,
+  "tf_modules": 19,
+  "network_modules": 6,
+  "significant_pathways_fdr05": 15,
+  "top_pathways": [
+    {
+      "name": "Nucleotide excision repair - Homo sapiens (human)",
+      "n_genes": 3,
+      "odds_ratio": 35.02,
+      "p_value": 0.00013232105672834513,
+      "p_adj_bh": 0.014158353069932931
+    },
+    {
+      "name": "JAK-STAT signaling pathway - Homo sapiens (human)",
+      "n_genes": 3,
+      "odds_ratio": 12.66,
+      "p_value": 0.00231330916981851,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "MicroRNAs in cancer - Homo sapiens (human)",
+      "n_genes": 4,
+      "odds_ratio": 9.08,
+      "p_value": 0.0015314893502508787,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Cell cycle - Homo sapiens (human)",
+      "n_genes": 3,
+      "odds_ratio": 13.49,
+      "p_value": 0.0019426291375162195,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Wnt signaling pathway - Homo sapiens (human)",
+      "n_genes": 3,
+      "odds_ratio": 12.22,
+      "p_value": 0.002555401549649824,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Thyroid cancer - Homo sapiens (human)",
+      "n_genes": 2,
+      "odds_ratio": 38.64,
+      "p_value": 0.0015509147584344956,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Bladder cancer - Homo sapiens (human)",
+      "n_genes": 2,
+      "odds_ratio": 34.67,
+      "p_value": 0.0019020638297973498,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Basal transcription factors - Homo sapiens (human)",
+      "n_genes": 2,
+      "odds_ratio": 32.19,
+      "p_value": 0.0021878921201392287,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "One carbon pool by folate - Homo sapiens (human)",
+      "n_genes": 2,
+      "odds_ratio": 36.55,
+      "p_value": 0.0017221881728399396,
+      "p_adj_bh": 0.030380885090281244
+    },
+    {
+      "name": "Proteoglycans in cancer - Homo sapiens (human)",
+      "n_genes": 3,
+      "odds_ratio": 10.38,
+      "p_value": 0.003999438945710616,
+      "p_adj_bh": 0.038903633381003264
+    }
+  ],
+  "significant_tfs_fdr05": 11,
+  "top_tfs": [
+    {
+      "tf": "E2F4",
+      "n_targets": 5,
+      "p_value": 0.000318028308392949,
+      "p_adj_bh": 0.006042537859466032
+    },
+    {
+      "tf": "NFIC",
+      "n_targets": 2,
+      "p_value": 0.0008081251365397786,
+      "p_adj_bh": 0.007677188797127897
+    },
+    {
+      "tf": "MYC",
+      "n_targets": 4,
+      "p_value": 0.001249591800181247,
+      "p_adj_bh": 0.007914081401147898
+    },
+    {
+      "tf": "TFAP2A",
+      "n_targets": 2,
+      "p_value": 0.003563493989325401,
+      "p_adj_bh": 0.016926596449295655
+    },
+    {
+      "tf": "STAT3",
+      "n_targets": 2,
+      "p_value": 0.004779310209782052,
+      "p_adj_bh": 0.0181613787971718
+    },
+    {
+      "tf": "SP1",
+      "n_targets": 3,
+      "p_value": 0.00790042768074868,
+      "p_adj_bh": 0.025018020989037486
+    },
+    {
+      "tf": "JUN",
+      "n_targets": 2,
+      "p_value": 0.010148701490524903,
+      "p_adj_bh": 0.027546475474281882
+    },
+    {
+      "tf": "RELA",
+      "n_targets": 2,
+      "p_value": 0.01649590466913974,
+      "p_adj_bh": 0.03482468763485056
+    },
+    {
+      "tf": "AR",
+      "n_targets": 2,
+      "p_value": 0.01519205054024346,
+      "p_adj_bh": 0.03482468763485056
+    },
+    {
+      "tf": "HIF1A",
+      "n_targets": 2,
+      "p_value": 0.021738111174155954,
+      "p_adj_bh": 0.04130241123089631
+    }
+  ],
+  "hub_genes": [
+    {
+      "gene": "RAD1",
+      "centrality": 0.52
+    },
+    {
+      "gene": "MYC",
+      "centrality": 0.48
+    },
+    {
+      "gene": "CDK7",
+      "centrality": 0.12
+    },
+    {
+      "gene": "MCL1",
+      "centrality": 0.08
+    },
+    {
+      "gene": "DROSHA",
+      "centrality": 0.04
+    },
+    {
+      "gene": "ZEB2",
+      "centrality": 0.04
+    },
+    {
+      "gene": "RUVBL1",
+      "centrality": 0.04
+    },
+    {
+      "gene": "TAF10",
+      "centrality": 0.04
+    },
+    {
+      "gene": "POLD2",
+      "centrality": 0.04
+    },
+    {
+      "gene": "AHCY",
+      "centrality": 0.04
+    }
+  ]
+}

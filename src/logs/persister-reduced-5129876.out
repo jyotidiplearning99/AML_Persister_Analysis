@@ -1,0 +1,53 @@
+=========================================
+Persister Inference - REDUCED Model
+Started: Sat Sep 20 22:55:26 EEST 2025
+=========================================
+2025-09-20 22:55:37,070 | INFO | Starting inference at 2025-09-20 22:55:37.070756
+2025-09-20 22:55:37,070 | INFO | Model directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled
+2025-09-20 22:55:37,070 | INFO | Output directory: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_225526
+2025-09-20 22:55:37,071 | INFO | [MODEL] Loading /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/model_reduced.h5
+2025-09-20 22:55:39,332 | INFO | [LOAD] scaler loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/scaler_reduced.pkl
+2025-09-20 22:55:39,475 | INFO | [LOAD] pca loaded from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/pca_reduced.pkl
+2025-09-20 22:55:39,476 | INFO | [THRESH] Using override: 0.551
+2025-09-20 22:55:39,484 | INFO | [GENES] Loaded 1000 genes from /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/reduced_model_distilled/selected_genes.txt
+2025-09-20 22:55:39,484 | INFO | [MODEL] Type: REDUCED (1000 genes)
+2025-09-20 22:55:39,484 | INFO | [MODEL] Genes: 1000
+2025-09-20 22:55:39,484 | INFO | [MODEL] PCA components: 100
+2025-09-20 22:55:39,484 | INFO | [MODEL] Threshold: 0.551
+2025-09-20 22:55:39,492 | INFO | Found 8 samples to process
+2025-09-20 22:55:40,679 | INFO | [LOAD] GSM3516664_METASTASIS: 1,316 cells × 17,625 genes
+2025-09-20 22:55:40,684 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:41,376 | INFO | [RESULT] GSM3516664_METASTASIS: 1232 persisters (93.6%), 84 non-persisters
+2025-09-20 22:55:43,992 | INFO | [LOAD] GSM3516665_PRIMARY: 3,435 cells × 19,856 genes
+2025-09-20 22:55:44,001 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:44,216 | INFO | [RESULT] GSM3516665_PRIMARY: 1078 persisters (31.4%), 2357 non-persisters
+2025-09-20 22:55:46,665 | INFO | [LOAD] GSM3516666_NORMAL: 3,061 cells × 18,158 genes
+2025-09-20 22:55:46,672 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:46,874 | INFO | [RESULT] GSM3516666_NORMAL: 717 persisters (23.4%), 2344 non-persisters
+2025-09-20 22:55:49,416 | INFO | [LOAD] GSM3516667_PRIMARY: 4,014 cells × 18,082 genes
+2025-09-20 22:55:49,435 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:49,692 | INFO | [RESULT] GSM3516667_PRIMARY: 1730 persisters (43.1%), 2284 non-persisters
+2025-09-20 22:55:52,347 | INFO | [LOAD] GSM3516668_METASTASIS: 3,886 cells × 16,287 genes
+2025-09-20 22:55:52,365 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:52,606 | INFO | [RESULT] GSM3516668_METASTASIS: 3145 persisters (80.9%), 741 non-persisters
+2025-09-20 22:55:53,974 | INFO | [LOAD] GSM3516671_METASTASIS: 1,630 cells × 18,444 genes
+2025-09-20 22:55:53,980 | INFO | [ALIGN] Gene coverage: 1000/1000 (100.0%)
+2025-09-20 22:55:54,113 | INFO | [RESULT] GSM3516671_METASTASIS: 609 persisters (37.4%), 1021 non-persisters
+2025-09-20 22:56:15,863 | INFO | [LOAD] FH_5897_2: 9,495 cells × 33,538 genes
+2025-09-20 22:56:15,908 | INFO | [ALIGN] Gene coverage: 999/1000 (99.9%)
+2025-09-20 22:56:16,411 | INFO | [RESULT] FH_5897_2: 6608 persisters (69.6%), 2887 non-persisters
+2025-09-20 22:56:22,222 | INFO | [LOAD] FH_6333_2: 2,451 cells × 33,694 genes
+2025-09-20 22:56:22,232 | INFO | [ALIGN] Gene coverage: 991/1000 (99.1%)
+2025-09-20 22:56:22,403 | INFO | [RESULT] FH_6333_2: 1810 persisters (73.8%), 641 non-persisters
+2025-09-20 22:56:22,433 | INFO | 
+================================================================================
+2025-09-20 22:56:22,433 | INFO | INFERENCE COMPLETE
+2025-09-20 22:56:22,433 | INFO | ================================================================================
+2025-09-20 22:56:22,433 | INFO | Processed: 8 samples
+2025-09-20 22:56:22,435 | INFO | Total cells: 29,288
+2025-09-20 22:56:22,435 | INFO | Mean persister %: 56.7%
+2025-09-20 22:56:22,435 | INFO | Results saved to: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_225526
+=========================================
+Finished: Sat Sep 20 22:56:23 EEST 2025
+Output: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced_20250920_225526
+=========================================

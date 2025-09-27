@@ -1,0 +1,27 @@
+node,module,node_type
+JAK-STAT signaling pathway - Homo sapiens (human),4,pathway
+MCL1,4,gene
+MicroRNAs in cancer - Homo sapiens (human),4,pathway
+ZEB2,4,gene
+MYC,2,gene
+RAD1,2,gene
+Pancreatic cancer - Homo sapiens (human),2,pathway
+Glioma - Homo sapiens (human),2,pathway
+Acute myeloid leukemia - Homo sapiens (human),2,pathway
+Endometrial cancer - Homo sapiens (human),2,pathway
+Thyroid cancer - Homo sapiens (human),2,pathway
+Bladder cancer - Homo sapiens (human),2,pathway
+Chronic myeloid leukemia - Homo sapiens (human),2,pathway
+Proteoglycans in cancer - Homo sapiens (human),3,pathway
+DROSHA,3,gene
+Cell cycle - Homo sapiens (human),5,pathway
+CDK7,5,gene
+Basal transcription factors - Homo sapiens (human),5,pathway
+TAF10,5,gene
+Nucleotide excision repair - Homo sapiens (human),5,pathway
+POLD2,5,gene
+Wnt signaling pathway - Homo sapiens (human),1,pathway
+RUVBL1,1,gene
+One carbon pool by folate - Homo sapiens (human),0,pathway
+AHCY,0,gene
+GCSH,0,gene

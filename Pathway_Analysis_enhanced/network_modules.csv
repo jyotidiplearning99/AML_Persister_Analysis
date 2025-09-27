@@ -1,0 +1,93 @@
+node,module,node_type
+KEGG:Cornified envelope formation - Homo sapiens (human),0,pathway
+KRT8,0,gene
+MYC,1,gene
+KEGG:Polycomb repressive complex - Homo sapiens (human),1,pathway
+KEGG:Small cell lung cancer - Homo sapiens (human),1,pathway
+KEGG:EGFR tyrosine kinase inhibitor resistance - Homo sapiens (human),1,pathway
+KEGG:Endocrine resistance - Homo sapiens (human),1,pathway
+KEGG:ErbB signaling pathway - Homo sapiens (human),1,pathway
+KEGG:HIF-1 signaling pathway - Homo sapiens (human),1,pathway
+KEGG:Autophagy - other - Homo sapiens (human),1,pathway
+KEGG:Longevity regulating pathway - Homo sapiens (human),1,pathway
+KEGG:Longevity regulating pathway - multiple species - Homo sapiens (human),1,pathway
+KEGG:Cellular senescence - Homo sapiens (human),1,pathway
+KEGG:Apelin signaling pathway - Homo sapiens (human),1,pathway
+KEGG:Th17 cell differentiation - Homo sapiens (human),1,pathway
+KEGG:Adipocytokine signaling pathway - Homo sapiens (human),1,pathway
+KEGG:Type II diabetes mellitus - Homo sapiens (human),1,pathway
+KEGG:Insulin resistance - Homo sapiens (human),1,pathway
+"KEGG:Growth hormone synthesis, secretion and action - Homo sapiens (human)",1,pathway
+KEGG:Chemical carcinogenesis - receptor activation - Homo sapiens (human),1,pathway
+KEGG:Gastric cancer - Homo sapiens (human),1,pathway
+KEGG:Central carbon metabolism in cancer - Homo sapiens (human),1,pathway
+KEGG:Choline metabolism in cancer - Homo sapiens (human),1,pathway
+KEGG:PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human),1,pathway
+KEGG:TGF-beta signaling pathway - Homo sapiens (human),1,pathway
+KEGG:Human T-cell leukemia virus 1 infection - Homo sapiens (human),1,pathway
+KEGG:Endometrial cancer - Homo sapiens (human),1,pathway
+KEGG:Thyroid cancer - Homo sapiens (human),1,pathway
+RAD1,2,gene
+KEGG:AMPK signaling pathway - Homo sapiens (human),2,pathway
+KEGG:Thyroid hormone signaling pathway - Homo sapiens (human),2,pathway
+KEGG:Human cytomegalovirus infection - Homo sapiens (human),2,pathway
+KEGG:Human papillomavirus infection - Homo sapiens (human),2,pathway
+KEGG:Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human),2,pathway
+KEGG:Colorectal cancer - Homo sapiens (human),2,pathway
+KEGG:Pancreatic cancer - Homo sapiens (human),2,pathway
+KEGG:Glioma - Homo sapiens (human),2,pathway
+KEGG:Prostate cancer - Homo sapiens (human),2,pathway
+KEGG:Acute myeloid leukemia - Homo sapiens (human),2,pathway
+KEGG:Breast cancer - Homo sapiens (human),2,pathway
+KEGG:Hepatocellular carcinoma - Homo sapiens (human),2,pathway
+KEGG:Hippo signaling pathway - Homo sapiens (human),2,pathway
+KEGG:Hepatitis C - Homo sapiens (human),2,pathway
+KEGG:Epstein-Barr virus infection - Homo sapiens (human),2,pathway
+KEGG:Bladder cancer - Homo sapiens (human),2,pathway
+KEGG:Chronic myeloid leukemia - Homo sapiens (human),2,pathway
+KEGG:Platinum drug resistance - Homo sapiens (human),2,pathway
+KEGG:Fanconi anemia pathway - Homo sapiens (human),2,pathway
+KEGG:p53 signaling pathway - Homo sapiens (human),2,pathway
+KEGG:Hedgehog signaling pathway - Homo sapiens (human),2,pathway
+KEGG:Prolactin signaling pathway - Homo sapiens (human),2,pathway
+KEGG:AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human),2,pathway
+KEGG:Melanoma - Homo sapiens (human),2,pathway
+KEGG:Non-small cell lung cancer - Homo sapiens (human),2,pathway
+KEGG:Viral myocarditis - Homo sapiens (human),2,pathway
+KEGG:PI3K-Akt signaling pathway - Homo sapiens (human),6,pathway
+MCL1,6,gene
+KEGG:JAK-STAT signaling pathway - Homo sapiens (human),6,pathway
+KEGG:MicroRNAs in cancer - Homo sapiens (human),6,pathway
+ZEB2,6,gene
+KEGG:Amyotrophic lateral sclerosis - Homo sapiens (human),4,pathway
+NUP155,4,gene
+KEGG:Nucleocytoplasmic transport - Homo sapiens (human),4,pathway
+KEGG:Proteoglycans in cancer - Homo sapiens (human),5,pathway
+DROSHA,5,gene
+KEGG:Cell cycle - Homo sapiens (human),7,pathway
+CDK7,7,gene
+KEGG:Basal transcription factors - Homo sapiens (human),7,pathway
+TAF10,7,gene
+KEGG:Nucleotide excision repair - Homo sapiens (human),7,pathway
+POLD2,7,gene
+KEGG:DNA replication - Homo sapiens (human),7,pathway
+KEGG:Base excision repair - Homo sapiens (human),7,pathway
+KEGG:Mismatch repair - Homo sapiens (human),7,pathway
+KEGG:Homologous recombination - Homo sapiens (human),7,pathway
+KEGG:Wnt signaling pathway - Homo sapiens (human),8,pathway
+RUVBL1,8,gene
+KEGG:ATP-dependent chromatin remodeling - Homo sapiens (human),8,pathway
+MRGBP,8,gene
+KEGG:Purine metabolism - Homo sapiens (human),9,pathway
+IMPDH2,9,gene
+PAICS,9,gene
+KEGG:Drug metabolism - other enzymes - Homo sapiens (human),9,pathway
+KEGG:Nucleotide metabolism - Homo sapiens (human),9,pathway
+KEGG:Cysteine and methionine metabolism - Homo sapiens (human),3,pathway
+AHCY,3,gene
+KEGG:One carbon pool by folate - Homo sapiens (human),3,pathway
+GCSH,3,gene
+"KEGG:Glycine, serine and threonine metabolism - Homo sapiens (human)",3,pathway
+KEGG:Glyoxylate and dicarboxylate metabolism - Homo sapiens (human),3,pathway
+KEGG:Lipoic acid metabolism - Homo sapiens (human),3,pathway
+KEGG:Carbon metabolism - Homo sapiens (human),3,pathway

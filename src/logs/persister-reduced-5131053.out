@@ -1,0 +1,7 @@
+=========================================
+Persister Inference - REDUCED Model
+Started: Sun Sep 21 08:30:28 EEST 2025
+Output dir: /scratch/project_2010376/JDs_Project/AML_Persister_Analysis/results/inference_reduced
+=========================================
+2025-09-21 08:30:28,096 | INFO | [DISCOVER] Found 6 AML 10x datasets under /scratch/project_2010751/AML_scRNA_decrypted
+2025-09-21 08:30:28,098 | INFO | [DISCOVER] Found 0 healthy GSE120221 triplets under /scratch/project_2010751/GSE120221_RAW
