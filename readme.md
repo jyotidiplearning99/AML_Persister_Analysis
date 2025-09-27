@@ -155,11 +155,9 @@ AML_Persister_Analysis/
 ├── src/
 │   ├── production_transformer_13092025.py
 │   ├── inference_persister_transformer_14092025.py
-│   ├── model_aware_gene_selection_fixed.py
+│   ├── gene_Reduction_production_transformer_20092025.py
 │   ├── train_reduced_model.py
-│   ├── depmap_integration_v2.py
-│   ├── pathway_analysis_complete_fixed.py
-│   └── module_score_analysis.py
+|
 ├── results/
 │   ├── models/
 │   │   ├── final_model.h5
@@ -167,9 +165,13 @@ AML_Persister_Analysis/
 │   │   └── *.pkl
 │   ├── predictions/
 │   │   └── *_predictions.csv
-│   └── pathway_analysis/
-│       ├── pathway_network.html
-│       └── signaling_modules_with_fdr.csv
+│── src/── pathway_analysis/
+│       ├── pathway_analysis.py
+│       └── depmap_gene_refinement.py
+|       |___generate_data_expression_for_scoring.py
+|       |___pathway_module_score_analysis.py
+|       |___Refined_Analysis_on_score.py
+|       |___depmap_aml_primary_analysis.py
 ├── data/
 │   ├── GSE123902_RAW/
 │   ├── AML_scRNA_decrypted/
