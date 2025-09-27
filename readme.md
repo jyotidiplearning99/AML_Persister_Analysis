@@ -2,7 +2,7 @@ AML Persister Cell Classifier Pipeline
 Overview
 A production-ready deep learning pipeline for identifying persister cells in Acute Myeloid Leukemia (AML) using single-cell RNA-sequencing data. The pipeline implements a transformer-based architecture with knowledge distillation, multi-stage gene selection, and comprehensive pathway analysis.
 Key Features
-SOTA Transformer Architecture: Feature Token Transformer with multi-head attention for cell classification
+Transformer Architecture: Feature Token Transformer with multi-head attention for cell classification
 Intelligent Gene Reduction: From 13,000+ genes to 1,000 then 500 most informative genes
 Knowledge Distillation: Maintains performance while reducing computational requirements
 DepMap Integration: Identifies therapeutically relevant targets using CRISPR dependency data
@@ -150,33 +150,67 @@ python module_score_analysis.py \
 Directory Structure
 text
 
-
 AML_Persister_Analysis/
 ├── src/
-│   ├── production_transformer_13092025.py
-│   ├── inference_persister_transformer_14092025.py
-│   ├── gene_Reduction_production_transformer_20092025.py
-│   ├── train_reduced_model.py
-|
+│   ├── production_transformer_13092025.py              # Step 1 
+│   ├── run_training.sbatch                             # Step 2
+│   ├── inference_persister_transformer_14092025.py     # Step 3-4
+│   ├── gene_Reduction_production_transformer_20092025.py  # Step 5
+│   ├── train_gene_reduction.py                         # Step 6 
+│   ├── inference_persister_v3_masked.py               # Step 7
+│   ├── depmap_gene_refinement.py                      # Step 8
+│   ├── pathway_analysis.py                            # Step 9-10
+│   ├── pathway_module_score_analysis.py               # Step 11
+│   ├── generate_data_expression_for_scoring.py        # Data prep
+│   ├── Refined_Analysis_on_score.py                   # Post-analysis
+│   ├── Model_structure.py                             # Model architecture
+│   ├── depmap_aml_primary_analysis/                   # DepMap analysis directory
+│   ├── production_transformer.sbatch                  # Training batch script
+│   ├── production_transformer_training.sbatch         # Trraining 1000 genes batchscript
+│   ├── run_depmap_gene_refinement.sbatch             # Run DepMap batch script
+│   ├── run_inference_reduced_v2.sbatch               # Inference batch on initial training script
+│   ├── inference_reduced.sbatch                       # inference on 1000 gene batch script
 ├── results/
 │   ├── models/
 │   │   ├── final_model.h5
 │   │   ├── model_reduced.h5
-│   │   └── *.pkl
+│   │   ├── scaler.pkl
+│   │   ├── scaler_reduced.pkl
+│   │   ├── pca.pkl
+│   │   ├── pca_reduced.pkl
+│   │   ├── threshold.pkl
+│   │   └── threshold_reduced.pkl
 │   ├── predictions/
 │   │   └── *_predictions.csv
-│── src/── pathway_analysis/
-│       ├── pathway_analysis.py
-│       └── depmap_gene_refinement.py
-|       |___generate_data_expression_for_scoring.py
-|       |___pathway_module_score_analysis.py
-|       |___Refined_Analysis_on_score.py
-|       |___depmap_aml_primary_analysis.py
+│   ├── pathway_analysis/
+│   │   ├── pathway_network.html
+│   │   ├── signaling_modules_with_fdr.csv
+│   │   ├── tf_modules_with_fdr.csv
+│   │   ├── drug_pathway_mapping.csv
+│   │   └── module_scores.csv
+│   └── depmap_refined/
+│       ├── aml_dependencies_ranked.csv
+│       ├── wet_lab_top100_genes.csv
+│       └── genes_500_depmap.txt
 ├── data/
 │   ├── GSE123902_RAW/
 │   ├── AML_scRNA_decrypted/
 │   └── GSE120221_RAW/
-└── logs/
+├── logs/
+│   └── *.out
+├── gene_reduction_model_aware/
+│   ├── selected_genes_model_aware.txt
+│   ├── de_high_confidence.csv
+│   └── pca_importance.csv
+├── reduced_model_distilled/
+│   ├── model_reduced.h5
+│   ├── selected_genes.txt
+│   └── training_metrics.json
+├── artifacts/                        # Training artifacts
+├── test_samples.txt                  # Test sample lists
+└── README.md                          # Documentation
+
+
 Performance Metrics
 Full Model (13,000 genes)
 AUC-ROC: 0.85-0.92
@@ -202,7 +236,7 @@ CD33, CD34: Surface markers
 IDH1, IDH2: Metabolic enzymes
 
 Contact
-Lead Developer: Jyotidip Barman
+Developer: Jyotidip Barman
 Email:jyotidip.barman@helsinki.fi
 Institution: University of Helsinki
 
@@ -210,4 +244,4 @@ Acknowledgments
 DepMap Consortium for dependency data
 KEGG database for pathway information
 DoRothEA for TF-target relationships
-Last updated: September 2025
+Last updated: 27 September 2025
