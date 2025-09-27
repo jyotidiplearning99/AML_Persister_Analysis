@@ -150,6 +150,67 @@ python module_score_analysis.py \
 Directory Structure
 text
 
+# AML Persister Cell Classifier Pipeline
+
+## Directory Structure
+
+AML_Persister_Analysis/ ├── src/ │ ├── training/ │ │ ├── production_transformer_13092025.py # Step 1: Full model training (13k genes) │ │ ├── gene_Reduction_production_transformer_20092025.py # Step 5: Gene reduction │ │ └── train_gene_reduction.py # Step 6: Reduced model training │ ├── inference/ │ │ ├── inference_persister_transformer_14092025.py # Step 3-4: Production inference │ │ ├── inference_persister_v3_masked.py # Step 7: Reduced model inference │ │ ├── inference_reduced_gene.py # Alternative inference script │ │ └── inference_reduced_v2.py # (not used) │ ├── analysis/ │ │ ├── depmap_gene_refinement.py # Step 8: DepMap integration │ │ ├── pathway_analysis.py # Step 9-10: Pathway analysis │ │ ├── pathway_module_score_analysis.py # Step 11: Module scoring │ │ ├── generate_data_expression_for_scoring.py # Data preparation │ │ ├── Refined_Analysis_on_score.py # Post-analysis │ │ ├── depmap_aml_primary_analysis/ # DepMap analysis directory │ │ └── pathway_analysis_v2_enhanced.py # (not used) │ ├── batch_scripts/ │ │ ├── production_transformer.sbatch # Step 2: Main training batch │ │ ├── production_transformer_training.sbatch # 1000-gene training batch │ │ ├── run_depmap_gene_refinement.sbatch # DepMap batch script │ │ ├── run_inference_reduced_v2.sbatch # Initial model inference batch │ │ ├── inference_reduced.sbatch # 1000-gene inference batch │ │ └── run100_30.sbatch # Batch processing script │ ├── utilities/ │ │ ├── Model_structure.py # Model architecture definitions │ │ └── Pipeline_v1.py # (not used) │ ├── artifacts/ # Training artifacts │ ├── logs/ # Execution logs │ ├── results/ # Intermediate results │ ├── test_samples.txt # Test sample lists │ └── test_samples_20250920_221555.txt ├── results/ │ ├── models/ │ │ ├── final_model.h5 # Full model (13k genes) │ │ ├── model_reduced.h5 # Reduced model (1000 genes) │ │ ├── scaler.pkl │ │ ├── scaler_reduced.pkl │ │ ├── pca.pkl │ │ ├── pca_reduced.pkl │ │ ├── threshold.pkl │ │ └── threshold_reduced.pkl │ ├── predictions/ │ │ └── *_predictions.csv │ ├── pathway_analysis/ │ │ ├── pathway_network.html │ │ ├── signaling_modules_with_fdr.csv │ │ ├── tf_modules_with_fdr.csv │ │ ├── drug_pathway_mapping.csv │ │ └── module_scores.csv │ └── depmap_refined/ │ ├── aml_dependencies_ranked.csv │ ├── wet_lab_top100_genes.csv │ └── genes_500_depmap.txt ├── data/ │ ├── GSE123902_RAW/ │ ├── AML_scRNA_decrypted/ │ └── GSE120221_RAW/ ├── gene_reduction_model_aware/ │ ├── selected_genes_model_aware.txt │ ├── de_high_confidence.csv │ └── pca_importance.csv ├── reduced_model_distilled/ │ ├── model_reduced.h5 │ ├── selected_genes.txt │ └── training_metrics.json └── README.md
+text
+
+
+
+## Pipeline Workflow
+
+### Stage 1: Full Model Training (13,000 genes)
+**Scripts**: `production_transformer_13092025.py` + `production_transformer.sbatch`
+- Feature Token Transformer architecture
+- Stratified k-fold validation
+- Output: `final_model.h5`, `common_genes.txt`
+
+### Stage 2: Gene Reduction (13k → 1k genes)
+**Script**: `gene_Reduction_production_transformer_20092025.py`
+- Method A: Differential expression on high-confidence predictions
+- Method B: PCA-based feature importance
+- Method C: Filter housekeeping genes
+- Output: `selected_genes_model_aware.txt`
+
+### Stage 3: Reduced Model Training
+**Script**: `train_gene_reduction.py`
+- Knowledge distillation from full model
+- Maintains performance with 10x faster inference
+- Output: `model_reduced.h5`
+
+### Stage 4: Inference & Validation
+**Scripts**: `inference_persister_v3_masked.py` + `inference_reduced.sbatch`
+- Supports 10x Genomics, CSV, MTX formats
+- Automatic gene alignment
+- Coverage guards for quality control
+
+### Stage 5: DepMap Refinement (1k → 500 genes)
+**Script**: `depmap_gene_refinement.py`
+- CRISPR dependency scoring in AML cell lines
+- Therapeutic target prioritization
+- Output: `genes_500_depmap.txt`, `wet_lab_top100_genes.csv`
+
+### Stage 6: Biological Interpretation
+**Scripts**: `pathway_analysis.py`, `pathway_module_score_analysis.py`
+- KEGG pathway enrichment with FDR correction
+- Transcription factor network analysis
+- Drug-pathway mapping
+- Module activity scoring
+
+## File Status
+
+### Active Production Scripts
+Core training and inference pipeline
+Gene reduction and refinement  
+Pathway and network analysis  
+Module scoring and evaluation  
+
+ 
+
+
+
 AML_Persister_Analysis/
 ├── src/
 │   ├── production_transformer_13092025.py              # Step 1 
