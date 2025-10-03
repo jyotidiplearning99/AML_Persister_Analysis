@@ -1,0 +1,72 @@
+=========================================
+Running Bulk RNA-seq Predictions
+Started: Tue Sep 30 09:31:32 EEST 2025
+=========================================
+Processing BeatAML with 1k model...
+
+============================================================
+BULK RNA-SEQ PERSISTER INFERENCE
+============================================================
+Loading model from: reduced_model_distilled/model_reduced.h5
+Loading preprocessing components...
+  ✓ Loaded scaler
+  ✓ Loaded PCA (100 components)
+Threshold: 0.935
+Model expects 1000 genes
+
+Loading expression data from: results/bulk_BeatAML/processed/expression.csv
+Expression shape: 877 genes × 452 samples
+Gene coverage: 877/1000 (87.7%)
+
+Processing 452 samples...
+
+============================================================
+RESULTS SUMMARY
+============================================================
+Total samples: 452
+Mean persister probability: 0.487
+Median persister probability: 0.484
+Persister predictions: 53/452
+
+Results saved to: results/bulk_BeatAML/predictions/predictions_reduced_1k.csv
+Processing TCGA with 1k model...
+
+============================================================
+BULK RNA-SEQ PERSISTER INFERENCE
+============================================================
+Loading model from: reduced_model_distilled/model_reduced.h5
+Loading preprocessing components...
+  ✓ Loaded scaler
+  ✓ Loaded PCA (100 components)
+Threshold: 0.935
+Model expects 1000 genes
+
+Loading expression data from: results/bulk_TCGA/processed/expression.csv
+Expression shape: 1000 genes × 173 samples
+Gene coverage: 1000/1000 (100.0%)
+
+Processing 173 samples...
+
+============================================================
+RESULTS SUMMARY
+============================================================
+Total samples: 173
+Mean persister probability: 0.495
+Median persister probability: 0.431
+Persister predictions: 41/173
+
+Results saved to: results/bulk_TCGA/predictions/predictions_reduced_1k.csv
+Processing with 13k model...
+
+============================================================
+BULK RNA-SEQ PERSISTER INFERENCE
+============================================================
+Loading model from: results/models/final_model.h5
+
+============================================================
+BULK RNA-SEQ PERSISTER INFERENCE
+============================================================
+Loading model from: results/models/final_model.h5
+=========================================
+Completed: Tue Sep 30 09:34:05 EEST 2025
+=========================================

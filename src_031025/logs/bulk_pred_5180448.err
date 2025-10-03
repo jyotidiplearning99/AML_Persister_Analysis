@@ -1,0 +1,100 @@
+2025-09-30 09:31:51.559058: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:31:54.166328: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-30 09:32:38.988864: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:33:06.933557: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2025-09-30 09:33:41.430574: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:33:41.484631: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-30 09:33:43.506993: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:33:44.710152: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2025-09-30 09:33:56.263272: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:33:56.317628: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-30 09:33:58.328867: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/ops/operation.py", line 255, in from_config
+    return cls(**config)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/layers/attention/multi_head_attention.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/layers/layer.py", line 291, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to MultiHeadAttention: {'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 196, in <module>
+    main()
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 188, in main
+    results = run_bulk_inference(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 66, in run_bulk_inference
+    model = tf.keras.models.load_model(model_path, compile=False)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/saving/saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/legacy_h5_format.py", line 137, in load_model_from_hdf5
+    model = saving_utils.model_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/saving_utils.py", line 83, in model_from_config
+    return serialization.deserialize_keras_object(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/serialization.py", line 488, in deserialize_keras_object
+    deserialized_obj = cls.from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/model.py", line 660, in from_config
+    return functional_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/functional.py", line 558, in functional_from_config
+    process_layer(layer_data)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/functional.py", line 521, in process_layer
+    layer = saving_utils.model_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/saving_utils.py", line 83, in model_from_config
+    return serialization.deserialize_keras_object(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/serialization.py", line 497, in deserialize_keras_object
+    deserialized_obj = cls.from_config(cls_config)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/ops/operation.py", line 257, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'MultiHeadAttention' using config={'name': 'multi_head_attention_5', 'trainable': True, 'dtype': 'float32', 'num_heads': 4, 'key_dim': 16, 'value_dim': 16, 'dropout': 0.2, 'use_bias': True, 'output_shape': None, 'attention_axes': [1], 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None, 'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}.
+
+Exception encountered: Unrecognized keyword arguments passed to MultiHeadAttention: {'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}
+2025-09-30 09:34:01.247003: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-30 09:34:01.301221: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-30 09:34:03.334334: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/ops/operation.py", line 255, in from_config
+    return cls(**config)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/layers/attention/multi_head_attention.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/layers/layer.py", line 291, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to MultiHeadAttention: {'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 196, in <module>
+    main()
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 188, in main
+    results = run_bulk_inference(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/src/analysis/bulk_inference.py", line 66, in run_bulk_inference
+    model = tf.keras.models.load_model(model_path, compile=False)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/saving/saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/legacy_h5_format.py", line 137, in load_model_from_hdf5
+    model = saving_utils.model_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/saving_utils.py", line 83, in model_from_config
+    return serialization.deserialize_keras_object(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/serialization.py", line 488, in deserialize_keras_object
+    deserialized_obj = cls.from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/model.py", line 660, in from_config
+    return functional_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/functional.py", line 558, in functional_from_config
+    process_layer(layer_data)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/models/functional.py", line 521, in process_layer
+    layer = saving_utils.model_from_config(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/saving_utils.py", line 83, in model_from_config
+    return serialization.deserialize_keras_object(
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/legacy/saving/serialization.py", line 497, in deserialize_keras_object
+    deserialized_obj = cls.from_config(cls_config)
+  File "/scratch/project_2010376/JDs_Project/AML_Persister_Analysis/.venv_amlphase2/lib/python3.10/site-packages/keras/src/ops/operation.py", line 257, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'MultiHeadAttention' using config={'name': 'multi_head_attention_5', 'trainable': True, 'dtype': 'float32', 'num_heads': 4, 'key_dim': 16, 'value_dim': 16, 'dropout': 0.2, 'use_bias': True, 'output_shape': None, 'attention_axes': [1], 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None, 'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}.
+
+Exception encountered: Unrecognized keyword arguments passed to MultiHeadAttention: {'query_shape': [None, 100, 64], 'key_shape': [None, 100, 64], 'value_shape': [None, 100, 64]}
