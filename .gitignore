@@ -38,3 +38,12 @@ results/
 # ad-hoc files
 Manuscript.doc
 predictions_*.csv
+# local-only helpers
+/custom_modules/
+
+# specific big artifacts in repo root
+/gpl570_complete_mapping.pkl
+/probe_gene_mapping.pkl
+
+# audit logs
+/predictions_*_audit.json
