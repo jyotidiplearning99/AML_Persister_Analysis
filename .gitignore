@@ -25,3 +25,16 @@ __pycache__/
 # OS
 .DS_Store
 GSE13159_data/
+# local data & logs
+data/
+logs/
+wget-log
+
+# analysis outputs
+results/
+**/*.err
+**/*.out
+
+# ad-hoc files
+Manuscript.doc
+predictions_*.csv
