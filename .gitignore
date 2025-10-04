@@ -68,3 +68,9 @@ src_031025/Hematopoietic_Cells_Healthy_AML/GSE74246/GSE74246_RNAseq_All_Counts.t
 *.txt
 *.json
 *.rnk
+*.csv
+*.txt
+*.json
+*.rnk
+*.xlsx
+*.soft
