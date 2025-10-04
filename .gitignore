@@ -47,3 +47,5 @@ predictions_*.csv
 
 # audit logs
 /predictions_*_audit.json
+Complete_Analysis*/
+Expression_Data_for_Predictive_Score/

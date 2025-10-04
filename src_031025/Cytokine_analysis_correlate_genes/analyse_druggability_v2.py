@@ -29,6 +29,16 @@ warnings.filterwarnings("ignore")
 sns.set_style("whitegrid")
 plt.rcParams["figure.dpi"] = 110
 
+PALETTE = {
+    "blue":   "#1f77b4",
+    "orange": "#ff7f0e",
+    "green":  "#2ca02c",
+    "red":    "#d62728",
+    "purple": "#9467bd",
+    "teal":   "#17becf",
+    "gray":   "#7f7f7f"
+}
+
 # =============================================================================
 # CellPhoneDB integration
 # =============================================================================
@@ -327,53 +337,123 @@ def identify_therapeutic_targets(df_druggability, interaction_partners):
 def visualize_druggability(df_druggability, df_annotations, output_dir, mode):
     fig, axes = plt.subplots(2, 3, figsize=(18, 12))
 
-    # 1. Score distribution
-    ax = axes[0,0]
-    ax.hist(df_druggability["total_druggability_score"], bins=20, edgecolor="black")
-    ax.set_title("Druggability Score Distribution"); ax.set_xlabel("Score"); ax.set_ylabel("Genes")
+    # 1) Score distribution
+    ax = axes[0, 0]
+    ax.hist(df_druggability["total_druggability_score"], bins=20,
+            color=PALETTE["blue"], edgecolor="black")
+    ax.set_title("Druggability Score Distribution")
+    ax.set_xlabel("Score")
+    ax.set_ylabel("Number of Genes")
 
-    # 2. Categories
-    ax = axes[0,1]
-    counts = df_druggability["category"].value_counts()
-    ax.bar(range(len(counts)), counts.values)
-    ax.set_xticks(range(len(counts))); ax.set_xticklabels(counts.index, rotation=30); ax.set_title("Priority Categories")
+    # 2) Priority categories (fixed order + colors)
+    ax = axes[0, 1]
+    order = ["Not_Druggable", "Low_Priority", "Medium_Priority", "High_Priority"]
+    cat_counts = df_druggability["category"].value_counts().reindex(order, fill_value=0)
+    cat_colors = [PALETTE["gray"], PALETTE["orange"], PALETTE["purple"], PALETTE["red"]]
+    ax.bar(range(len(cat_counts)), cat_counts.values, color=cat_colors)
+    ax.set_xticks(range(len(cat_counts)))
+    ax.set_xticklabels(order, rotation=25, ha="right")
+    ax.set_ylabel("Count")
+    ax.set_title("Druggability Categories")
 
-    # 3. Protein types
-    ax = axes[0,2]
-    prot_cols = ["is_receptor","is_ligand","is_secreted","is_membrane","is_cytokine","is_kinase"]
-    vals = [int(df_annotations.get(c, pd.Series(dtype=bool)).sum()) for c in prot_cols]
-    ax.bar(range(len(prot_cols)), vals)
-    ax.set_xticks(range(len(prot_cols))); ax.set_xticklabels(["Receptor","Ligand","Secreted","Membrane","Cytokine","Kinase"], rotation=30)
+    # 3) Protein types in model (fixed mapping -> color)
+    ax = axes[0, 2]
+    labels = ["Receptor", "Ligand", "Secreted", "Membrane", "Cytokine", "Kinase"]
+    cols   = ["is_receptor", "is_ligand", "is_secreted", "is_membrane", "is_cytokine", "is_kinase"]
+    vals   = [int(df_annotations.get(c, pd.Series(dtype=bool)).sum()) for c in cols]
+    type_colors = [PALETTE["blue"], PALETTE["orange"], PALETTE["green"],
+                   PALETTE["purple"], PALETTE["red"], PALETTE["teal"]]
+    ax.bar(range(len(vals)), vals, color=time_colors if (time_colors := type_colors) else type_colors)
+    ax.set_xticks(range(len(labels)))
+    ax.set_xticklabels(labels, rotation=25, ha="right")
+    ax.set_ylabel("Count")
     ax.set_title("Protein Types in Model")
 
-    # 4. Top 20
-    ax = axes[1,0]
+    # 4) Top 20 druggable targets (all same color for consistency)
+    ax = axes[1, 0]
     top20 = df_druggability.nlargest(20, "total_druggability_score")
-    ax.barh(top20["gene"], top20["total_druggability_score"]); ax.invert_yaxis()
-    ax.set_title("Top 20 Druggable Targets"); ax.set_xlabel("Score")
+    ax.barh(top20["gene"], top20["total_druggability_score"], color=PALETTE["blue"])
+    ax.invert_yaxis()
+    ax.set_xlabel("Druggability Score")
+    ax.set_title("Top 20 Druggable Targets")
 
-    # 5. Target accessibility
-    ax = axes[1,1]
-    s_cnt = int(df_druggability["is_surface_target"].sum())
+    # 5) Target accessibility (surface/secreted/both)
+    ax = axes[1, 1]
+    s_cnt   = int(df_druggability["is_surface_target"].sum())
     sec_cnt = int(df_druggability["is_secreted_target"].sum())
     both_cnt = int((df_druggability["is_surface_target"] & df_druggability["is_secreted_target"]).sum())
-    ax.bar(["Surface","Secreted","Both"], [s_cnt, sec_cnt, both_cnt])
+    labels_acc = ["Surface", "Secreted", "Both"]
+    vals_acc   = [s_cnt, sec_cnt, both_cnt]
+    acc_colors = [PALETTE["blue"], PALETTE["green"], PALETTE["orange"]]
+    ax.bar(labels_acc, vals_acc, color=acc_colors)
     ax.set_title(f"Target Accessibility (mode={mode})")
 
-    # 6. Validated targets
-    ax = axes[1,2]
+    # 6) Validated buckets (FDA/clinical, antibody)
+    ax = axes[1, 2]
     fda = int(df_druggability["is_fda_or_clinical"].sum())
     ab  = int(df_druggability["is_antibody_target"].sum())
-    ax.bar(["Clinical/Approved","Antibodyable"], [fda, ab])
+    ax.bar(["FDA/Clinical", "Antibody"], [fda, ab],
+           color=[PALETTE["purple"], PALETTE["orange"]])
     ax.set_title("Validated Target Buckets")
 
     plt.suptitle("Persister Model Druggability Analysis", fontsize=16)
     plt.tight_layout()
 
-    outpath = Path(output_dir)/"druggability_analysis.png"
+    outpath = Path(output_dir) / "druggability_analysis.png"
     plt.savefig(outpath, dpi=300, bbox_inches="tight")
     print(f"\nVisualization saved to: {outpath}")
     return fig
+
+# def visualize_druggability(df_druggability, df_annotations, output_dir, mode):
+#     fig, axes = plt.subplots(2, 3, figsize=(18, 12))
+
+#     # 1. Score distribution
+#     ax = axes[0,0]
+#     ax.hist(df_druggability["total_druggability_score"], bins=20, edgecolor="black")
+#     ax.set_title("Druggability Score Distribution"); ax.set_xlabel("Score"); ax.set_ylabel("Genes")
+
+#     # 2. Categories
+#     ax = axes[0,1]
+#     counts = df_druggability["category"].value_counts()
+#     ax.bar(range(len(counts)), counts.values)
+#     ax.set_xticks(range(len(counts))); ax.set_xticklabels(counts.index, rotation=30); ax.set_title("Priority Categories")
+
+#     # 3. Protein types
+#     ax = axes[0,2]
+#     prot_cols = ["is_receptor","is_ligand","is_secreted","is_membrane","is_cytokine","is_kinase"]
+#     vals = [int(df_annotations.get(c, pd.Series(dtype=bool)).sum()) for c in prot_cols]
+#     ax.bar(range(len(prot_cols)), vals)
+#     ax.set_xticks(range(len(prot_cols))); ax.set_xticklabels(["Receptor","Ligand","Secreted","Membrane","Cytokine","Kinase"], rotation=30)
+#     ax.set_title("Protein Types in Model")
+
+#     # 4. Top 20
+#     ax = axes[1,0]
+#     top20 = df_druggability.nlargest(20, "total_druggability_score")
+#     ax.barh(top20["gene"], top20["total_druggability_score"]); ax.invert_yaxis()
+#     ax.set_title("Top 20 Druggable Targets"); ax.set_xlabel("Score")
+
+#     # 5. Target accessibility
+#     ax = axes[1,1]
+#     s_cnt = int(df_druggability["is_surface_target"].sum())
+#     sec_cnt = int(df_druggability["is_secreted_target"].sum())
+#     both_cnt = int((df_druggability["is_surface_target"] & df_druggability["is_secreted_target"]).sum())
+#     ax.bar(["Surface","Secreted","Both"], [s_cnt, sec_cnt, both_cnt])
+#     ax.set_title(f"Target Accessibility (mode={mode})")
+
+#     # 6. Validated targets
+#     ax = axes[1,2]
+#     fda = int(df_druggability["is_fda_or_clinical"].sum())
+#     ab  = int(df_druggability["is_antibody_target"].sum())
+#     ax.bar(["FDA Target","Antibody Target"], [fda, ab])
+#     ax.set_title("Validated Target Buckets")
+
+#     plt.suptitle("Persister Model Druggability Analysis", fontsize=16)
+#     plt.tight_layout()
+
+#     outpath = Path(output_dir)/"druggability_analysis.png"
+#     plt.savefig(outpath, dpi=300, bbox_inches="tight")
+#     print(f"\nVisualization saved to: {outpath}")
+#     return fig
 
 # =============================================================================
 # Main

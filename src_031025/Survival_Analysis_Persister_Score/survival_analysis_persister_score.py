@@ -92,7 +92,7 @@ def stratify_by_persister_bins(data, method='median'):
         data['persister_group'] = pd.qcut(
             data['persister_probability'],
             q=3,
-            labels=['Low', 'Medium', 'High']
+            labels=['Low', 'Medium', 'High'], duplicates='drop'
         )
         tertiles = data['persister_probability'].quantile([0.33, 0.67])
         print(f"  Tertile cutoffs: {tertiles.values}")
@@ -102,7 +102,7 @@ def stratify_by_persister_bins(data, method='median'):
         data['persister_group'] = pd.qcut(
             data['persister_probability'],
             q=4,
-            labels=['Q1', 'Q2', 'Q3', 'Q4']
+            labels=['Q1', 'Q2', 'Q3', 'Q4'], duplicates='drop'
         )
         quartiles = data['persister_probability'].quantile([0.25, 0.5, 0.75])
         print(f"  Quartile cutoffs: {quartiles.values}")
@@ -476,11 +476,16 @@ def analyze_tcga_survival_comprehensive():
     )
     
     # 2. Distribution analysis
-    fig2 = plot_persister_distribution(
-        data,
-        output_dir / "persister_distribution.png"
-    )
+    # fig2 = plot_persister_distribution(
+    #     data,
+    #     output_dir / "persister_distribution.png"
+    # )
     
+    best_data = results[best_method[0]]['data']   # has 'persister_group'
+    fig2 = plot_persister_distribution(
+    best_data,
+    output_dir / "persister_distribution.png"
+    )
     # 3. Stratification comparison
     fig3 = plot_stratification_comparison(
         results,
