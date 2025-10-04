@@ -335,15 +335,32 @@ def plot_persister_distribution(data, save_path=None):
     ax.set_title('Persister Score vs Survival Time', fontsize=14)
     
     # 4. Density plot by group
+
     ax = axes[1, 1]
     if 'persister_group' in data.columns:
-        for group in data['persister_group'].unique():
-            group_data = data[data['persister_group'] == group]['persister_probability']
-            group_data.plot.density(ax=ax, label=group, linewidth=2)
+        sns.histplot(
+            data=data,
+            x='persister_probability',
+            hue='persister_group',
+            bins=20,
+            element='step',
+            stat='density',
+            common_norm=False,
+            ax=ax
+        )
+        ax.set_xlim(0, 1)
+        ax.set_title('Distribution by Group', fontsize=14)
         ax.set_xlabel('Persister Probability', fontsize=12)
         ax.set_ylabel('Density', fontsize=12)
-        ax.set_title('Distribution by Group', fontsize=14)
-        ax.legend()
+    #     ax = axes[1, 1]
+    # if 'persister_group' in data.columns:
+    #     for group in data['persister_group'].unique():
+    #         group_data = data[data['persister_group'] == group]['persister_probability']
+    #         group_data.plot.density(ax=ax, label=group, linewidth=2)
+    #     ax.set_xlabel('Persister Probability', fontsize=12)
+    #     ax.set_ylabel('Density', fontsize=12)
+    #     ax.set_title('Distribution by Group', fontsize=14)
+    #     ax.legend()
     
     plt.suptitle('Persister Score Distribution Analysis', fontsize=16)
     plt.tight_layout()
