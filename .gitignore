@@ -64,4 +64,7 @@ src_031025/Hematopoietic_Cells_Healthy_AML/GSE74246/GSE74246_RNAseq_All_Counts.t
 aml_hspc_analysis_final.png
 exploratory_plots.png 
 src_031025/Hematopoietic_Cells_Healthy_AML/GSE125345/GSE125345_countdata.xlsx
-src_031025/Hematopoietic_Cells_Healthy_AML/GSE74246/GSE74246_RNAseq_All_Counts.txt
+src_031025/Hematopoietic_Cells_Healthy_AML/GSE74246/GSE74246_RNAseq_All_Counts.txt*.csv
+*.txt
+*.json
+*.rnk
