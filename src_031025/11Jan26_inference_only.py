@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-FINAL: AML Persister Inference with H5 Support & Proper Patient ID Extraction
+FINAL: AML Persister Inference with H5 + MTX Support
 """
 
 import os, sys, gzip, json, logging, warnings, re, argparse
@@ -75,50 +75,71 @@ def scrna_cpm_log1p(X: np.ndarray) -> np.ndarray:
     return np.log1p(X).astype(np.float32)
 
 # ============================================================================
-# FIXED: H5 Discovery & Patient ID Extraction
+# Patient ID Extraction
 # ============================================================================
 
-def extract_patient_id_from_h5_path(h5_path: Path) -> str:
-    """
-    Extract patient ID from H5 file path.
+def extract_patient_id_from_path(path: Path) -> str:
+    """Extract patient ID from file path"""
+    SKIP = {"outs", "filtered_feature_bc_matrix", "count", "matrix"}
     
-    Example:
-    .../FH_6088_3/outs/filtered_feature_bc_matrix.h5 → FH_6088_3
-    .../FHRB_1886_6/outs/filtered_feature_bc_matrix.h5 → FHRB_1886_6
-    """
-    SKIP = {"outs", "filtered_feature_bc_matrix", "count"}
-    
-    # Walk up from H5 file
-    for part in h5_path.parts[::-1]:
-        if part in SKIP or part.endswith('.h5'):
+    for part in path.parts[::-1]:
+        if part in SKIP or part.endswith('.h5') or part.endswith('.gz'):
             continue
-        # Check if looks like patient ID
         if re.match(r'^(FH|FHRB|BERG)_\d+', part):
             return part
     
-    # Fallback
-    return h5_path.parent.name
-
-def discover_h5_files(root: Path) -> List[Tuple[Path, str]]:
-    """Find all H5 files and extract patient IDs"""
-    samples = []
-    if not root.exists():
-        log.warning(f"Root not found: {root}")
-        return samples
-    
-    for h5_file in root.rglob("filtered_feature_bc_matrix.h5"):
-        if h5_file.is_file():
-            patient_id = extract_patient_id_from_h5_path(h5_file)
-            samples.append((h5_file, patient_id))
-            log.info(f"  H5: {patient_id} at {h5_file.relative_to(root)}")
-    
-    return samples
+    return path.parent.name
 
 # ============================================================================
-# Data Loading
+# NEW: MTX Format Support
+# ============================================================================
+
+def load_mtx_directory(mtx_dir: Path, max_cells: Optional[int] = None):
+    """
+    Load 10X MTX format data from directory containing:
+    - matrix.mtx.gz
+    - features.tsv.gz (or genes.tsv.gz)
+    - barcodes.tsv.gz
+    """
+    matrix_file = mtx_dir / "matrix.mtx.gz"
+    features_file = mtx_dir / "features.tsv.gz"
+    if not features_file.exists():
+        features_file = mtx_dir / "genes.tsv.gz"  # Older format
+    barcodes_file = mtx_dir / "barcodes.tsv.gz"
+    
+    # Check all files exist
+    if not all([matrix_file.exists(), features_file.exists(), barcodes_file.exists()]):
+        raise FileNotFoundError(f"MTX directory incomplete: {mtx_dir}")
+    
+    # Load matrix
+    with gzip.open(matrix_file, 'rt') as f:
+        X = mmread(f).T.tocsr()  # Transpose: cells x genes
+    
+    # Load features (genes)
+    features_df = pd.read_csv(features_file, sep='\t', header=None)
+    genes = features_df[1].tolist() if features_df.shape[1] >= 2 else features_df[0].tolist()
+    
+    # Load barcodes (cell IDs)
+    with gzip.open(barcodes_file, 'rt') as f:
+        cell_ids = [line.strip() for line in f]
+    
+    # Subsample if needed
+    if max_cells and X.shape[0] > max_cells:
+        indices = np.random.choice(X.shape[0], max_cells, replace=False)
+        X = X[indices]
+        cell_ids = [cell_ids[i] for i in indices]
+    
+    # Convert to dense
+    X = X.toarray().astype(np.float32)
+    
+    return X, clean_gene_names(genes), cell_ids
+
+# ============================================================================
+# UPDATED: H5 Format Support
 # ============================================================================
 
 def load_h5_file(h5_path: Path, max_cells: Optional[int] = None):
+    """Load 10X H5 format data"""
     if not HAS_SCANPY:
         raise ImportError("scanpy required for H5. Install: pip install scanpy")
     
@@ -134,6 +155,71 @@ def load_h5_file(h5_path: Path, max_cells: Optional[int] = None):
     cell_ids = [str(c) for c in adata.obs_names]
     
     return X, clean_gene_names(genes), cell_ids
+
+# ============================================================================
+# UPDATED: Sample Discovery (H5 + MTX)
+# ============================================================================
+
+def discover_samples(root: Path) -> List[Tuple[Path, str, str]]:
+    """
+    Find all samples in H5 or MTX format (with deduplication).
+    Returns: [(path, patient_id, format_type)]
+    """
+    samples = []
+    seen_patients = {}  # Track patient_id → (path, format)
+    
+    if not root.exists():
+        log.warning(f"Root not found: {root}")
+        return samples
+    
+    # Find H5 files
+    for h5_file in root.rglob("filtered_feature_bc_matrix.h5"):
+        if h5_file.is_file():
+            patient_id = extract_patient_id_from_path(h5_file)
+            
+            # Skip if already found this patient
+            if patient_id in seen_patients:
+                log.debug(f"  Skipping duplicate H5: {patient_id}")
+                continue
+            
+            seen_patients[patient_id] = (h5_file, "H5")
+            samples.append((h5_file, patient_id, "H5"))
+            log.info(f"  H5: {patient_id} at {h5_file.relative_to(root)}")
+    
+    # Find MTX directories
+    for mtx_dir in root.rglob("filtered_feature_bc_matrix"):
+        if mtx_dir.is_dir():
+            if (mtx_dir / "matrix.mtx.gz").exists():
+                patient_id = extract_patient_id_from_path(mtx_dir)
+                
+                # Skip if already found this patient
+                if patient_id in seen_patients:
+                    log.debug(f"  Skipping duplicate MTX: {patient_id}")
+                    continue
+                
+                seen_patients[patient_id] = (mtx_dir, "MTX")
+                samples.append((mtx_dir, patient_id, "MTX"))
+                log.info(f"  MTX: {patient_id} at {mtx_dir.relative_to(root)}")
+    
+    return samples
+
+
+# ============================================================================
+# UPDATED: Unified Sample Loading
+# ============================================================================
+
+def load_sample(path: Path, format_type: str, max_cells: Optional[int] = None):
+    """Load sample in either H5 or MTX format"""
+    if format_type == "H5":
+        return load_h5_file(path, max_cells)
+    elif format_type == "MTX":
+        return load_mtx_directory(path, max_cells)
+    else:
+        raise ValueError(f"Unknown format: {format_type}")
+
+# ============================================================================
+# Gene Alignment
+# ============================================================================
 
 def merge_duplicate_columns(X: np.ndarray, genes: List[str]):
     genes_arr = np.asarray(genes)
@@ -205,9 +291,10 @@ class PersisterInference:
             X = self.pca.transform(X).astype(np.float32)
         return X
     
-    def predict_sample(self, h5_path: Path, sample_name: str):
-        X, genes, cell_ids = load_h5_file(h5_path, max_cells=ARGS.max_cells)
-        log.info(f"[LOAD] {sample_name}: cells={X.shape[0]:,} genes={X.shape[1]:,}")
+    def predict_sample(self, path: Path, sample_name: str, format_type: str):
+        """Predict on sample (H5 or MTX format)"""
+        X, genes, cell_ids = load_sample(path, format_type, max_cells=ARGS.max_cells)
+        log.info(f"[LOAD] {sample_name} ({format_type}): cells={X.shape[0]:,} genes={X.shape[1]:,}")
         
         X_aligned, found, n_merged = align_to_training_genes(X, genes, self.training_genes, self.id2name)
         pct = 100.0 * found / len(self.training_genes)
@@ -233,7 +320,7 @@ class PersisterInference:
             "sample": sample_name,
             "cells": total,
             "persister_count": pos,
-            "persister_pct": float(pos_pct),
+            "persister_pct": int(round(pos_pct)),  # ✅ ROUNDED TO INTEGER
             "mean_prob": float(np.mean(probs)),
             "std_prob": float(np.std(probs))
         }
@@ -263,36 +350,34 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     
     log.info(f"\n{'='*80}")
-    log.info(f"AML PERSISTER INFERENCE (H5 FIXED)")
+    log.info(f"AML PERSISTER INFERENCE (H5 + MTX SUPPORT)")
     log.info(f"{'='*80}")
     log.info(f"Output: {out_dir}")
     
-    if not HAS_SCANPY:
-        log.error("scanpy not installed! Run: pip install scanpy")
-        sys.exit(1)
-    
     infer = PersisterInference(ARGS.model_dir, ARGS.genes_file)
     
-    # Discover H5 files
-    log.info(f"\nDiscovering H5 files in: {ARGS.aml_root}")
-    samples = discover_h5_files(ARGS.aml_root)
+    # Discover samples (both H5 and MTX)
+    log.info(f"\nDiscovering samples in: {ARGS.aml_root}")
+    samples = discover_samples(ARGS.aml_root)
     
     if not samples:
-        log.error("No H5 files found!")
+        log.error("No samples found!")
         sys.exit(1)
     
-    log.info(f"\n✓ Found {len(samples)} H5 files")
+    log.info(f"\n✓ Found {len(samples)} samples")
     
     all_summaries = []
-    for h5_path, sname in samples:
+    for path, sname, fmt in samples:
         log.info(f"\n{'='*70}")
-        log.info(f"Processing: {sname}")
+        log.info(f"Processing: {sname} ({fmt})")
         try:
-            df_cells, summary = infer.predict_sample(h5_path, sname)
+            df_cells, summary = infer.predict_sample(path, sname, fmt)
             all_summaries.append(summary)
             df_cells.to_csv(out_dir / f"{sname}_predictions.csv", index=False)
         except Exception as e:
             log.error(f"[ERROR] {sname}: {e}")
+            import traceback
+            traceback.print_exc()
     
     df_sum = pd.DataFrame(all_summaries)
     df_sum.to_csv(out_dir / "inference_results_summary.csv", index=False)
