@@ -74,3 +74,9 @@ src_031025/Hematopoietic_Cells_Healthy_AML/GSE74246/GSE74246_RNAseq_All_Counts.t
 *.rnk
 *.xlsx
 *.soft
+
+# AML Persister generated datasets / outputs
+src_031025/GSE176078_BRCA_cellxgene_uploads/
+src_031025/GSE202771_TNBC_outputs/
+src_031025/output/
+src_031025/proteinatlas.tsv
