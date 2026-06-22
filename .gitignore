@@ -80,3 +80,6 @@ src_031025/GSE176078_BRCA_cellxgene_uploads/
 src_031025/GSE202771_TNBC_outputs/
 src_031025/output/
 src_031025/proteinatlas.tsv
+
+# Backup files
+*.bak
